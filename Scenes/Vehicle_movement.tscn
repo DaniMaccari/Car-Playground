@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://d08iuocp8g1y8" path="res://Assets/auto_racing_car/turnipCar.png" id="2_c33vq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
-size = Vector3(2.23999, 0.989513, 3.67538)
+size = Vector3(2.23999, 1.96881, 3.67538)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pfg6y"]
 albedo_texture = ExtResource("2_c33vq")
@@ -114,13 +114,15 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_f3jxb")
 
-[node name="VehicleBody3D" type="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0621619, 0)
-collision_mask = 16
+[node name="Body" type="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.141597, 0)
+mass = 100.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, 0.5, 0)
 script = ExtResource("1_ijyx4")
 
 [node name="CollisionBox" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449647, 0.220596)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05948, 0.220596)
 shape = SubResource("BoxShape3D_e3vso")
 
 [node name="sportsCar_yellow" type="Node3D" parent="."]
@@ -132,45 +134,73 @@ mesh = SubResource("ArrayMesh_sbqri")
 skeleton = NodePath("")
 
 [node name="WheelFrontLeft" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.219, 1.483)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.342067, 1.483)
 use_as_steering = true
-wheel_radius = 0.4
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 1.0
+suspension_stiffness = 65.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
 
 [node name="wheelFL" type="MeshInstance3D" parent="WheelFrontLeft"]
-transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 layers = 2
 mesh = SubResource("ArrayMesh_y31eb")
 skeleton = NodePath("")
 
 [node name="WheelFrontRight" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0.219, 1.483)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0.342067, 1.483)
 use_as_steering = true
-wheel_radius = 0.4
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 1.0
+suspension_stiffness = 65.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
 
 [node name="wheelFR" type="MeshInstance3D" parent="WheelFrontRight"]
-transform = Transform3D(-1, 0, -2.26494e-07, 0, 1.5, 0, 1.50996e-07, 0, -1.5, 0, 0, 0)
+transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
 layers = 2
 mesh = SubResource("ArrayMesh_nu47w")
 skeleton = NodePath("")
 
 [node name="WheelBackLeft" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.219, -1.112)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0.342067, -1.112)
 use_as_traction = true
-wheel_radius = 0.4
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 1.0
+suspension_stiffness = 65.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
 
 [node name="wheelBL" type="MeshInstance3D" parent="WheelBackLeft"]
-transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 layers = 2
 mesh = SubResource("ArrayMesh_y31eb")
 skeleton = NodePath("")
 
 [node name="WheelBackRight" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0.219, -1.112)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1, 0.342067, -1.112)
 use_as_traction = true
-wheel_radius = 0.4
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+wheel_friction_slip = 1.0
+suspension_travel = 1.0
+suspension_stiffness = 65.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
 
 [node name="wheelBR" type="MeshInstance3D" parent="WheelBackRight"]
-transform = Transform3D(-1, 0, -2.26494e-07, 0, 1.5, 0, 1.50996e-07, 0, -1.5, 0, 0, 0)
+transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
 layers = 2
 mesh = SubResource("ArrayMesh_nu47w")
 skeleton = NodePath("")
