@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds02v5oixc6gh"
+path="res://.godot/imported/SportsCar_Yellow.obj-626e386bb6b3bfe1c56fca8f1635232c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SportsCar_Yellow.obj-626e386bb6b3bfe1c56fca8f1635232c.mesh"]
+
+source_file="res://Assets/auto_racing_car/Yellow/SportsCar_Yellow.obj"
+dest_files=["res://.godot/imported/SportsCar_Yellow.obj-626e386bb6b3bfe1c56fca8f1635232c.mesh", "res://.godot/imported/SportsCar_Yellow.obj-626e386bb6b3bfe1c56fca8f1635232c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

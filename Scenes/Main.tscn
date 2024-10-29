@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://cadip24ccwo6q"]
+
+[ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d18de"]
+size = Vector3(15, 0.2, 15)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a85fd"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="PlaneWorld" type="StaticBody3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlaneWorld"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101741, 0)
+shape = SubResource("BoxShape3D_d18de")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlaneWorld"]
+transform = Transform3D(8, 0, 0, 0, 0.533, 0, 0, 0, 8, 0, 0, 0)
+mesh = SubResource("PlaneMesh_a85fd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 2.18557e-08, -0.5, 0.5, -3.78552e-08, 0.866025, 0, -1, -4.37114e-08, 0, 3.90455, 0)
+
+[node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.67617, 0)
+MAX_STEER = 0.6
+ENGINE_POWER = 500
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.1211, 30.6757)
+projection = 1
+size = 43.0479
