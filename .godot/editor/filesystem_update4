@@ -1,6 +1,2 @@
-res://Godot-Easy-Vehicle-Physics-284b44fd8e477ac6a693f3575617baf007f6a2b9/addons/gevp/scenes/track.tscn
-res://Godot-Easy-Vehicle-Physics-284b44fd8e477ac6a693f3575617baf007f6a2b9/addons/gevp/scenes/demo_drift.tscn
-res://Godot-Easy-Vehicle-Physics-284b44fd8e477ac6a693f3575617baf007f6a2b9/addons/gevp/scenes/drift_car.tscn
 res://Scenes/Main.tscn
 res://Scenes/Vehicle_movement.tscn
-res://Scripts/vehicle_movement.gd

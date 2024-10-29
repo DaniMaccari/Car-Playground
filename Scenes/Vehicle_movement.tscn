@@ -1,10 +1,14 @@
-[gd_scene load_steps=11 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=13 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
+[ext_resource type="Texture2D" uid="uid://d08iuocp8g1y8" path="res://Assets/auto_racing_car/turnipCar.png" id="2_c33vq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
 size = Vector3(2.23999, 0.989513, 3.67538)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pfg6y"]
+albedo_texture = ExtResource("2_c33vq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rso3r"]
 resource_name = "sportsCar_yellow"
@@ -115,7 +119,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0621619, 0)
 collision_mask = 16
 script = ExtResource("1_ijyx4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionBox" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449647, 0.220596)
 shape = SubResource("BoxShape3D_e3vso")
 
@@ -123,6 +127,7 @@ shape = SubResource("BoxShape3D_e3vso")
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar_yellow"]
+material_override = SubResource("StandardMaterial3D_pfg6y")
 mesh = SubResource("ArrayMesh_sbqri")
 skeleton = NodePath("")
 
