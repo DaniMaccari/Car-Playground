@@ -1,2 +1,3 @@
-res://Scenes/Vehicle_movement.tscn
 res://Scenes/Main.tscn
+res://Scripts/vehicle_movement.gd
+res://Scenes/Vehicle_movement.tscn
