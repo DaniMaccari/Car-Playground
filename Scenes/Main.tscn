@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=7 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
+[ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -9,12 +10,11 @@ ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
 tonemap_mode = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d18de"]
-size = Vector3(18, 0.2, 18)
+size = Vector3(16.0916, 0.2, 16.1094)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_a85fd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlxl5"]
-albedo_color = Color(0.109804, 0.803922, 0, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -27,6 +27,7 @@ light_energy = 1.2
 shadow_bias = 0.015
 directional_shadow_mode = 0
 directional_shadow_max_distance = 80.0
+sky_mode = 1
 
 [node name="PlaneWorld" type="StaticBody3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
@@ -41,6 +42,8 @@ cast_shadow = 0
 mesh = SubResource("PlaneMesh_a85fd")
 surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
 
+[node name="Road" type="Node3D" parent="."]
+
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329204, 0)
 MAX_STEER = 0.4
@@ -49,3 +52,6 @@ MAX_STEER = 0.4
 transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.1211, 30.6757)
 projection = 1
 size = 43.0479
+
+[node name="CollectableObject" parent="." instance=ExtResource("2_1pi0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, 3.35001, 12.4467)

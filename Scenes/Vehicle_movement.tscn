@@ -205,6 +205,6 @@ skeleton = NodePath("")
 
 [node name="BlobShadow" type="Decal" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.00333, 0.131746)
-size = Vector3(4.58691, 4, 5.73438)
+size = Vector3(4.5, 4, 5.75)
 texture_albedo = ExtResource("4_nmhot")
 cull_mask = 1048573
