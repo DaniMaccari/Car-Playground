@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=8 format=4 uid="uid://b1lv72wgq2xnc"]
 
+[ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
 [ext_resource type="Texture2D" uid="uid://crs00pxk5my3a" path="res://Assets/shadow.png" id="2_bgi5k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nsy54"]
 resource_name = "treebase_color"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_s8vmp")
 emission_enabled = true
 uv1_offset = Vector3(0, -1, 0)
@@ -48,11 +48,11 @@ radius = 2.35599
 
 [node name="CollectableObject" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.35523, 0)
+script = ExtResource("1_om0bk")
 
 [node name="Turnip" type="StaticBody3D" parent="."]
 
 [node name="leaves_5" type="MeshInstance3D" parent="Turnip"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_nqu00")
 skeleton = NodePath("")
 

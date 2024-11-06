@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730753022
+::res://::1730925447
 icon.svg::CompressedTexture2D::8445948122843711016::1730135459::1730135468::1::::<><>::
 README.md::TextFile::-1::1730196857::0::1::::<><>::
 ::res://Assets/::1730248109
@@ -116,8 +116,9 @@ treeSet_pine1.obj::Mesh::5275392076723220363::1471122140::1730195498::1::::<><>:
 treeSet_pine2.dae::PackedScene::5696840749889720089::1471122270::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.fbx::PackedScene::314090825589050912::1471121971::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.obj::Mesh::4997888647085511052::1471122146::1730195498::1::::<><>::
-::res://Scenes/::1730311992
-Main.tscn::PackedScene::4779548486523294006::1730311991::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn
-Vehicle_movement.tscn::PackedScene::7422262263913703112::1730311992::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://crs00pxk5my3a::::res://Assets/shadow.png
+::res://Scenes/::1730753378
+Collectable_object.tscn::PackedScene::4235372428240886192::1730753378::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://crs00pxk5my3a::::res://Assets/shadow.png
+Main.tscn::PackedScene::4779548486523294006::1730753378::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn
+Vehicle_movement.tscn::PackedScene::7422262263913703112::1730753378::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://crs00pxk5my3a::::res://Assets/shadow.png
 ::res://Scripts/::1730246335
 vehicle_movement.gd::GDScript::-1::1730246335::0::1::::<>VehicleBody3D<>::
