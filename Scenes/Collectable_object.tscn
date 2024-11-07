@@ -44,7 +44,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_sphfr")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_p3xh3"]
-radius = 2.35599
+radius = 1.5613
 
 [node name="CollectableObject" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.35523, 0)
@@ -58,10 +58,10 @@ skeleton = NodePath("")
 
 [node name="BlobShadow" type="Decal" parent="Turnip/leaves_5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.00333, 0.131746)
-size = Vector3(4, 3, 4)
+size = Vector3(6, 3, 6)
 texture_albedo = ExtResource("2_bgi5k")
 cull_mask = 1048573
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Turnip"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.394102, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0709448, 0)
 shape = SubResource("SphereShape3D_p3xh3")
