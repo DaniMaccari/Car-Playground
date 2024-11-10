@@ -204,7 +204,7 @@ mesh = SubResource("ArrayMesh_nu47w")
 skeleton = NodePath("")
 
 [node name="BlobShadow" type="Decal" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.00333, 0.131746)
-size = Vector3(4.5, 4, 5.75)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.46227, 0.131746)
+size = Vector3(4.5, 3.08212, 5.75)
 texture_albedo = ExtResource("4_nmhot")
 cull_mask = 1048573

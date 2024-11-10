@@ -1,4 +1,3 @@
 res://Scenes/Main.tscn
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
-res://Scripts/vehicle_movement.gd

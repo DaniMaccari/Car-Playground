@@ -54,7 +54,7 @@ projection = 1
 size = 43.0479
 
 [node name="CollectableObject" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, -0.64999, 12.4467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, -0.497972, 12.4467)
 
 [node name="CollectableObject2" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 3.35523, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1.64838, -15)
