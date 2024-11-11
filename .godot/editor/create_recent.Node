@@ -1,7 +1,7 @@
-CollisionShape3D
 StaticBody3D
-CollisionPolygon3D
 Node3D
+CollisionShape3D
+CollisionPolygon3D
 Decal
 WorldEnvironment
 Camera3D
