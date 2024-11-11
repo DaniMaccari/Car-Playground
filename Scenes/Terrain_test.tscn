@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca7h2il3ay43c"]
+
+[ext_resource type="ArrayMesh" uid="uid://cww10kjflg76j" path="res://Assets/Terrain/playgroundTerrain.obj" id="1_hkhgm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_aadf8"]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="PlaygroundTerrain" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("1_hkhgm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_aadf8")

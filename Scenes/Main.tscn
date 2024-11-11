@@ -1,13 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=10 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
+[ext_resource type="Texture2D" uid="uid://cas0x7ga5oho5" path="res://Assets/Terrain/terrainTexture_24x24.png" id="1_qyux7"]
 [ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
+[ext_resource type="ArrayMesh" uid="uid://cww10kjflg76j" path="res://Assets/Terrain/playgroundTerrain.obj" id="2_ps3rg"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
 background_color = Color(0.125147, 0.693433, 0.694784, 1)
 ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
 tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bewro"]
+albedo_texture = ExtResource("1_qyux7")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d18de"]
 size = Vector3(16.0916, 0.2, 16.1094)
@@ -32,6 +37,13 @@ sky_mode = 1
 [node name="PlaneWorld" type="StaticBody3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 
+[node name="PlaygroundTerrain" type="MeshInstance3D" parent="PlaneWorld"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.666667, 0, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_bewro")
+mesh = ExtResource("2_ps3rg")
+skeleton = NodePath("../..")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlaneWorld"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101741, 0)
 shape = SubResource("BoxShape3D_d18de")
@@ -45,7 +57,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
 [node name="Road" type="Node3D" parent="."]
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329204, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.28124, 0)
 MAX_STEER = 0.4
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -54,7 +66,7 @@ projection = 1
 size = 43.0479
 
 [node name="CollectableObject" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, -0.497972, 12.4467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, 2.76214, 12.4467)
 
 [node name="CollectableObject2" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1.64838, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 3.53541, -15)
