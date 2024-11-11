@@ -32,16 +32,13 @@ sky_mode = 1
 
 [node name="PlaneWorld" type="StaticBody3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlaneWorld"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101741, 0)
-visible = false
 shape = SubResource("BoxShape3D_d18de")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PlaneWorld"]
 transform = Transform3D(8, 0, 0, 0, 0.533, 0, 0, 0, 8, 0, 0, 0)
-visible = false
 cast_shadow = 0
 mesh = SubResource("PlaneMesh_a85fd")
 surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
@@ -58,10 +55,13 @@ projection = 1
 size = 43.0479
 
 [node name="CollectableObject" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, 2.76214, 12.4467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, 1.65271, 12.4467)
 
 [node name="CollectableObject2" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 3.53541, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1.72222, -15)
 
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+visible = false
+collision_layer = 0
+collision_mask = 0
