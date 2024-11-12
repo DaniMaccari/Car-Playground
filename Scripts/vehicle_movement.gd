@@ -19,35 +19,12 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	
-	steering = move_toward(steering, left_right_input * MAX_STEER, delta * 10)
+	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 10)
 	#engine_force = Input.get_axis("ui_decel", "ui_accel") * ENGINE_POWER
 	
 	var actual_speed := linear_velocity.length()
 	var direction := global_transform.basis.z.dot(linear_velocity.normalized())
-	
-	# vibrate with collision
-	if abs(actual_speed - previous_speed) > 3.0:
-		print("big collision")
-		Input.vibrate_handheld(100)
-		for joypad in Input.get_connected_joypads():
-			Input.start_joy_vibration(joypad, 0.0, 0.6, 0.1)
-	elif abs(actual_speed - previous_speed) > 1.0: # For softer bumps
-		print("small collision")
-		for joypad in Input.get_connected_joypads():
-			Input.start_joy_vibration(joypad, 0.5, 0.0, 0.1)
-	
-
-	#print("direction", direction)
-	previous_speed = actual_speed
-
-func _input(event: InputEvent) -> void:
-	if event.device != player_index:
-		return
-	
-	left_right_input = Input.get_axis("ui_right", "ui_left")
-	
-	var actual_speed := linear_velocity.length()
-	var direction := global_transform.basis.z.dot(linear_velocity.normalized())
+		
 	# initial accel faster
 	#if Input.is_joy_button_pressed(player_index, ):
 	if Input.is_action_pressed("ui_accel"):
@@ -70,6 +47,26 @@ func _input(event: InputEvent) -> void:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * 2.0
 		else:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER
+	# vibrate with collision
+	if abs(actual_speed - previous_speed) > 3.0:
+		print("big collision")
+		Input.vibrate_handheld(100)
+		for joypad in Input.get_connected_joypads():
+			Input.start_joy_vibration(joypad, 0.0, 0.6, 0.1)
+	elif abs(actual_speed - previous_speed) > 1.0: # For softer bumps
+		print("small collision")
+		for joypad in Input.get_connected_joypads():
+			Input.start_joy_vibration(joypad, 0.5, 0.0, 0.1)
+	
+
+	#print("direction", direction)
+	previous_speed = actual_speed
+
+func _input(event: InputEvent) -> void:
+	if event.device != player_index:
+		return
+	
+	
 
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index
