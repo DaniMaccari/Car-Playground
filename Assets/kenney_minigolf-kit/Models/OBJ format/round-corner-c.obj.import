@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cp2cxnt3wi2td"
+path="res://.godot/imported/round-corner-c.obj-cf2f1fede762946e39704fbabc97e5fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/round-corner-c.obj-cf2f1fede762946e39704fbabc97e5fd.mesh"]
+
+source_file="res://Assets/kenney_minigolf-kit/Models/OBJ format/round-corner-c.obj"
+dest_files=["res://.godot/imported/round-corner-c.obj-cf2f1fede762946e39704fbabc97e5fd.mesh", "res://.godot/imported/round-corner-c.obj-cf2f1fede762946e39704fbabc97e5fd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

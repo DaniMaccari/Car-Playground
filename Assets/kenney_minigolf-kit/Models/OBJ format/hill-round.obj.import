@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chgvlyx65050t"
+path="res://.godot/imported/hill-round.obj-f718d551c99ad2c56d189acec105293c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hill-round.obj-f718d551c99ad2c56d189acec105293c.mesh"]
+
+source_file="res://Assets/kenney_minigolf-kit/Models/OBJ format/hill-round.obj"
+dest_files=["res://.godot/imported/hill-round.obj-f718d551c99ad2c56d189acec105293c.mesh", "res://.godot/imported/hill-round.obj-f718d551c99ad2c56d189acec105293c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

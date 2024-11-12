@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c4u4phgyywyxb"
+path="res://.godot/imported/castle.obj-6852a350e59c81b1e6e6ed0a04750761.mesh"
+
+[deps]
+
+files=["res://.godot/imported/castle.obj-6852a350e59c81b1e6e6ed0a04750761.mesh"]
+
+source_file="res://Assets/kenney_minigolf-kit/Models/OBJ format/castle.obj"
+dest_files=["res://.godot/imported/castle.obj-6852a350e59c81b1e6e6ed0a04750761.mesh", "res://.godot/imported/castle.obj-6852a350e59c81b1e6e6ed0a04750761.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

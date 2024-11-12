@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731327914
+::res://::1731368407
 icon.svg::CompressedTexture2D::8445948122843711016::1730135459::1730135468::1::::<><>::
 README.md::TextFile::-1::1730196857::0::1::::<><>::
-::res://Assets/::1731322694
-shadow.png::CompressedTexture2D::6004773902348311000::1715793212::1730248109::1::::<><>::
-::res://Assets/auto_racing_car/::1730205172
-turnipCar.png::CompressedTexture2D::8982629798876723033::1730205170::1730205172::1::::<><>::
+::res://Assets/::1731363629
+shadow.png::CompressedTexture2D::2526691689808764331::1715793212::1731363629::1::::<><>::
+::res://Assets/auto_racing_car/::1731358024
+turnipCar.png::CompressedTexture2D::8982629798876723033::1731358023::1731358024::1::::<><>::
 ::res://Assets/auto_racing_car/black/::1730195507
 sportsCar_black.fbx::PackedScene::3507048867548242844::1470514372::1730195502::1::::<><>::uid://bc86ujm0p3o01::::res://Assets/auto_racing_car/black/sportsCar_black.png
 sportsCar_black.obj::Mesh::3142982962761808139::1470514379::1730195499::1::::<><>::
@@ -48,6 +48,230 @@ SportsCar_Yellow.obj::Mesh::8475949138614177743::1470514182::1730195498::1::::<>
 sportsCar_yellow.png::CompressedTexture2D::1780412628892661599::1470512797::1730195507::1::::<><>::
 SportsCar_Yellow_collada_14.dae::PackedScene::5688594115860263825::1470514114::1730195503::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png
 SportsCar_Yellow_collada_15.dae::PackedScene::451025993547661501::1470514155::1730195503::1::::<><>::
+::res://Assets/kenney_minigolf-kit/::1731353344
+::res://Assets/kenney_minigolf-kit/Models/::1698510677
+::res://Assets/kenney_minigolf-kit/Models/FBX format/::1731353384
+ball-blue.fbx::PackedScene::1215698862962344701::1698510681::1731353373::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ball-green.fbx::PackedScene::8986627859130094483::1698510681::1731353373::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ball-red.fbx::PackedScene::7904003809236840182::1698510681::1731353384::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+block.fbx::PackedScene::351627908113192993::1698510681::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+bump-down-walls.fbx::PackedScene::7156694226813572386::1698510681::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+bump-down.fbx::PackedScene::1558124769041758510::1698510681::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+bump-walls.fbx::PackedScene::8404817588794252250::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+bump.fbx::PackedScene::2573498808373373209::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+castle.fbx::PackedScene::8357608484300579802::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+club-blue.fbx::PackedScene::4871436043222710013::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+club-green.fbx::PackedScene::7550866950801511363::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+club-red.fbx::PackedScene::390376554758454338::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+corner.fbx::PackedScene::4960467355742363071::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+crest.fbx::PackedScene::5134791464158476416::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+end.fbx::PackedScene::7140752812759484368::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+flag-blue.fbx::PackedScene::4785684810125424862::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+flag-green.fbx::PackedScene::7706548114917788443::1698510681::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+flag-red.fbx::PackedScene::8883122491002735547::1698510682::1731353378::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+gap.fbx::PackedScene::8132631500168422226::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hill-corner.fbx::PackedScene::4996164639724148711::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hill-round.fbx::PackedScene::215939044982549072::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hill-square.fbx::PackedScene::8656323419382513006::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hole-open.fbx::PackedScene::44230255192973025::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hole-round.fbx::PackedScene::43220947148492361::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+hole-square.fbx::PackedScene::4631156373492733702::1698510682::1731353379::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+inner-corner.fbx::PackedScene::1559579019116573108::1698510682::1731353380::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+narrow-block.fbx::PackedScene::7214799261790172619::1698510682::1731353380::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+narrow-round.fbx::PackedScene::1289057637674530204::1698510682::1731353380::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+narrow-square.fbx::PackedScene::4044039327241998960::1698510682::1731353380::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+obstacle-block.fbx::PackedScene::1633286872451839399::1698510682::1731353380::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+obstacle-diamond.fbx::PackedScene::8724591448426614919::1698510682::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+obstacle-triangle.fbx::PackedScene::4919818744108516080::1698510682::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+open.fbx::PackedScene::7122331754506089854::1698510682::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-a.fbx::PackedScene::4667326792203618199::1698510682::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-b.fbx::PackedScene::3169819308952186479::1698510682::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-c.fbx::PackedScene::1456010831739316933::1698510683::1731353375::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-d.fbx::PackedScene::2236090478359917173::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-large-side.fbx::PackedScene::7892995028046918599::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-large.fbx::PackedScene::4691072975271220946::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-sharp.fbx::PackedScene::3084010816353007157::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-side.fbx::PackedScene::902882986892201960::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp-square.fbx::PackedScene::8117366188175625729::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+ramp.fbx::PackedScene::5298528949516364945::1698510682::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+round-corner-a.fbx::PackedScene::2235665771211975197::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+round-corner-b.fbx::PackedScene::7730451697786631319::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+round-corner-c.fbx::PackedScene::5393440962703276885::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+round-large-corner-open.fbx::PackedScene::5162792253467387927::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+round-large-corner.fbx::PackedScene::5794843816959799779::1698510683::1731353376::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+side.fbx::PackedScene::7415173658327593684::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+skew-corner.fbx::PackedScene::604986818393069409::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+skew-large-corner-open.fbx::PackedScene::2080081628837821455::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+skew-large-corner.fbx::PackedScene::559188936125210270::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+split-start.fbx::PackedScene::7497053306102886584::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+split-t.fbx::PackedScene::7880972619127089896::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+split-walls-to-open.fbx::PackedScene::3258890336477181301::1698510684::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+split.fbx::PackedScene::5341133618676714787::1698510683::1731353377::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+square-corner-a.fbx::PackedScene::8724977167782689130::1698510684::1731353382::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+start.fbx::PackedScene::2866876196756659697::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+straight.fbx::PackedScene::8613455243034077948::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+support-bottom.fbx::PackedScene::1446937619642815954::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+support.fbx::PackedScene::4297368965249638384::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+supports-bottom.fbx::PackedScene::6900467760219736278::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+supports.fbx::PackedScene::55702237783927164::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+tunnel-double.fbx::PackedScene::7410192561229013723::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+tunnel-narrow.fbx::PackedScene::4771076869895032464::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+tunnel-wide.fbx::PackedScene::7791035851230685106::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+wall-left.fbx::PackedScene::5296912412338234172::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+wall-right.fbx::PackedScene::2518179392637348517::1698510684::1731353383::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+walls-to-open.fbx::PackedScene::1650314045512711959::1698510684::1731353384::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+windmill.fbx::PackedScene::8341993054921689652::1698510684::1731353384::1::::<><>::uid://b6kni6wc3rqlt::::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/colormap.png
+::res://Assets/kenney_minigolf-kit/Models/FBX format/Textures/::1731353386
+colormap.png::CompressedTexture2D::4583723883608432849::1698510695::1731353386::1::::<><>::
+::res://Assets/kenney_minigolf-kit/Models/GLB format/::1731353385
+ball-blue.glb::PackedScene::8162514207041309570::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ball-green.glb::PackedScene::5064473978842604548::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ball-red.glb::PackedScene::3176356872820462043::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+block.glb::PackedScene::8047704748229430187::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+bump-down-walls.glb::PackedScene::8431989924369321413::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+bump-down.glb::PackedScene::2479943553256949450::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+bump-walls.glb::PackedScene::5141270636562218457::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+bump.glb::PackedScene::2052599489230063886::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+castle.glb::PackedScene::5430145124009475150::1698510681::1731353384::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+club-blue.glb::PackedScene::8031457165778206644::1698510681::1731353385::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+club-green.glb::PackedScene::4773219827201692534::1698510681::1731353385::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+club-red.glb::PackedScene::3594591505703794520::1698510681::1731353385::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+corner.glb::PackedScene::6217141314202244744::1698510681::1731353380::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+crest.glb::PackedScene::6313173669920098496::1698510681::1731353380::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+end.glb::PackedScene::1150543668008469596::1698510681::1731353380::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+flag-blue.glb::PackedScene::4064524046886944062::1698510681::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+flag-green.glb::PackedScene::4875328735354350071::1698510681::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+flag-red.glb::PackedScene::4946703439327771886::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+gap.glb::PackedScene::1924441667109191882::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hill-corner.glb::PackedScene::6037906729663405471::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hill-round.glb::PackedScene::5475868292476369330::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hill-square.glb::PackedScene::4119916857647981778::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hole-open.glb::PackedScene::5817597613248068207::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hole-round.glb::PackedScene::2261558767560024376::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+hole-square.glb::PackedScene::4583319444476950818::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+inner-corner.glb::PackedScene::8223981349493275026::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+narrow-block.glb::PackedScene::8707298965402235843::1698510682::1731353381::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+narrow-round.glb::PackedScene::2489094630259002371::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+narrow-square.glb::PackedScene::3555984316252156862::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+obstacle-block.glb::PackedScene::1495280596939699968::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+obstacle-diamond.glb::PackedScene::2577193926484884327::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+obstacle-triangle.glb::PackedScene::7900231015371751127::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+open.glb::PackedScene::1111675112282101071::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-a.glb::PackedScene::5591291081558769125::1698510682::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-b.glb::PackedScene::5108657621684481156::1698510683::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-c.glb::PackedScene::5164420779023966878::1698510683::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-d.glb::PackedScene::403728826652809049::1698510683::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-large-side.glb::PackedScene::138996560898252401::1698510683::1731353382::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-large.glb::PackedScene::3992469234687532265::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-sharp.glb::PackedScene::7633680988677941626::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-side.glb::PackedScene::8850781475944222713::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp-square.glb::PackedScene::3423531312879282354::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+ramp.glb::PackedScene::9133589262400476887::1698510682::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+round-corner-a.glb::PackedScene::1977283481876626321::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+round-corner-b.glb::PackedScene::3505188423931901428::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+round-corner-c.glb::PackedScene::8576841548232694729::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+round-large-corner-open.glb::PackedScene::7618026972030273450::1698510683::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+round-large-corner.glb::PackedScene::9018919655017549753::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+side.glb::PackedScene::2635708729977632884::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+skew-corner.glb::PackedScene::7474027122379692607::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+skew-large-corner-open.glb::PackedScene::1905840945035830765::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+skew-large-corner.glb::PackedScene::5664865964338848573::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+split-start.glb::PackedScene::6777338741704317561::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+split-t.glb::PackedScene::3254831339277477426::1698510683::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+split-walls-to-open.glb::PackedScene::8234125501872532412::1698510684::1731353372::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+split.glb::PackedScene::665538420715336685::1698510683::1731353375::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+square-corner-a.glb::PackedScene::7775242192353203358::1698510684::1731353375::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+start.glb::PackedScene::5324908798711726213::1698510684::1731353375::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+straight.glb::PackedScene::4731008696740609096::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+support-bottom.glb::PackedScene::4859796265472101970::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+support.glb::PackedScene::3946324663457866954::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+supports-bottom.glb::PackedScene::8456631150028633799::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+supports.glb::PackedScene::4949742818499732386::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+tunnel-double.glb::PackedScene::4748356264186008600::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+tunnel-narrow.glb::PackedScene::8272602917305953413::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+tunnel-wide.glb::PackedScene::8570529036202468697::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+wall-left.glb::PackedScene::6086423328070192640::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+wall-right.glb::PackedScene::8797706472822433988::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+walls-to-open.glb::PackedScene::6208455916778049315::1698510684::1731353374::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+windmill.glb::PackedScene::6137224594011918777::1698510684::1731353373::1::::<><>::uid://bjr2e0ij0poq4::::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/colormap.png
+::res://Assets/kenney_minigolf-kit/Models/GLB format/Textures/::1731353386
+colormap.png::CompressedTexture2D::3054862526119845277::1698510695::1731353386::1::::<><>::
+::res://Assets/kenney_minigolf-kit/Models/OBJ format/::1731353372
+ball-blue.obj::Mesh::5775857444563876908::1698510681::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ball-green.obj::Mesh::4896400576580152406::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ball-red.obj::Mesh::2457824760846561508::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+block.obj::Mesh::7578670517663026562::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+bump-down-walls.obj::Mesh::297745211565831993::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+bump-down.obj::Mesh::5459267589981671664::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+bump-walls.obj::Mesh::9187092236990978609::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+bump.obj::Mesh::5488015403992102470::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+castle.obj::Mesh::6851393345724830623::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+club-blue.obj::Mesh::5678708274725204314::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+club-green.obj::Mesh::1871784943250095582::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+club-red.obj::Mesh::3893842155151921590::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+corner.obj::Mesh::6407623339818242549::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+crest.obj::Mesh::477913692664006975::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+end.obj::Mesh::644279237802124733::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+flag-blue.obj::Mesh::291187854713899798::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+flag-green.obj::Mesh::3845432002967625577::1698510681::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+flag-red.obj::Mesh::8464624471818434827::1698510682::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+gap.obj::Mesh::7877712973029532997::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hill-corner.obj::Mesh::7898345134657051694::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hill-round.obj::Mesh::5277845537498348453::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hill-square.obj::Mesh::4041569082675178139::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hole-open.obj::Mesh::5124094701258452754::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hole-round.obj::Mesh::5780304659185479461::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+hole-square.obj::Mesh::8240410622515681773::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+inner-corner.obj::Mesh::7810968836444197709::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+narrow-block.obj::Mesh::5146733291811275161::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+narrow-round.obj::Mesh::3984116235563546467::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+narrow-square.obj::Mesh::8082937086371635269::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+obstacle-block.obj::Mesh::1261705389807256343::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+obstacle-diamond.obj::Mesh::6709985878264621167::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+obstacle-triangle.obj::Mesh::8569669447482012528::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+open.obj::Mesh::2242909259064686874::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-a.obj::Mesh::3759377789174454336::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-b.obj::Mesh::8645802447723834317::1698510682::1731353369::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-c.obj::Mesh::1625841607876548047::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-d.obj::Mesh::7714388366415072994::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-large-side.obj::Mesh::4579910415637312839::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-large.obj::Mesh::5079465666173667869::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-sharp.obj::Mesh::7641915783741212129::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-side.obj::Mesh::7455030069640549757::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp-square.obj::Mesh::5455339810391185255::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+ramp.obj::Mesh::5489694077953904678::1698510682::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+round-corner-a.obj::Mesh::2710457912769024371::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+round-corner-b.obj::Mesh::4689171594336199133::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+round-corner-c.obj::Mesh::5881575442018420693::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+round-large-corner-open.obj::Mesh::2868697937541437391::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+round-large-corner.obj::Mesh::5450259030554784210::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+side.obj::Mesh::4709840469349139444::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+skew-corner.obj::Mesh::3939249160982254606::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+skew-large-corner-open.obj::Mesh::7934088740888215229::1698510683::1731353372::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+skew-large-corner.obj::Mesh::1598545937538360961::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+split-start.obj::Mesh::6451966572265429874::1698510683::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+split-t.obj::Mesh::7667600190291474409::1698510683::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+split-walls-to-open.obj::Mesh::9070605314053833525::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+split.obj::Mesh::4130971339131132500::1698510683::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+square-corner-a.obj::Mesh::6515385115660439711::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+start.obj::Mesh::8864397561970458553::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+straight.obj::Mesh::3780538199540431049::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+support-bottom.obj::Mesh::1745905577932593149::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+support.obj::Mesh::2662506530685698246::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+supports-bottom.obj::Mesh::2584043522015925764::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+supports.obj::Mesh::8500515901723962506::1698510684::1731353370::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+tunnel-double.obj::Mesh::8849766501823036268::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+tunnel-narrow.obj::Mesh::3293613222744710743::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+tunnel-wide.obj::Mesh::3220040337264811677::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+wall-left.obj::Mesh::5360038533015553916::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+wall-right.obj::Mesh::2046110466837838921::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+walls-to-open.obj::Mesh::3089622122189734686::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+windmill.obj::Mesh::1789724358956616527::1698510684::1731353371::1::::<><>::uid://bd6svlebxnwl3::::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/colormap.png
+::res://Assets/kenney_minigolf-kit/Models/OBJ format/Textures/::1731353386
+colormap.png::CompressedTexture2D::2662113916537627618::1698510695::1731353386::1::::<><>::
+::res://Assets/kenney_minigolf-kit/Models/Textures/::1731353429
+variation-a.png::CompressedTexture2D::2167258854127780115::1698510694::1731353369::1::::<><>::
+variation-b.png::CompressedTexture2D::8003790962864162192::1698510694::1731353429::1::::<><>::
 ::res://Assets/road/::1557901222
 ::res://Assets/road/assets/::1730195507
 lowpoly_road.png::CompressedTexture2D::1980525158324549206::1557901128::1730195507::1::::<><>::
@@ -84,8 +308,12 @@ roadStraight_divider_end.obj::Mesh::1481059199071937764::1557900879::1730195498:
 roadStraight_divider_start.dae::PackedScene::1328433029140254078::1557900817::1730195505::1::::<><>::
 roadStraight_divider_start.fbx::PackedScene::5039191464982753596::1493877326::1730195500::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/assets/lowpoly_road.png
 roadStraight_divider_start.obj::Mesh::4587960136428112030::1557900879::1730195498::1::::<><>::
-::res://Assets/Terrain/::1731323694
+::res://Assets/Terrain/::1731357080
+mapa_grises2.png::CompressedTexture2D::2682355209618683724::1731356603::1731356607::1::::<><>::
+mapa_grises.png::CompressedTexture2D::7945401227767018522::1731357007::1731357080::1::::<><>::
 playgroundTerrain.obj::Mesh::6364036064050671975::1731322771::1731323112::1::::<><>::
+playgroundTerrainMapa2.obj::Mesh::4533647082755836316::1731357077::1731357080::1::::<><>::
+playgroundTerrainMapa.obj::Mesh::420403870880642817::1731356702::1731356704::1::::<><>::
 terrainTexture_24x24.png::CompressedTexture2D::4811560855094932326::1731323690::1731323694::1::::<><>::
 ::res://Assets/tree_set/::1730195507
 tree01.dae::PackedScene::5051825350363011000::1471122258::1730195499::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
@@ -119,11 +347,12 @@ treeSet_pine1.obj::Mesh::5275392076723220363::1471122140::1730195498::1::::<><>:
 treeSet_pine2.dae::PackedScene::5696840749889720089::1471122270::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.fbx::PackedScene::314090825589050912::1471121971::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.obj::Mesh::4997888647085511052::1471122146::1730195498::1::::<><>::
-::res://Scenes/::1731325363
-Collectable_object.tscn::PackedScene::4235372428240886192::1731325363::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://crs00pxk5my3a::::res://Assets/shadow.png
-Main.tscn::PackedScene::4779548486523294006::1731325363::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn
-Terrain_test.tscn::PackedScene::4839375129353731758::1731325363::0::1::::<><>::uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png<>uid://cww10kjflg76j::::res://Assets/Terrain/playgroundTerrain.obj
-Vehicle_movement.tscn::PackedScene::7422262263913703112::1731325363::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://crs00pxk5my3a::::res://Assets/shadow.png
-::res://Scripts/::1730984652
+::res://Scenes/::1731364457
+Collectable_object.tscn::PackedScene::4235372428240886192::1731361043::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>res://Assets/shadow.png
+Main.tscn::PackedScene::4779548486523294006::1731364457::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://blj2ujrybowxx::::res://Assets/tree_set/tree02.fbx
+Road_scene.tscn::PackedScene::8629768174352779536::1731364457::0::1::::<><>::uid://dmbdjdthiw0r1::::res://Assets/kenney_minigolf-kit/Models/Textures/variation-b.png<>uid://bt4k6abra16mf::::res://Assets/kenney_minigolf-kit/Models/OBJ format/straight.obj<>uid://chgvlyx65050t::::res://Assets/kenney_minigolf-kit/Models/OBJ format/hill-round.obj<>uid://beu7301ekypgl::::res://Assets/kenney_minigolf-kit/Models/OBJ format/round-corner-a.obj<>uid://dhiiiwv7iwjgj::::res://Assets/kenney_minigolf-kit/Models/OBJ format/split-t.obj
+Terrain_test.tscn::PackedScene::4839375129353731758::1731364457::0::1::::<><>::uid://b5uerf4vcfxts::::res://Assets/Terrain/playgroundTerrainMapa2.obj<>uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png
+Vehicle_movement.tscn::PackedScene::7422262263913703112::1731364457::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png
+::res://Scripts/::1731364446
 collectable.gd::GDScript::-1::1730925515::0::1::::<>Node3D<>::
-vehicle_movement.gd::GDScript::-1::1730984652::0::1::::<>VehicleBody3D<>::
+vehicle_movement.gd::GDScript::-1::1731364446::0::1::::<>VehicleBody3D<>::

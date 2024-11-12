@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlbljuotkardt"
+path="res://.godot/imported/skew-large-corner-open.obj-f8711bafee8042f73c37d0240e88ecbe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skew-large-corner-open.obj-f8711bafee8042f73c37d0240e88ecbe.mesh"]
+
+source_file="res://Assets/kenney_minigolf-kit/Models/OBJ format/skew-large-corner-open.obj"
+dest_files=["res://.godot/imported/skew-large-corner-open.obj-f8711bafee8042f73c37d0240e88ecbe.mesh", "res://.godot/imported/skew-large-corner-open.obj-f8711bafee8042f73c37d0240e88ecbe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4ffe1mgf264l"
+path="res://.godot/imported/wall-right.obj-5b766c54e121f578de426dadff31ca94.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-right.obj-5b766c54e121f578de426dadff31ca94.mesh"]
+
+source_file="res://Assets/kenney_minigolf-kit/Models/OBJ format/wall-right.obj"
+dest_files=["res://.godot/imported/wall-right.obj-5b766c54e121f578de426dadff31ca94.mesh", "res://.godot/imported/wall-right.obj-5b766c54e121f578de426dadff31ca94.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

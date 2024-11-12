@@ -1,5 +1,5 @@
 res://Scenes/Vehicle_movement.tscn
 res://Scripts/vehicle_movement.gd
 res://Scenes/Main.tscn
-res://Scenes/Collectable_object.tscn
 res://Scenes/Terrain_test.tscn
+res://Scenes/Road_scene.tscn
