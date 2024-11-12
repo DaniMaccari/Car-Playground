@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731407750
+::res://::1731417805
 icon.svg::CompressedTexture2D::8445948122843711016::1730135459::1730135468::1::::<><>::
 README.md::TextFile::-1::1730196857::0::1::::<><>::
 ::res://Assets/::1731370562
@@ -308,7 +308,7 @@ roadStraight_divider_end.obj::Mesh::1481059199071937764::1557900879::1730195498:
 roadStraight_divider_start.dae::PackedScene::1328433029140254078::1557900817::1730195505::1::::<><>::
 roadStraight_divider_start.fbx::PackedScene::5039191464982753596::1493877326::1730195500::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/assets/lowpoly_road.png
 roadStraight_divider_start.obj::Mesh::4587960136428112030::1557900879::1730195498::1::::<><>::
-::res://Assets/Terrain/::1731370564
+::res://Assets/Terrain/::1731409508
 mapa_grises2.png::CompressedTexture2D::2682355209618683724::1731370539::1731370561::1::::<><>::
 mapa_grises.png::CompressedTexture2D::7945401227767018522::1731370539::1731409508::1::::<><>::
 playgroundTerrain.obj::Mesh::6364036064050671975::1731322771::1731323112::1::::<><>::
@@ -347,12 +347,12 @@ treeSet_pine1.obj::Mesh::5275392076723220363::1471122140::1730195498::1::::<><>:
 treeSet_pine2.dae::PackedScene::5696840749889720089::1471122270::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.fbx::PackedScene::314090825589050912::1471121971::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.obj::Mesh::4997888647085511052::1471122146::1730195498::1::::<><>::
-::res://Scenes/::1731409462
+::res://Scenes/::1731412376
 Collectable_object.tscn::PackedScene::4235372428240886192::1731370539::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>res://Assets/shadow.png
-Main.tscn::PackedScene::4779548486523294006::1731409462::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://blj2ujrybowxx::::res://Assets/tree_set/tree02.fbx
-Road_scene.tscn::PackedScene::8629768174352779536::1731409462::0::1::::<><>::uid://dmbdjdthiw0r1::::res://Assets/kenney_minigolf-kit/Models/Textures/variation-b.png<>uid://bt4k6abra16mf::::res://Assets/kenney_minigolf-kit/Models/OBJ format/straight.obj<>uid://chgvlyx65050t::::res://Assets/kenney_minigolf-kit/Models/OBJ format/hill-round.obj<>uid://beu7301ekypgl::::res://Assets/kenney_minigolf-kit/Models/OBJ format/round-corner-a.obj<>uid://dhiiiwv7iwjgj::::res://Assets/kenney_minigolf-kit/Models/OBJ format/split-t.obj
-Terrain_test.tscn::PackedScene::4839375129353731758::1731409462::0::1::::<><>::uid://b5uerf4vcfxts::::res://Assets/Terrain/playgroundTerrainMapa2.obj
-Vehicle_movement.tscn::PackedScene::7422262263913703112::1731409462::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png
-::res://Scripts/::1731409397
+Main.tscn::PackedScene::4779548486523294006::1731412375::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://blj2ujrybowxx::::res://Assets/tree_set/tree02.fbx
+Road_scene.tscn::PackedScene::8629768174352779536::1731412376::0::1::::<><>::uid://dmbdjdthiw0r1::::res://Assets/kenney_minigolf-kit/Models/Textures/variation-b.png<>uid://bt4k6abra16mf::::res://Assets/kenney_minigolf-kit/Models/OBJ format/straight.obj<>uid://chgvlyx65050t::::res://Assets/kenney_minigolf-kit/Models/OBJ format/hill-round.obj<>uid://beu7301ekypgl::::res://Assets/kenney_minigolf-kit/Models/OBJ format/round-corner-a.obj<>uid://dhiiiwv7iwjgj::::res://Assets/kenney_minigolf-kit/Models/OBJ format/split-t.obj
+Terrain_test.tscn::PackedScene::4839375129353731758::1731412375::0::1::::<><>::uid://b5uerf4vcfxts::::res://Assets/Terrain/playgroundTerrainMapa2.obj<>uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png
+Vehicle_movement.tscn::PackedScene::7422262263913703112::1731412376::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png
+::res://Scripts/::1731412190
 collectable.gd::GDScript::-1::1730925515::0::1::::<>Node3D<>::
-vehicle_movement.gd::GDScript::-1::1731409397::0::1::::<>VehicleBody3D<>::
+vehicle_movement.gd::GDScript::-1::1731412190::0::1::::<>VehicleBody3D<>::
