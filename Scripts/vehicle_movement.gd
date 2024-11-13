@@ -61,8 +61,11 @@ func _physics_process(delta: float) -> void:
 		engine_force = 0.0
 	
 	if floor_raycast.is_colliding():
-		var surface_normal : Vector3 = floor_raycast.get_collision_normal()
-		apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
+		var collider := floor_raycast.get_collider()
+		
+		if collider.is_in_group("floor"):
+			var surface_normal : Vector3 = floor_raycast.get_collision_normal()
+			apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
 
 	#print("direction", direction)
 	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 10)

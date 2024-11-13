@@ -1,15 +1,15 @@
 extends Node3D
 
+signal collided
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
 	pass
+
+func start_position(max_z : float, max_x : float) -> void:
+	position.z = randf_range(max_z, -max_z)
+	position.x = randf_range(max_x, -max_x)
 
 
 func _on_collision_detection_area_entered(area: Area3D) -> void:
+	emit_signal("collided")
 	queue_free()

@@ -3,4 +3,6 @@ res://Scenes/Terrain_test.tscn
 res://Scenes/Road_scene.tscn
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
+res://Scripts/points_counter.gd
+res://Scripts/vehicle_movement.gd
 res://Scripts/collectable.gd
