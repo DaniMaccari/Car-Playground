@@ -88,6 +88,7 @@ height = 3.9421
 
 [node name="Body" type="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142, 0)
+collision_layer = 2
 mass = 100.0
 center_of_mass_mode = 1
 script = ExtResource("1_ijyx4")
@@ -182,6 +183,8 @@ texture_albedo = ExtResource("4_nmhot")
 cull_mask = 1048573
 
 [node name="raycast_floor" type="RayCast3D" parent="."]
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 5
 
 [node name="Area3D" type="Area3D" parent="."]
 

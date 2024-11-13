@@ -11,10 +11,13 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func spawn_collectable() -> void:
+	await get_tree().create_timer(0.2).timeout
+	
 	var collectable_actual := collectable_scene.instantiate()
+	
+	get_parent().add_child(collectable_actual)
 	collectable_actual.start_position(max_z, max_x)
 	collectable_actual.collided.connect(_on_collectable_collided)
-	add_child(collectable_actual)
 
 func _on_collectable_collided() -> void:
 	spawn_collectable()

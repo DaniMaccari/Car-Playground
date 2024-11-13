@@ -5,3 +5,6 @@ res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
 res://Scripts/collectable.gd
 res://Scripts/vehicle_movement.gd
+res://Scripts/points_counter.gd
+res://Scenes/Collectable_Test.tscn
+res://Scenes/tree_test.tscn

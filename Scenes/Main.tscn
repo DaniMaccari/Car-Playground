@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
-[ext_resource type="PackedScene" uid="uid://blj2ujrybowxx" path="res://Assets/tree_set/tree02.fbx" id="4_j8mop"]
+[ext_resource type="PackedScene" uid="uid://bcv1gb63g1d2t" path="res://Scenes/tree_test.tscn" id="5_l2gm7"]
 [ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
@@ -62,9 +62,6 @@ projection = 1
 size = 43.0479
 far = 80.0
 
-[node name="tree02" parent="." instance=ExtResource("4_j8mop")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1598, -3.94273, 15.0844)
-
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
 transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
 
@@ -77,3 +74,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -27)
 
 [node name="MarkerX" type="Marker3D" parent="PointsCounter"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 0)
+
+[node name="Node3D" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
+
+[node name="Node3D2" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.78348, -2.05976, -18.777)
+
+[node name="Node3D3" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2949, -3.16887, 7.15186)
