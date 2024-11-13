@@ -1,8 +1,10 @@
+CollisionShape3D
+Area3D
+RigidBody3D
 RayCast3D
 MeshInstance3D
 StaticBody3D
 Node3D
-CollisionShape3D
 CollisionPolygon3D
 Decal
 WorldEnvironment

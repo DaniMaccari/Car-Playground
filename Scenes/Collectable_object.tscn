@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=9 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
-[ext_resource type="Texture2D" path="res://Assets/shadow.png" id="2_bgi5k"]
+[ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="2_bgi5k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nsy54"]
 resource_name = "treebase_color"
@@ -46,6 +46,9 @@ shadow_mesh = SubResource("ArrayMesh_sphfr")
 [sub_resource type="SphereShape3D" id="SphereShape3D_p3xh3"]
 radius = 1.5613
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_20d4o"]
+radius = 1.84236
+
 [node name="CollectableObject" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.35523, 0)
 script = ExtResource("1_om0bk")
@@ -58,10 +61,18 @@ skeleton = NodePath("")
 
 [node name="BlobShadow" type="Decal" parent="Turnip/leaves_5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.00333, 0.131746)
+visible = false
 size = Vector3(6, 3, 6)
 texture_albedo = ExtResource("2_bgi5k")
 cull_mask = 1048573
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Turnip"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0709448, 0)
 shape = SubResource("SphereShape3D_p3xh3")
+disabled = true
+
+[node name="CollisionDetection" type="Area3D" parent="Turnip"]
+
+[node name="CollectedShape" type="CollisionShape3D" parent="Turnip/CollisionDetection"]
+shape = SubResource("SphereShape3D_20d4o")
+
+[connection signal="area_entered" from="Turnip/CollisionDetection" to="." method="_on_collision_detection_area_entered"]

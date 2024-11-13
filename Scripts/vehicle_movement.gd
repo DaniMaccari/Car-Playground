@@ -6,7 +6,7 @@ const STEER_LIMIT : float = 0.4
 @export var MAX_STEER : float = 0.9
 @export var ENGINE_POWER : float = 300
 #@export var MAX_ENGINE_POWER : float = 500
-const BRAKE_STRENGTH : float = 2.0
+const BRAKE_STRENGTH : float = 3.0
 const DOWN_FORCE : float = -2000.0
 
 var previous_speed := linear_velocity.length()
