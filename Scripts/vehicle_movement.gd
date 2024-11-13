@@ -20,7 +20,7 @@ func _ready() -> void:
 	pass
 	
 func _physics_process(delta: float) -> void:
-	var fwd_mps := (linear_velocity * transform.basis).x
+	#var fwd_mps := (linear_velocity * transform.basis).x
 	#engine_force = Input.get_axis("ui_decel", "ui_accel") * ENGINE_POWER
 	
 	var actual_speed := linear_velocity.length()
