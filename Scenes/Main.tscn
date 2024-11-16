@@ -63,23 +63,26 @@ size = 43.0479
 far = 80.0
 
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, -4, 0)
 
 [node name="PointsCounter" type="Node3D" parent="."]
 script = ExtResource("5_lcgfw")
 collectable_scene = ExtResource("2_1pi0d")
 
 [node name="MarkerZ" type="Marker3D" parent="PointsCounter"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -27)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
 
 [node name="MarkerX" type="Marker3D" parent="PointsCounter"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 0)
 
 [node name="Node3D" parent="." instance=ExtResource("5_l2gm7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
 
 [node name="Node3D2" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.78348, -2.05976, -18.777)
+transform = Transform3D(0.0572155, 0, 0.998362, 0, 1, 0, -0.998362, 0, 0.0572155, 2.97004, -3.05976, -18.777)
 
 [node name="Node3D3" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2949, -3.16887, 7.15186)
+transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 15.2949, -3.16887, 7.15186)
+
+[node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.37027, 8.66702)
