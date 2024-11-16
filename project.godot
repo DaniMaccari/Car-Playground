@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 
 gdscript/warnings/untyped_declaration=2
 
+[global_group]
+
+floor="the vehicle should ride above"
+
 [input]
 
 ui_left={

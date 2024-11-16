@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=10 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
-[ext_resource type="PackedScene" uid="uid://blj2ujrybowxx" path="res://Assets/tree_set/tree02.fbx" id="4_j8mop"]
+[ext_resource type="PackedScene" uid="uid://bcv1gb63g1d2t" path="res://Scenes/tree_test.tscn" id="5_l2gm7"]
+[ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -61,14 +62,27 @@ projection = 1
 size = 43.0479
 far = 80.0
 
-[node name="CollectableObject" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.86257, -1.31063, 12.4467)
-
-[node name="CollectableObject2" parent="." instance=ExtResource("2_1pi0d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, -0.440141, -15)
-
-[node name="tree02" parent="." instance=ExtResource("4_j8mop")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1598, -3.94273, 15.0844)
-
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, -4, 0)
+
+[node name="PointsCounter" type="Node3D" parent="."]
+script = ExtResource("5_lcgfw")
+collectable_scene = ExtResource("2_1pi0d")
+
+[node name="MarkerZ" type="Marker3D" parent="PointsCounter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
+
+[node name="MarkerX" type="Marker3D" parent="PointsCounter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 0)
+
+[node name="Node3D" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
+
+[node name="Node3D2" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(0.0572155, 0, 0.998362, 0, 1, 0, -0.998362, 0, 0.0572155, 2.97004, -3.05976, -18.777)
+
+[node name="Node3D3" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 15.2949, -3.16887, 7.15186)
+
+[node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
+transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.37027, 8.66702)

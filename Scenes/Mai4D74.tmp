@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://cadip24ccwo6q"]
+
+[ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
+[ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
+[ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
+[ext_resource type="PackedScene" uid="uid://blj2ujrybowxx" path="res://Assets/tree_set/tree02.fbx" id="4_j8mop"]
+[ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
+
+[sub_resource type="Environment" id="Environment_sn5f3"]
+background_mode = 1
+background_color = Color(0.125147, 0.693433, 0.694784, 1)
+ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
+tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d18de"]
+size = Vector3(16.0916, 0.2, 16.1094)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a85fd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlxl5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_sn5f3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.470198, 0.33152, -0.817929, 0.848778, 0.0840971, 0.522018, 0.241845, -0.939693, -0.241845, 0, 10, 0)
+light_energy = 1.2
+shadow_enabled = true
+shadow_normal_bias = 10.0
+shadow_opacity = 0.9
+directional_shadow_max_distance = 80.0
+sky_mode = 1
+
+[node name="PlaneWorld" type="StaticBody3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -2.78114, 0)
+visible = false
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlaneWorld"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101741, 0)
+shape = SubResource("BoxShape3D_d18de")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlaneWorld"]
+transform = Transform3D(8, 0, 0, 0, 0.533, 0, 0, 0, 8, 0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_a85fd")
+surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
+
+[node name="Road" type="Node3D" parent="."]
+
+[node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.43434, -0.92973, 6.09994)
+MAX_STEER = 0.45
+ENGINE_POWER = 400.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.1211, 30.6757)
+projection = 1
+size = 43.0479
+far = 80.0
+
+[node name="tree02" parent="." instance=ExtResource("4_j8mop")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.1598, -3.94273, 15.0844)
+
+[node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+
+[node name="PointsCounter" type="Node3D" parent="."]
+script = ExtResource("5_lcgfw")
+collectable_scene = ExtResource("2_1pi0d")
+
+[node name="MarkerZ" type="Marker3D" parent="PointsCounter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -27)
+
+[node name="MarkerX" type="Marker3D" parent="PointsCounter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 0)

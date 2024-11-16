@@ -6,8 +6,10 @@ const STEER_LIMIT : float = 0.4
 @export var MAX_STEER : float = 0.9
 @export var ENGINE_POWER : float = 300
 #@export var MAX_ENGINE_POWER : float = 500
-const BRAKE_STRENGTH : float = 2.0
+const BRAKE_STRENGTH : float = 3.0
 const DOWN_FORCE : float = -2000.0
+const MIN_MOVEMENT_SPEED : float = 1.0
+const FRICTION_IMPULSE : float = 1.0
 
 var previous_speed := linear_velocity.length()
 var _steer_target := 0.0
@@ -20,7 +22,7 @@ func _ready() -> void:
 	pass
 	
 func _physics_process(delta: float) -> void:
-	var fwd_mps := (linear_velocity * transform.basis).x
+	#var fwd_mps := (linear_velocity * transform.basis).x
 	#engine_force = Input.get_axis("ui_decel", "ui_accel") * ENGINE_POWER
 	
 	var actual_speed := linear_velocity.length()
@@ -36,6 +38,14 @@ func _physics_process(delta: float) -> void:
 		print("small collision")
 		for joypad in Input.get_connected_joypads():
 			Input.start_joy_vibration(joypad, 0.5, 0.0, 0.1)
+	
+	# stick to floor
+	if floor_raycast.is_colliding():
+		var collider := floor_raycast.get_collider()
+		
+		if collider.is_in_group("floor"):
+			var surface_normal : Vector3 = floor_raycast.get_collision_normal()
+			apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
 	
 	# initial accel faster
 	if Input.is_action_pressed("ui_accel"):
@@ -59,14 +69,10 @@ func _physics_process(delta: float) -> void:
 	
 	else:
 		engine_force = 0.0
-	
-	if floor_raycast.is_colliding():
-		var surface_normal : Vector3 = floor_raycast.get_collision_normal()
-		apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
 
-	#print("direction", direction)
 	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 10)
 	
+	#print("direction", direction)
 	previous_speed = actual_speed
 
 func _input(event: InputEvent) -> void:

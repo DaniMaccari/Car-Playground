@@ -1,16 +1,16 @@
-[gd_scene load_steps=13 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=14 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
-[ext_resource type="Texture2D" uid="uid://dryfipg1mxl0q" path="res://Assets/auto_racing_car/orange/sportsCar_orange.png" id="2_hpo2y"]
+[ext_resource type="Texture2D" uid="uid://dryfipg1mxl0q" path="res://Assets/auto_racing_car/orange/sportsCar_orange.png" id="2_xm3fc"]
 [ext_resource type="ArrayMesh" uid="uid://nf8dymeux4b4" path="res://Assets/auto_racing_car/orange/sportscar_orange.obj" id="3_xcat0"]
 [ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="4_nmhot"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
 size = Vector3(2.23999, 1.96881, 3.67538)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtmmt"]
-albedo_texture = ExtResource("2_hpo2y")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mgnv"]
+albedo_texture = ExtResource("2_xm3fc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rso3r"]
 resource_name = "sportsCar_yellow"
@@ -82,8 +82,13 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_f3jxb")
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r4qvl"]
+radius = 1.09148
+height = 3.9421
+
 [node name="Body" type="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142, 0)
+collision_layer = 2
 mass = 100.0
 center_of_mass_mode = 1
 script = ExtResource("1_ijyx4")
@@ -98,7 +103,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar_yellow"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_gtmmt")
+material_override = SubResource("StandardMaterial3D_1mgnv")
 mesh = ExtResource("3_xcat0")
 skeleton = NodePath("")
 
@@ -172,8 +177,17 @@ skeleton = NodePath("")
 
 [node name="BlobShadow" type="Decal" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.46227, 0.131746)
+visible = false
 size = Vector3(5.02832, 3.08212, 6.34351)
 texture_albedo = ExtResource("4_nmhot")
 cull_mask = 1048573
 
 [node name="raycast_floor" type="RayCast3D" parent="."]
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 5
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.872116, 0.207988)
+shape = SubResource("CapsuleShape3D_r4qvl")
