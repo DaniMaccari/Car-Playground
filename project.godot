@@ -18,6 +18,12 @@ config/icon="res://icon.svg"
 
 gdscript/warnings/untyped_declaration=2
 
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
+window/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)
+
 [global_group]
 
 floor="the vehicle should ride above"
@@ -72,3 +78,7 @@ ui_decel={
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":4,"axis_value":1.0,"script":null)
 ]
 }
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)

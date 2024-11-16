@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=15 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
 [ext_resource type="PackedScene" uid="uid://bcv1gb63g1d2t" path="res://Scenes/tree_test.tscn" id="5_l2gm7"]
 [ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
+[ext_resource type="Texture2D" uid="uid://babgxuvp8ftuj" path="res://Assets/Terrain/waterTexture.png" id="6_lfaja"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -19,13 +20,23 @@ size = Vector3(16.0916, 0.2, 16.1094)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlxl5"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rygui"]
+albedo_texture = ExtResource("6_lfaja")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uq350"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_yf1id"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w843v"]
+size = Vector3(1.29236, 0.821167, 1)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sn5f3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.470198, 0.33152, -0.817929, 0.848778, 0.0840971, 0.522018, 0.241845, -0.939693, -0.241845, 0, 10, 0)
+transform = Transform3D(0.420102, 0.492247, -0.762369, 0.848778, 0.0840973, 0.522018, 0.321075, -0.866383, -0.382479, 0, 10, 0)
 light_energy = 1.2
 shadow_enabled = true
 shadow_normal_bias = 10.0
@@ -57,13 +68,13 @@ MAX_STEER = 0.45
 ENGINE_POWER = 400.0
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.1211, 30.6757)
+transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.121, 31.8165)
 projection = 1
-size = 43.0479
+size = 58.0
 far = 80.0
 
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, -4, 0)
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, -1.62, -4, 0)
 
 [node name="PointsCounter" type="Node3D" parent="."]
 script = ExtResource("5_lcgfw")
@@ -86,3 +97,20 @@ transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 
 
 [node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
 transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.37027, 8.66702)
+
+[node name="WaterMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 0, -4, 0.921)
+layers = 16
+material_override = SubResource("StandardMaterial3D_rygui")
+mesh = SubResource("PlaneMesh_uq350")
+
+[node name="RampaSalto" type="StaticBody3D" parent="."]
+transform = Transform3D(0.213202, -0.865544, -0.453187, 0.976383, 0.172163, 0.130526, -0.0349542, -0.470313, 0.881807, -7.61069, -2.16277, -11.3266)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RampaSalto"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 7, 0, 0, 0)
+mesh = SubResource("PrismMesh_yf1id")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RampaSalto"]
+transform = Transform3D(2.23099, 4.47467, 0, -4.47467, 2.23099, 0, 0, 0, 7, -0.388807, -1.29215, 0)
+shape = SubResource("BoxShape3D_w843v")
