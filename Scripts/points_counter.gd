@@ -1,5 +1,7 @@
 extends Node3D
 
+signal catched_signal
+
 @export var collectable_scene : PackedScene
 var max_z : int
 var max_x : int
@@ -20,6 +22,7 @@ func spawn_collectable() -> void:
 	collectable_actual.collided.connect(_on_collectable_collided)
 
 func _on_collectable_collided() -> void:
+	emit_signal("catched_signal")
 	spawn_collectable()
 	pass
 	

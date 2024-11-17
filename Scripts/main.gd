@@ -1,11 +1,8 @@
 extends Node3D
 
+@onready var points_manager := $PointsCounter
+@onready var ui_manager := $Control
 
-
-func _input(event: InputEvent) -> void:
+func _ready() -> void:
+	points_manager.catched_signal.connect(ui_manager.add_point)
 	
-	if event.is_action_pressed("ui_respawn"):
-		print("respawn")
-		print($VehicleBody3D.transform.origin)
-		#$VehicleBody3D.transform = Vector3.ZERO
-		#transform.position = Vector3.ZERO

@@ -1,11 +1,12 @@
 res://Scenes/Main.tscn
-res://Scenes/Terrain_test.tscn
 res://Scenes/Road_scene.tscn
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
-res://Scenes/Collectable_Test.tscn
 res://Scenes/tree_test.tscn
 res://Scenes/Pixel_Shader_Test.tscn
-res://Scripts/vehicle_movement.gd
+res://Scenes/Terrain_test.tscn
+res://Scenes/Trees/tree_green1.tscn
+res://Scenes/Trees/tree_pine1.tscn
+res://Scripts/ui_scrip.gd
+res://Scripts/points_counter.gd
 res://Scripts/main.gd
-res://Scripts/collectable.gd
