@@ -5,5 +5,7 @@ res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
 res://Scenes/Collectable_Test.tscn
 res://Scenes/tree_test.tscn
-res://Scripts/vehicle_movement.gd
 res://Scenes/Pixel_Shader_Test.tscn
+res://Scripts/vehicle_movement.gd
+res://Scripts/main.gd
+res://Scripts/collectable.gd

@@ -76,6 +76,13 @@ func _physics_process(delta: float) -> void:
 	previous_speed = actual_speed
 
 func _input(event: InputEvent) -> void:
+	
+	if event.is_action_pressed("ui_respawn"):
+		print("respawn")
+		print("ante ",transform.origin)
+		transform.origin = Vector3.ZERO
+		print("depue ",transform.origin)
+	
 	if event.device != player_index:
 		return
 	

@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=11 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
 [ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="2_bgi5k"]
+[ext_resource type="Texture2D" uid="uid://dr32085ecldit" path="res://Assets/shadow2.png" id="4_djri1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1pl3"]
 albedo_color = Color(1, 0.294118, 0, 1)
@@ -84,5 +85,11 @@ target_position = Vector3(0, -10, 0)
 collision_mask = 3
 debug_shape_custom_color = Color(0, 0, 1, 1)
 debug_shape_thickness = 5
+
+[node name="Decal" type="Decal" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.97891, 0)
+size = Vector3(4, 2.842, 4)
+texture_albedo = ExtResource("4_djri1")
+emission_energy = 11.18
 
 [connection signal="area_entered" from="Turnip/CollisionDetection" to="." method="_on_collision_detection_area_entered"]

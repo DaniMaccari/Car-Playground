@@ -63,7 +63,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
 [node name="Road" type="Node3D" parent="."]
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.43434, -0.92973, 6.09994)
 MAX_STEER = 0.45
 ENGINE_POWER = 400.0
 

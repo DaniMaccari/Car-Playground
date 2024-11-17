@@ -4,7 +4,7 @@ signal collided
 
 var raycast : RayCast3D 
 var is_positioned : bool = false
-var object_heigth : float = 2.1
+var object_heigth : float = 2.3
 
 func _ready() -> void:
 	hide()

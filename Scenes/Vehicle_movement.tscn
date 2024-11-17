@@ -1,16 +1,19 @@
-[gd_scene load_steps=14 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=18 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
-[ext_resource type="Texture2D" uid="uid://dryfipg1mxl0q" path="res://Assets/auto_racing_car/orange/sportsCar_orange.png" id="2_xm3fc"]
+[ext_resource type="Texture2D" uid="uid://bdqtagqcmrma1" path="res://Assets/auto_racing_car/turnipCar2.tga" id="2_j6sfj"]
 [ext_resource type="ArrayMesh" uid="uid://nf8dymeux4b4" path="res://Assets/auto_racing_car/orange/sportscar_orange.obj" id="3_xcat0"]
 [ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="4_nmhot"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
 size = Vector3(2.23999, 1.96881, 3.67538)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mgnv"]
-albedo_texture = ExtResource("2_xm3fc")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7db8"]
+albedo_texture = ExtResource("2_j6sfj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3o8ct"]
+albedo_texture = ExtResource("2_j6sfj")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rso3r"]
 resource_name = "sportsCar_yellow"
@@ -50,6 +53,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wtdmm")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7igrp"]
+albedo_texture = ExtResource("2_j6sfj")
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_f3jxb"]
 _surfaces = [{
 "aabb": AABB(-0.191607, -0.27037, -0.284284, 0.383214, 0.54074, 0.568568),
@@ -82,12 +88,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_f3jxb")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbht3"]
+albedo_texture = ExtResource("2_j6sfj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axxll"]
+albedo_texture = ExtResource("2_j6sfj")
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r4qvl"]
 radius = 1.09148
 height = 3.9421
 
 [node name="Body" type="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142, 0)
 collision_layer = 2
 mass = 100.0
 center_of_mass_mode = 1
@@ -103,7 +114,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar_yellow"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_1mgnv")
+material_override = SubResource("StandardMaterial3D_q7db8")
 mesh = ExtResource("3_xcat0")
 skeleton = NodePath("")
 
@@ -121,6 +132,7 @@ damping_compression = 0.88
 [node name="wheelFL" type="MeshInstance3D" parent="WheelFrontLeft"]
 transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 layers = 2
+material_override = SubResource("StandardMaterial3D_3o8ct")
 mesh = SubResource("ArrayMesh_y31eb")
 skeleton = NodePath("")
 
@@ -138,6 +150,7 @@ damping_compression = 0.88
 [node name="wheelFR" type="MeshInstance3D" parent="WheelFrontRight"]
 transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
 layers = 2
+material_override = SubResource("StandardMaterial3D_7igrp")
 mesh = SubResource("ArrayMesh_nu47w")
 skeleton = NodePath("")
 
@@ -155,6 +168,7 @@ damping_compression = 0.88
 [node name="wheelBL" type="MeshInstance3D" parent="WheelBackLeft"]
 transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 layers = 2
+material_override = SubResource("StandardMaterial3D_cbht3")
 mesh = SubResource("ArrayMesh_y31eb")
 skeleton = NodePath("")
 
@@ -172,6 +186,7 @@ damping_compression = 0.88
 [node name="wheelBR" type="MeshInstance3D" parent="WheelBackRight"]
 transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
 layers = 2
+material_override = SubResource("StandardMaterial3D_axxll")
 mesh = SubResource("ArrayMesh_nu47w")
 skeleton = NodePath("")
 
