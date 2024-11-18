@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2019-12-01T05:39:32Z</created><keywords></keywords><modified>2019-12-01T05:39:32Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_geometries>
+    <geometry id="pineapplePiece-lib" name="pineapplePieceMesh">
+      <mesh>
+        <source id="pineapplePiece-POSITION">
+          <float_array id="pineapplePiece-POSITION-array" count="33">
+-0.048042 0.062250 1.371838
+-5.006600 1.390891 1.371838
+-1.773450 7.330792 -1.371838
+-1.782254 7.330792 -1.371838
+-1.782254 7.330792 1.371838
+-5.036100 1.336546 -1.371838
+5.036100 1.362292 -1.371838
+5.005917 1.416454 1.371838
+1.710073 7.330792 1.371838
+1.710073 7.330792 -1.371838
+-0.048042 0.000000 -1.371838
+</float_array>
+          <technique_common>
+            <accessor source="#pineapplePiece-POSITION-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pineapplePiece-Normal0">
+          <float_array id="pineapplePiece-Normal0-array" count="153">
+0.000000 1.000000 0.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+0.000000 -1.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -0.000000 -1.000000
+0.000000 -0.000000 -1.000000
+-0.000000 0.000000 -0.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 -0.000000 -1.000000
+1.000000 0.000000 0.000000
+0.000000 -0.000000 -1.000000
+0.000000 0.000000 1.000000
+-0.000000 0.000000 -0.000000
+0.022683 -0.258757 -0.965694
+1.000000 -0.000000 0.000000
+-0.999743 0.022683 -0.000000
+1.000000 -0.000000 0.000000
+0.022683 -0.258757 -0.965694
+0.258757 -0.965694 0.021910
+-0.258757 -0.965694 0.021910
+-0.999743 0.022683 -0.000000
+1.000000 -0.000000 0.000000
+0.477072 0.000000 -0.878864
+0.022683 0.258757 -0.965694
+-0.878864 0.477072 0.000000
+0.022683 0.258757 -0.965694
+0.477072 0.000000 -0.878864
+-0.999743 0.022683 -0.000000
+0.000000 -0.878864 0.477072
+0.873523 0.486783 -0.000000
+0.486783 -0.000000 0.873523
+0.000000 -0.878864 0.477072
+0.486783 -0.000000 0.873523
+-0.000000 0.873523 0.486783
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pineapplePiece-Normal0-array" count="51" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pineapplePiece-UV0">
+          <float_array id="pineapplePiece-UV0-array" count="50">
+0.076002 0.425674
+0.080532 0.425674
+0.084856 0.433434
+0.078245 0.435206
+0.071759 0.433468
+0.071759 0.433468
+0.078245 0.435206
+0.084857 0.433434
+0.080545 0.425697
+0.075977 0.425697
+0.084231 0.416090
+0.092179 0.416090
+0.084253 0.416090
+0.084253 0.422773
+0.075746 0.422773
+0.075746 0.416090
+0.036553 0.425423
+0.041418 0.425423
+0.041418 0.431776
+0.036552 0.431776
+0.046377 0.431776
+0.046377 0.425423
+0.092107 0.422773
+0.067718 0.422773
+0.067644 0.416090
+</float_array>
+          <technique_common>
+            <accessor source="#pineapplePiece-UV0-array" count="25" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pineapplePiece-VERTEX">
+          <input semantic="POSITION" source="#pineapplePiece-POSITION"/>
+        </vertices>
+        <triangles count="17"><input semantic="VERTEX" offset="0" source="#pineapplePiece-VERTEX"/><input semantic="NORMAL" offset="1" source="#pineapplePiece-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#pineapplePiece-UV0"/><p> 5 0 4 2 1 0 10 2 3 10 3 3 9 4 1 6 5 2 9 6 1 10 7 3 2 8 0 8 9 8 0 10 6 7 11 7 0 12 6 4 13 9 1 14 5 4 15 9 0 16 6 8 17 8 8 18 14 2 19 10 4 20 13 2 21 10 8 22 14 9 23 15 3 24 12 4 25 13 2 26 10 1 27 19 10 28 17 0 29 18 10 30 17 1 31 19 5 32 16 7 33 20 0 34 18 10 35 17 7 36 20 10 37 17 6 38 21 1 39 22 3 40 12 5 41 11 3 42 12 1 43 22 4 44 13 6 45 24 9 46 15 7 47 23 8 48 14 7 49 23 9 50 15</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="pineapplePiece" id="pineapplePiece" sid="pineapplePiece"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pineapplePiece-lib"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>1.000000</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>

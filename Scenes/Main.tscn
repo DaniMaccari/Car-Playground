@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=20 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://babgxuvp8ftuj" path="res://Assets/Terrain/waterTexture.png" id="6_lfaja"]
 [ext_resource type="PackedScene" uid="uid://icqo0ewds2pv" path="res://Scenes/Trees/tree_pine1.tscn" id="8_7auv0"]
 [ext_resource type="Script" path="res://Scripts/ui_scrip.gd" id="8_ccuvy"]
+[ext_resource type="PackedScene" uid="uid://sgnjqag75kd" path="res://Scenes/Ramp_Jump.tscn" id="8_g2yf7"]
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="8_yu54q"]
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
@@ -31,11 +32,6 @@ albedo_texture = ExtResource("6_lfaja")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uq350"]
 
-[sub_resource type="PrismMesh" id="PrismMesh_yf1id"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_w843v"]
-size = Vector3(1.29236, 0.821167, 1)
-
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_sbpb4")
 
@@ -43,7 +39,7 @@ script = ExtResource("1_sbpb4")
 environment = SubResource("Environment_sn5f3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.420102, 0.492247, -0.762369, 0.848778, 0.0840973, 0.522018, 0.321075, -0.866383, -0.382479, 0, 10, 0)
+transform = Transform3D(0.420102, 0.492247, -0.76237, 0.848778, 0.0840974, 0.522018, 0.321075, -0.866383, -0.38248, 2.38419e-07, 10, -5.51343e-07)
 light_color = Color(0.98702, 0.829624, 0.780708, 1)
 light_energy = 1.2
 light_indirect_energy = 2.0
@@ -72,6 +68,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
 [node name="Road" type="Node3D" parent="."]
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38419e-07, 0, -5.51343e-07)
 MAX_STEER = 0.45
 ENGINE_POWER = 400.0
 
@@ -82,17 +79,17 @@ size = 58.0
 far = 80.0
 
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
-transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, -1.62, -4, 0)
+transform = Transform3D(30, 0, -1.13687e-13, 0, 30, 0, 1.13687e-13, 0, 30, -1.62, -4, -6.25849e-07)
 
 [node name="PointsCounter" type="Node3D" parent="."]
 script = ExtResource("5_lcgfw")
 collectable_scene = ExtResource("2_1pi0d")
 
 [node name="MarkerZ" type="Marker3D" parent="PointsCounter"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38419e-07, 0, -25)
 
 [node name="MarkerX" type="Marker3D" parent="PointsCounter"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, -6.4075e-07)
 
 [node name="Node3D" parent="." instance=ExtResource("5_l2gm7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
@@ -101,27 +98,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
 transform = Transform3D(0.0572155, 0, 0.998362, 0, 1, 0, -0.998362, 0, 0.0572155, -4.06981, -2.71304, -24.6354)
 
 [node name="Node3D3" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 18.3833, -3.16887, 7.15186)
+transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 23.4096, -2.17263, 7.15186)
 
 [node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
 transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.37027, 8.66702)
 
 [node name="WaterMesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 0, -4, 0.921)
+transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 2.38419e-07, -4, 0.920999)
 layers = 16
 material_override = SubResource("StandardMaterial3D_rygui")
 mesh = SubResource("PlaneMesh_uq350")
 
-[node name="RampaSalto" type="StaticBody3D" parent="."]
-transform = Transform3D(0.213202, -0.865544, -0.453187, 0.976383, 0.172163, 0.130526, -0.0349542, -0.470313, 0.881807, -7.61069, -2.16277, -11.3266)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RampaSalto"]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 7, 0, 0, 0)
-mesh = SubResource("PrismMesh_yf1id")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RampaSalto"]
-transform = Transform3D(2.23099, 4.47467, 0, -4.47467, 2.23099, 0, 0, 0, 7, -0.388807, -1.29215, 0)
-shape = SubResource("BoxShape3D_w843v")
+[node name="RampaSalto" parent="." instance=ExtResource("8_g2yf7")]
+transform = Transform3D(0.707107, -7.61989e-09, 0.707107, -0.185086, 0.965136, 0.185086, -0.682454, -0.261751, 0.682454, -13.118, -1.6366, -14.7084)
 
 [node name="tree_pine1" parent="." instance=ExtResource("8_7auv0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8339, -2.62016, -12.1478)
@@ -155,13 +144,31 @@ offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("8_yu54q")
-theme_override_font_sizes/normal_font_size = 160
+theme_override_font_sizes/normal_font_size = 150
 bbcode_enabled = true
-text = "[center]GO!"
+text = "[center]READY"
+fit_content = true
+
+[node name="EndPointsLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = 77.0
+offset_right = 255.0
+offset_bottom = 163.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("8_yu54q")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]points 100"
 fit_content = true
 
 [node name="PointsLabel" type="RichTextLabel" parent="Control"]
-visible = false
 layout_mode = 0
 offset_left = 20.0
 offset_top = 10.0
@@ -174,12 +181,12 @@ text = "123"
 fit_content = true
 
 [node name="TimerLabel" type="TextureProgressBar" parent="Control"]
-visible = false
 layout_mode = 0
-offset_left = 662.0
-offset_top = 485.0
-offset_right = 762.0
-offset_bottom = 585.0
+offset_left = 671.0
+offset_top = 495.0
+offset_right = 771.0
+offset_bottom = 595.0
+scale = Vector2(0.9, 0.9)
 max_value = 360.0
 value = 360.0
 fill_mode = 4

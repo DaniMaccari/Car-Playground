@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6lutk7lwc2ak"
+path="res://.godot/imported/avadadoMash.obj-4b74fe511f0fcb4ee093e150baba39e8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/avadadoMash.obj-4b74fe511f0fcb4ee093e150baba39e8.mesh"]
+
+source_file="res://Assets/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02.zip/Mesh/OBJ/avadadoMash.obj"
+dest_files=["res://.godot/imported/avadadoMash.obj-4b74fe511f0fcb4ee093e150baba39e8.mesh", "res://.godot/imported/avadadoMash.obj-4b74fe511f0fcb4ee093e150baba39e8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=14 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
-[ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="2_bgi5k"]
 [ext_resource type="Texture2D" uid="uid://dr32085ecldit" path="res://Assets/shadow2.png" id="4_djri1"]
+[ext_resource type="ArrayMesh" uid="uid://wp43v4542lsy" path="res://Assets/Fruits/turnip_down.obj" id="4_ywyhk"]
+[ext_resource type="ArrayMesh" uid="uid://opn8126tpk75" path="res://Assets/Fruits/turnip_up.obj" id="5_gto8s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1pl3"]
 albedo_color = Color(1, 0.294118, 0, 1)
@@ -53,23 +54,23 @@ radius = 1.5613
 [sub_resource type="SphereShape3D" id="SphereShape3D_20d4o"]
 radius = 1.84236
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w631k"]
+albedo_color = Color(1, 0.258824, 0.454902, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q3i1r"]
+albedo_color = Color(0, 0.910753, 0.352298, 1)
+
 [node name="CollectableObject" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 script = ExtResource("1_om0bk")
 
-[node name="Turnip" type="StaticBody3D" parent="."]
-
-[node name="leaves_5" type="MeshInstance3D" parent="Turnip"]
+[node name="VisualModel" type="MeshInstance3D" parent="."]
+visible = false
 material_override = SubResource("StandardMaterial3D_k1pl3")
 mesh = SubResource("ArrayMesh_nqu00")
 skeleton = NodePath("")
 
-[node name="BlobShadow" type="Decal" parent="Turnip/leaves_5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.00333, 0.131746)
-visible = false
-size = Vector3(6, 3, 6)
-texture_albedo = ExtResource("2_bgi5k")
-cull_mask = 1048573
+[node name="Turnip" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Turnip"]
 shape = SubResource("SphereShape3D_p3xh3")
@@ -91,5 +92,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.97891, 0)
 size = Vector3(4, 2.842, 4)
 texture_albedo = ExtResource("4_djri1")
 emission_energy = 11.18
+
+[node name="Fruit" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -1.80405, 0)
+
+[node name="TurnipDown" type="MeshInstance3D" parent="Fruit"]
+transform = Transform3D(0.937276, -0.348588, 0, 0.344163, 0.925378, -0.15883, 0.0553663, 0.148868, 0.987306, 1.88659, 0.922642, -1.77671)
+material_override = SubResource("StandardMaterial3D_w631k")
+mesh = ExtResource("4_ywyhk")
+skeleton = NodePath("../..")
+
+[node name="TurnipUp" type="MeshInstance3D" parent="Fruit"]
+transform = Transform3D(0.937276, -0.348588, 0, 0.344163, 0.925378, -0.15883, 0.0553663, 0.148868, 0.987306, 1.88659, 0.922642, -1.77671)
+material_override = SubResource("StandardMaterial3D_q3i1r")
+mesh = ExtResource("5_gto8s")
+skeleton = NodePath("../..")
 
 [connection signal="area_entered" from="Turnip/CollisionDetection" to="." method="_on_collision_detection_area_entered"]

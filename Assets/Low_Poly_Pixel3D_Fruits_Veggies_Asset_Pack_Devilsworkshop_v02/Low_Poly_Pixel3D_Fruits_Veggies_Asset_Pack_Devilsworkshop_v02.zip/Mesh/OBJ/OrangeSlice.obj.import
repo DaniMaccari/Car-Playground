@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bidna85uuj0cn"
+path="res://.godot/imported/OrangeSlice.obj-436d4bdb1155fd67fc6a33659b1da75b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/OrangeSlice.obj-436d4bdb1155fd67fc6a33659b1da75b.mesh"]
+
+source_file="res://Assets/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02.zip/Mesh/OBJ/OrangeSlice.obj"
+dest_files=["res://.godot/imported/OrangeSlice.obj-436d4bdb1155fd67fc6a33659b1da75b.mesh", "res://.godot/imported/OrangeSlice.obj-436d4bdb1155fd67fc6a33659b1da75b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

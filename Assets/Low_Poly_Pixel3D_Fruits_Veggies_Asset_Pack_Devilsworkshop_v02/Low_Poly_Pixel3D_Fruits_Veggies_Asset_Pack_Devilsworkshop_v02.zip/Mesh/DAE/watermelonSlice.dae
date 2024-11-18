@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2019-12-01T05:39:32Z</created><keywords></keywords><modified>2019-12-01T05:39:32Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_geometries>
+    <geometry id="watermelonSlice-lib" name="watermelonSliceMesh">
+      <mesh>
+        <source id="watermelonSlice-POSITION">
+          <float_array id="watermelonSlice-POSITION-array" count="39">
+7.390799 7.390801 0.000000
+2.283883 1.411518 3.695400
+-2.283882 1.411517 3.695400
+-5.979283 3.695399 2.283883
+-5.979283 3.695399 -2.283883
+2.283883 1.411518 -3.695400
+5.979283 3.695401 2.283883
+-7.390800 7.390798 0.000000
+3.885574 1.103811 -0.000000
+-3.885573 1.103809 -0.000000
+-2.283882 1.411517 -3.695400
+5.979283 3.695401 -2.283883
+0.000001 0.000000 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#watermelonSlice-POSITION-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="watermelonSlice-Normal0">
+          <float_array id="watermelonSlice-Normal0-array" count="198">
+-0.000000 0.525731 -0.850651
+0.525731 -0.850651 -0.000000
+0.850651 -0.000000 0.525731
+0.525731 -0.850651 -0.000000
+-0.000000 0.525731 -0.850651
+-0.000000 0.525731 -0.850651
+-0.000000 0.525731 -0.850651
+0.525731 -0.850651 -0.000000
+-0.850651 -0.000000 0.525731
+0.525731 -0.850651 -0.000000
+-0.000000 0.525731 -0.850651
+-0.000000 0.525731 -0.850651
+-0.294136 -0.907629 -0.299489
+0.525731 0.850651 -0.000000
+0.850651 -0.000000 0.525731
+0.525731 0.850651 -0.000000
+-0.294136 -0.907629 -0.299489
+-0.000000 0.525731 0.850651
+-0.000000 0.525731 0.850651
+-1.000000 -0.000000 -0.525731
+0.000000 0.294136 -0.907629
+-1.000000 -0.000000 -0.525731
+-0.000000 0.525731 0.850651
+-0.294136 -0.907629 -0.299489
+0.525731 -0.850651 0.000000
+-1.000000 -0.000000 0.000000
+-0.000000 -0.294136 -0.907629
+0.294136 -0.907629 -0.299489
+-0.907629 0.299489 0.000000
+-0.000000 0.525731 -0.850651
+0.294136 -0.907629 -0.299489
+-0.599228 -0.108887 0.525731
+0.000000 -0.294136 -0.907629
+-0.525731 -0.850651 0.000000
+-1.000000 -0.000000 0.000000
+-0.000000 0.294136 -0.907629
+-0.294136 -0.907629 0.299489
+-0.599228 0.108887 -0.525731
+0.000000 -0.294136 -0.907629
+0.793139 -0.599228 -0.108887
+-0.599228 0.108887 0.525731
+0.000000 -0.793139 -0.599228
+-0.525731 -0.850651 0.000000
+-0.599228 0.108887 0.793139
+0.108887 0.793139 -0.599228
+0.934172 -0.356822 0.000000
+-0.599228 0.108887 -0.934172
+0.000000 -0.793139 -0.599228
+0.793139 -0.599228 0.108887
+-0.907629 0.299489 0.525731
+0.000000 -0.793139 -0.599228
+-0.294136 -0.907629 -0.299489
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+0.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#watermelonSlice-Normal0-array" count="66" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="watermelonSlice-UV0">
+          <float_array id="watermelonSlice-UV0-array" count="46">
+0.218470 1.000137
+0.314098 1.000137
+0.305881 0.959792
+0.283438 0.940684
+0.253686 0.940684
+0.227989 0.959792
+0.227989 0.959792
+0.253686 0.940684
+0.283438 0.940684
+0.305881 0.959792
+0.328959 0.978301
+0.343005 0.969620
+0.343005 0.984388
+0.328959 0.960939
+0.343005 0.954852
+0.357051 0.960939
+0.334324 0.946894
+0.357051 0.978301
+0.351686 0.992346
+0.351686 0.946894
+0.334324 0.992346
+0.343005 0.941529
+0.343005 0.997711
+</float_array>
+          <technique_common>
+            <accessor source="#watermelonSlice-UV0-array" count="23" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="watermelonSlice-VERTEX">
+          <input semantic="POSITION" source="#watermelonSlice-POSITION"/>
+        </vertices>
+        <triangles count="22"><input semantic="VERTEX" offset="0" source="#watermelonSlice-VERTEX"/><input semantic="NORMAL" offset="1" source="#watermelonSlice-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#watermelonSlice-UV0"/><p> 7 0 0 10 1 4 4 2 5 0 3 1 5 4 3 7 5 0 5 6 3 0 7 1 11 8 2 10 9 4 7 10 0 5 11 3 2 12 7 7 13 0 3 14 6 7 15 0 2 16 7 0 17 1 0 18 1 1 19 8 6 20 9 1 21 8 0 22 1 2 23 7 10 24 10 12 25 11 9 26 12 5 27 13 8 28 14 12 29 11 12 30 11 10 31 10 5 32 13 1 33 15 12 34 11 8 35 14 5 36 13 11 37 16 8 38 14 2 39 17 9 40 12 12 41 11 12 42 11 1 43 15 2 44 17 3 45 18 9 46 12 2 47 17 11 48 16 6 49 19 8 50 14 4 51 20 9 52 12 3 53 18 6 54 19 11 55 16 0 56 21 3 57 18 7 58 22 4 59 20 6 60 19 1 61 15 8 62 14 4 63 20 10 64 10 9 65 12</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="watermelonSlice" id="watermelonSlice" sid="watermelonSlice"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#watermelonSlice-lib"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>1.000000</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>

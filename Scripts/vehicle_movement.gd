@@ -7,7 +7,7 @@ const STEER_LIMIT : float = 0.4
 @export var ENGINE_POWER : float = 300
 #@export var MAX_ENGINE_POWER : float = 500
 const BRAKE_STRENGTH : float = 3.0
-const DOWN_FORCE : float = -2000.0
+const DOWN_FORCE : float = -2100.0
 const MIN_MOVEMENT_SPEED : float = 1.0
 const FRICTION_IMPULSE : float = 1.0
 
@@ -16,12 +16,24 @@ var _steer_target := 0.0
 var initial_min_speed : float = 5.0
 var floor_raycast : RayCast3D 
 
+var respawn_timer : Timer
+var respawning : bool = false
+
 func _ready() -> void:
 	floor_raycast = $raycast_floor
 	floor_raycast.enabled = true
+	
+	# set timer
+	respawn_timer = Timer.new()
+	respawn_timer.wait_time = 1.0
+	respawn_timer.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
+	respawn_timer.one_shot = true
+	respawn_timer.timeout.connect(_on_respawn_timeout)
+	add_child(respawn_timer)
 	pass
 	
 func _physics_process(delta: float) -> void:
+	
 	#var fwd_mps := (linear_velocity * transform.basis).x
 	#engine_force = Input.get_axis("ui_decel", "ui_accel") * ENGINE_POWER
 	
@@ -74,17 +86,26 @@ func _physics_process(delta: float) -> void:
 	
 	#print("direction", direction)
 	previous_speed = actual_speed
+	
+	# car fell-off
+	if transform.origin.y < -10:
+		respawn_car()
 
 func _input(event: InputEvent) -> void:
 	
 	if event.is_action_pressed("ui_respawn"):
-		print("respawn")
-		print("ante ",transform.origin)
-		transform.origin = Vector3.ZERO
-		print("depue ",transform.origin)
+		respawn_car()
+
+func respawn_car() -> void:
+	print("respawn")
+	transform.origin = Vector3.ZERO
+	transform.basis = Basis()
+	previous_speed = 0.0
+	respawn_timer.start()
+	get_tree().paused = true
 	
-	if event.device != player_index:
-		return
-	
+func _on_respawn_timeout() -> void:
+	get_tree().paused = false
+
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index

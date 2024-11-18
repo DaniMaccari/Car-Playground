@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4dfta2cuta1s"
+path="res://.godot/imported/lemonGreen.obj-68d61d69baaa9cc7eb04cf2c81317784.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lemonGreen.obj-68d61d69baaa9cc7eb04cf2c81317784.mesh"]
+
+source_file="res://Assets/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02/Low_Poly_Pixel3D_Fruits_Veggies_Asset_Pack_Devilsworkshop_v02.zip/Mesh/OBJ/lemonGreen.obj"
+dest_files=["res://.godot/imported/lemonGreen.obj-68d61d69baaa9cc7eb04cf2c81317784.mesh", "res://.godot/imported/lemonGreen.obj-68d61d69baaa9cc7eb04cf2c81317784.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

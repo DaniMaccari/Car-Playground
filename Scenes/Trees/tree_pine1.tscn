@@ -9,7 +9,6 @@ height = 4.52005
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egqky"]
 resource_name = "treebase_color"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_8vbyb")
 emission_enabled = true
 uv1_offset = Vector3(0, -1, 0)

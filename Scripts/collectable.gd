@@ -5,13 +5,18 @@ signal collided
 var raycast : RayCast3D 
 var is_positioned : bool = false
 var object_heigth : float = 2.3
+var tween : Tween
+var model : Node3D
 
 func _ready() -> void:
 	hide()
 	raycast = $RayCast_Distance
 	raycast.enabled = true
-	print("START")
-	pass
+	
+	model = $Fruit
+	tween = create_tween().set_loops()
+	tween.TRANS_LINEAR
+	tween.tween_property(model, "rotation_degrees", Vector3(0, 360, 0), 3.0).as_relative()
 
 func start_position(max_z : float, max_x : float) -> void:
 	position.z = randf_range(max_z, -max_z)
