@@ -9,8 +9,6 @@ var max_x : int
 func _ready() -> void:
 	max_z = $MarkerZ.position.z
 	max_x = $MarkerX.position.x
-	spawn_collectable()
-	pass # Replace with function body.
 
 func spawn_collectable() -> void:
 	await get_tree().create_timer(0.2).timeout

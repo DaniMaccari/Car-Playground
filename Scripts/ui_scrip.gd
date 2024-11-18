@@ -1,5 +1,7 @@
 extends Control
 
+signal start_signal
+
 var game_points : int = 0
 var game_time : int
 var timer : Timer
@@ -16,6 +18,7 @@ func _ready() -> void:
 	# set start timer
 	$EndPointsLabel.visible = false
 	init_timer = Timer.new()
+	init_timer.process_mode = Node.PROCESS_MODE_ALWAYS
 	init_timer.wait_time = 0.6
 	init_timer.autostart = true
 	init_timer.one_shot = false
@@ -57,6 +60,8 @@ func _on_timer_start() -> void:
 	init_timeout -= 1
 
 func start_ui() -> void:
+	emit_signal("start_signal")
+	
 	points_label.visible = true
 	timer_label.visible = true
 	timer.start()
@@ -73,6 +78,7 @@ func stop_ui() -> void:
 	points_label.visible = false
 	timer_label.visible = false
 	pass
+
 func add_point() -> void:
 	game_points += 1
 	
