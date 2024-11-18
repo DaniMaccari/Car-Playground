@@ -1,9 +1,9 @@
+Control
+RichTextLabel
 Node3D
 MeshInstance3D
 Timer
 TextureProgressBar
-RichTextLabel
-Control
 Decal
 SubViewport
 SubViewportContainer

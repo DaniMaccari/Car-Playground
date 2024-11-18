@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://l7rd14u5o0hj"]
+
+[ext_resource type="Script" path="res://menu_scene.gd" id="1_bba2d"]
+[ext_resource type="Texture2D" uid="uid://bg36o428vwiv4" path="res://letterIcon_FruitRush.png" id="1_w0i3t"]
+[ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="2_tdyvm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bba2d")
+
+[node name="LetterIconFruitRush" type="Sprite2D" parent="."]
+position = Vector2(395, 150)
+scale = Vector2(0.533193, 0.533193)
+texture = ExtResource("1_w0i3t")
+
+[node name="menuText" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartLabel" type="RichTextLabel" parent="menuText"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 21.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_tdyvm")
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[center]press      to start"
+fit_content = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=21 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -13,10 +13,11 @@
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="8_yu54q"]
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
+[ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
-background_color = Color(0.125147, 0.693433, 0.694784, 1)
+background_color = Color(0.0633341, 0.410143, 0.736122, 1)
 ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
 tonemap_mode = 2
 
@@ -73,10 +74,17 @@ MAX_STEER = 0.45
 ENGINE_POWER = 400.0
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.745743, 0.666233, 0, -0.666233, 0.745743, 0, 27.121, 31.8165)
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 0.71934, 0.694658, 0, -0.694658, 0.71934, 0, 27, 29)
 projection = 1
 size = 58.0
 far = 80.0
+
+[node name="CameraPositionGame" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 27, 32)
+
+[node name="CameraPositionMenu" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 27, 32)
 
 [node name="Terrain" parent="." instance=ExtResource("3_cmosh")]
 transform = Transform3D(30, 0, -1.13687e-13, 0, 30, 0, 1.13687e-13, 0, 30, -1.62, -4, -6.25849e-07)
@@ -121,7 +129,8 @@ transform = Transform3D(0.286625, 0, -0.958043, 0, 1, 0, 0.958043, 0, 0.286625, 
 [node name="tree_pine3" parent="." instance=ExtResource("8_7auv0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6662, 0.38375, 19.7764)
 
-[node name="Control" type="Control" parent="."]
+[node name="ingame_UI" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -130,7 +139,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_ccuvy")
 
-[node name="StartLabel" type="RichTextLabel" parent="Control"]
+[node name="StartLabel" type="RichTextLabel" parent="ingame_UI"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -149,7 +158,7 @@ bbcode_enabled = true
 text = "[center]READY"
 fit_content = true
 
-[node name="EndPointsLabel" type="RichTextLabel" parent="Control"]
+[node name="EndPointsLabel" type="RichTextLabel" parent="ingame_UI"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -168,7 +177,7 @@ bbcode_enabled = true
 text = "[center]points 100"
 fit_content = true
 
-[node name="PointsLabel" type="RichTextLabel" parent="Control"]
+[node name="PointsLabel" type="RichTextLabel" parent="ingame_UI"]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 10.0
@@ -180,7 +189,7 @@ theme_override_font_sizes/normal_font_size = 90
 text = "123"
 fit_content = true
 
-[node name="TimerLabel" type="TextureProgressBar" parent="Control"]
+[node name="TimerLabel" type="TextureProgressBar" parent="ingame_UI"]
 layout_mode = 0
 offset_left = 671.0
 offset_top = 495.0
@@ -193,3 +202,5 @@ fill_mode = 4
 radial_initial_angle = 305.0
 texture_under = ExtResource("9_h7shk")
 texture_progress = ExtResource("10_0hs6y")
+
+[node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]

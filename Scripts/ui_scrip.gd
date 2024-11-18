@@ -14,7 +14,9 @@ const MAX_TIME : int = 360
 @onready var timer_label := $TimerLabel
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func delay_ready() -> void:
+	show()
+	
 	# set start timer
 	$EndPointsLabel.visible = false
 	init_timer = Timer.new()
@@ -39,8 +41,7 @@ func _ready() -> void:
 	timer.one_shot = false
 	timer.timeout.connect(_on_timer_timeout)
 	add_child(timer)
-	
-	
+
 func _on_timer_timeout() -> void:
 	game_time -= 1
 	if game_time <= 0:
@@ -55,7 +56,8 @@ func _on_timer_start() -> void:
 	elif init_timeout < 0:
 		$StartLabel.clear()
 		$StartLabel.append_text("")
-		init_timer.queue_free()
+		if init_timer != null:
+			init_timer.queue_free()
 		start_ui()
 	init_timeout -= 1
 

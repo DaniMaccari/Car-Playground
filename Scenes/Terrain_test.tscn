@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cas0x7ga5oho5" path="res://Assets/Terrain/terrainTexture_24x24.png" id="1_fprie"]
 [ext_resource type="ArrayMesh" uid="uid://dn45a4gbxptf2" path="res://Assets/Terrain/playgroundTerrainMapa3.obj" id="1_hm3do"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cotuk"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f1x05"]
 albedo_texture = ExtResource("1_fprie")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q5ecf"]
@@ -13,7 +13,7 @@ data = PackedVector3Array(1.023, 0.2001, -1.0168, 1.0533, 0.2001, -0.9866, 1.023
 
 [node name="PlaygroundTerrainMapa3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
-material_override = SubResource("StandardMaterial3D_cotuk")
+material_override = SubResource("StandardMaterial3D_f1x05")
 mesh = ExtResource("1_hm3do")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
