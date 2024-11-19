@@ -5,7 +5,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_awcr4"]
 resource_name = "lowpoly_road"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_0sxs0")
 emission_enabled = true
 uv1_offset = Vector3(0, -1, 0)
@@ -46,7 +45,6 @@ shadow_mesh = SubResource("ArrayMesh_6yp2u")
 points = PackedVector3Array(-20, -6.76437e-14, -2.28839e-14, -20, 4.11956, -2.28839e-14, 0, -6.76437e-14, -2.28839e-14, -20, -6.76437e-14, 9.99902, -20, 8.11989, 9.99902, 0, 4.11956, -2.28839e-14, 0, -6.76437e-14, 9.99902, 0, 8.11989, 9.99902)
 
 [node name="RampaSalto" type="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="roadRampUp" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.4, 0, 0, 0, 0.482963, -0.12941, 0, 0.12941, 0.482963, 4, -2, 0)
