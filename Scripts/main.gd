@@ -14,7 +14,7 @@ func _ready() -> void:
 	in_menu = true
 	menu_ui.visible = true
 	ui_manager.visible = false
-	camera.rotation_degrees = Vector3(-17, 0, 0)
+	camera.rotation_degrees = Vector3(-13, 0, 0)
 	$VehicleBody3D.visible = false
 	points_manager.catched_signal.connect(ui_manager.add_point)
 	ui_manager.start_signal.connect(start_game)
@@ -28,6 +28,7 @@ func start_game() -> void:
 func menu_to_game() -> void:
 	menu_ui.change_scene()
 	camera_transition()
+	$WaterMesh.show()
 
 func camera_transition() -> void:
 	var timer := Timer.new()
@@ -49,7 +50,7 @@ func start_ingameUI() -> void:
 	ui_manager.delay_ready()
 	
 func _input(event: InputEvent) -> void:
-	if Input.is_action_pressed("ui_accept") && !game_started:
+	if !game_started && event is InputEventKey:
 		game_started = true
 		menu_to_game()
 		

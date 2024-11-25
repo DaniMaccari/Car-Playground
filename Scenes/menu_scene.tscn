@@ -14,8 +14,8 @@ grow_vertical = 2
 script = ExtResource("1_bba2d")
 
 [node name="LetterIconFruitRush" type="Sprite2D" parent="."]
-position = Vector2(395, 116)
-scale = Vector2(0.389916, 0.389916)
+position = Vector2(395, 142)
+scale = Vector2(0.406723, 0.406723)
 texture = ExtResource("1_w0i3t")
 
 [node name="menuText" type="Control" parent="."]
@@ -32,12 +32,28 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -36.0
-offset_bottom = 25.0
+offset_left = -7.0
+offset_top = 20.0
+offset_right = -7.0
+offset_bottom = 81.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_tdyvm")
-theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
-text = "[center]press      to start"
+text = "[center]press any button"
 fit_content = true
+
+[node name="Version" type="RichTextLabel" parent="menuText"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = -12.0
+offset_bottom = 27.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("2_tdyvm")
+theme_override_font_sizes/normal_font_size = 15
+bbcode_enabled = true
+text = "[right]v1.0"

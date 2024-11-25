@@ -14,6 +14,7 @@ data = PackedVector3Array(1.023, 0.2001, -1.0168, 1.0533, 0.2001, -0.9866, 1.023
 [node name="PlaygroundTerrainMapa3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
 material_override = SubResource("StandardMaterial3D_f1x05")
+cast_shadow = 0
 mesh = ExtResource("1_hm3do")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

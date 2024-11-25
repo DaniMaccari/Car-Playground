@@ -1,5 +1,6 @@
-CPUParticles3D
 Control
+CenterContainer
+CPUParticles3D
 RichTextLabel
 Node3D
 MeshInstance3D
@@ -11,5 +12,3 @@ SubViewportContainer
 StaticBody3D
 CollisionShape3D
 RayCast3D
-Area3D
-Marker3D

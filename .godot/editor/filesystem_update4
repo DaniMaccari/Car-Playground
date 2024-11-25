@@ -6,3 +6,4 @@ res://Scenes/Ramp_Jump.tscn
 res://Scenes/Terrain_test.tscn
 res://Scenes/menu_scene.tscn
 res://Scripts/main.gd
+res://menu_scene.gd
