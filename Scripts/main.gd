@@ -7,6 +7,7 @@ var in_menu : bool
 @onready var menu_ui := $menu_UI
 @onready var points_manager := $PointsCounter
 @onready var ui_manager := $ingame_UI
+var game_started : bool = false
 
 func _ready() -> void:
 	print("ready game")
@@ -19,6 +20,7 @@ func _ready() -> void:
 	ui_manager.start_signal.connect(start_game)
 
 func start_game() -> void:
+	
 	get_tree().paused = false
 	$VehicleBody3D.visible = true
 	points_manager.spawn_collectable()
@@ -47,6 +49,7 @@ func start_ingameUI() -> void:
 	ui_manager.delay_ready()
 	
 func _input(event: InputEvent) -> void:
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("ui_accept") && !game_started:
+		game_started = true
 		menu_to_game()
 		
