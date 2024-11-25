@@ -84,7 +84,7 @@ func stop_ui() -> void:
 func add_point() -> void:
 	game_points += 1
 	
-	game_time += 30
+	game_time += 50
 	if game_time > MAX_TIME:
 		game_time = MAX_TIME
 	timer_label.value = game_time

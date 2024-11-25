@@ -94,7 +94,7 @@ texture_albedo = ExtResource("4_djri1")
 emission_energy = 11.18
 
 [node name="Fruit" type="Node3D" parent="."]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -1.80405, 0)
+transform = Transform3D(0.34, 0, 0, 0, 0.34, 0, 0, 0, 0.34, 0, -1.80405, 0.0364494)
 
 [node name="TurnipDown" type="MeshInstance3D" parent="Fruit"]
 transform = Transform3D(0.937276, -0.348588, 0, 0.344163, 0.925378, -0.15883, 0.0553663, 0.148868, 0.987306, 1.88659, 0.922642, -1.77671)

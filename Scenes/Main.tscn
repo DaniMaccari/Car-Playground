@@ -17,7 +17,7 @@
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
-background_color = Color(0.0633341, 0.410143, 0.736122, 1)
+background_color = Color(0.203922, 0.490196, 0.858824, 1)
 ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
 tonemap_mode = 2
 
@@ -28,7 +28,7 @@ size = Vector3(16.0916, 0.2, 16.1094)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlxl5"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rygui"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oggjv"]
 albedo_texture = ExtResource("6_lfaja")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uq350"]
@@ -114,7 +114,7 @@ transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066
 [node name="WaterMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 2.38419e-07, -4, 0.920999)
 layers = 16
-material_override = SubResource("StandardMaterial3D_rygui")
+material_override = SubResource("StandardMaterial3D_oggjv")
 mesh = SubResource("PlaneMesh_uq350")
 
 [node name="RampaSalto" parent="." instance=ExtResource("8_g2yf7")]
