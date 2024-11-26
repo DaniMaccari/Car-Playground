@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj0cxi6liarg8"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwmek"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqufg"]
+
+[node name="SplashParticles" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+one_shot = true
+explosiveness = 0.6
+process_material = SubResource("ParticleProcessMaterial_xwmek")
+draw_pass_1 = SubResource("SphereMesh_gqufg")
