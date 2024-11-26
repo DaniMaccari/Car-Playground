@@ -19,35 +19,68 @@ maximum_volume = 1.0
 
 [node name="Engine0" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("2_4tp1l")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine1" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("3_6grei")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine2" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_ubpsq")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine3" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("5_1x8gh")
 volume_db = -80.0
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine4" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_p2jgf")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine5" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("7_t7wbi")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine6" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("8_2hrid")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine7" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("9_le1yj")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine8" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("10_gnvjt")
 volume_db = -80.0
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine9" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("11_lklcd")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
 
 [node name="Engine10" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("12_rjpeo")
+unit_size = 30.0
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
