@@ -8,9 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Prarticles.tscn" id="6_6ucmj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
-size = Vector3(2.23999, 1.96881, 3.67538)
+size = Vector3(2.1, 2, 3.7)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
+shading_mode = 2
 albedo_texture = ExtResource("2_uuu66")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv0xn"]
@@ -108,7 +109,7 @@ script = ExtResource("1_ijyx4")
 MAX_STEER = 0.6
 
 [node name="CollisionBox" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05948, 0.220596)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.19386, 0.220596)
 shape = SubResource("BoxShape3D_e3vso")
 
 [node name="sportsCar" type="Node3D" parent="."]
@@ -212,4 +213,4 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.8
 shape = SubResource("CapsuleShape3D_r4qvl")
 
 [node name="SmokeParticles" parent="." instance=ExtResource("6_6ucmj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1.75)
