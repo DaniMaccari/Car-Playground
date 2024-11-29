@@ -6,7 +6,7 @@ var in_menu : bool
 
 @onready var menu_ui := $menu_UI
 @onready var points_manager := $PointsCounter
-@onready var ui_manager := $ingame_UIç
+@onready var ui_manager := $ingame_UI
 
 @onready var water_position := $WaterMesh
 var game_started : bool = false

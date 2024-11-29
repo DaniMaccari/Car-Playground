@@ -1,0 +1,215 @@
+[gd_scene load_steps=19 format=4 uid="uid://dd0nts174s84k"]
+
+[ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
+[ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
+[ext_resource type="Texture2D" uid="uid://bdqtagqcmrma1" path="res://Assets/auto_racing_car/turnipCar2.tga" id="2_uuu66"]
+[ext_resource type="ArrayMesh" uid="uid://nf8dymeux4b4" path="res://Assets/auto_racing_car/orange/sportscar_orange.obj" id="3_xcat0"]
+[ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="4_nmhot"]
+[ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Prarticles.tscn" id="6_6ucmj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
+size = Vector3(2.23999, 1.96881, 3.67538)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
+albedo_texture = ExtResource("2_uuu66")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv0xn"]
+albedo_texture = ExtResource("2_uuu66")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rso3r"]
+resource_name = "sportsCar_yellow"
+cull_mode = 2
+albedo_texture = ExtResource("1_dao8p")
+roughness = 0.0764706
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wtdmm"]
+_surfaces = [{
+"aabb": AABB(-0.191607, -0.27037, -0.284284, 0.383214, 0.54074, 0.568568),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAACAAEAAAADAAIABAAGAAUABAAHAAYACAABAAkACAAAAAEACgAJAAsACgAIAAkADAAFAA0ADAAEAAUADgALAA8ADgAKAAsAEAAPABEAEAAOAA8AAwANAAIAAwAMAA0AEgARABMAEgAQABEABwATAAYABwASABMAEgAIAAoAEgAHAAgABgABAAUABgAJAAEABAAIAAcABAAAAAgAEgAOABAAEgAKAA4AAAAMAAMAAAAEAAwAEQALABMAEQAPAAsAEwAJAAYAEwALAAkABQACAA0ABQABAAIA"),
+"name": "sportsCar_yellow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AADkMIznAAD//+QwjOcAAP///3///wAAAAD/f///AAAAAP//jacAAP////+NpwAA/////3FYAAAAAP//cVgAAAAAAACNpwAA//8AAI2nAAAAAAAAcVgAAP//AABxWAAAAAAaz4znAAD//xrPjOcAAAAA5DBxGAAA///kMHEYAAAAAP9/AAAAAP///38AAAAAAAAaz3EYAAD//xrPcRgAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y31eb"]
+resource_name = "Mesh4"
+_surfaces = [{
+"aabb": AABB(-0.191607, -0.27037, -0.284284, 0.383214, 0.54074, 0.568568),
+"attribute_data": PackedByteArray("8BPXOWgK1zloCvA/8BPwP/ATIkxoCiJMaAo7UvATO1LwE74zaAq+M2gK1znwE9c58BOfamgKn2poCrhw8BO4cPATCUZoCglG8BOGZGgKhmTwE21eaAptXmgKhmTwE4ZkaAoJRvATCUbwE1RYaApUWGgKVFjwE1RY26a/EdK2vxG0uPML+aTyC2O4nw9juIYJNamXBJ+lhgncpiYG0rYmBsqrVBXjsVUV47GRAsurkQIBr3AWzrSNFJ+lnw81qY0UzrSXBAGvtQI="),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAACAAEAAAADAAIABAAGAAUABAAHAAYACAAKAAkACAALAAoADAAOAA0ADAAPAA4AEAAFABEAEAAEAAUAEgANABMAEgAMAA0AFAAWABUAFAAXABYAAwAYAAIAAwAZABgAGgAVABsAGgAUABUABwAcAAYABwAdABwAHgAgAB8AHgAhACAAIgAkACMAIgAlACQAJgAgACEAJgAnACAAHgApACgAHgAfACkAJwArACoAJwAmACsALAAuAC0ALAAvAC4ALQAlACIALQAuACUAIwAxADAAIwAkADEA"),
+"material": SubResource("StandardMaterial3D_rso3r"),
+"name": "sportsCar_yellow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 50,
+"vertex_data": PackedByteArray("AADkMIzn/////+QwjOf//////3//////AAD/f/////8AAP//jaf///////+Np////////3FY//8AAP//cVj//wAAAACNp/////8AAI2n/////+QwjOf//wAA5DCM5///AAAAAHFY/////wAAcVj/////AACNp///AAAAAI2n//8AABrPjOf/////Gs+M5///AADkMHEY/////+QwcRj//wAA/38AAP//////fwAA/////+QwcRj//wAA5DBxGP////8az4zn//8AABrPjOf//wAAGs9xGP////8az3EY/////xrPcRj//wAAGs9xGP//AAAaz3EYXc4AAAAAcVhdzgAAAACNp13OAAD//3FYXs7/////cVhU1f////+Np1TV///kMIznVNX//wAAjadU1QAA//+Np17OAADkMIznXc4AAP9/AABdzgAA5DBxGF3OAAD/f///Xc4AABrPjOddzv///38AAFTV//8az3EYVNX//wAAcVhU1f//5DBxGFTV//8az4znVNX///9///9U1f9/Y5//f2Of/3//f/9//3//fyLK/38iyv9/3LX/f9y13LX//9y1//9jn///Y5////9/Ikr/fyJK3LX//9y1////f5vg/3+b4P9/m2D/f5tg/3////9/////f5vg/3+b4P9/m2D/f5tgY5///2Of////f2Of/39jnxdaLrQXWi60F1outBdaLrSqKqoqqiqqKqoqqiqqKqoqF1outBdaLrQXWi60F1outBdaLrQXWi60qiqqKqoqqiqqKqoqqiqqKqoqqiqqKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wtdmm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plwsi"]
+albedo_texture = ExtResource("2_uuu66")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f3jxb"]
+_surfaces = [{
+"aabb": AABB(-0.191607, -0.27037, -0.284284, 0.383214, 0.54074, 0.568568),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("AAACAAEAAAADAAIABAAGAAUABAAHAAYACAABAAkACAAAAAEACgAJAAsACgAIAAkADAAFAA0ADAAEAAUADgALAA8ADgAKAAsAEAAPABEAEAAOAA8AAwANAAIAAwAMAA0AEgARABMAEgAQABEABwATAAYABwASABMAEgAIAAoAEgAHAAgABgABAAUABgAJAAEABAAIAAcABAAAAAgAEgAOABAAEgAKAA4AAAAMAAMAAAAEAAwAEQALABMAEQAPAAsAEwAJAAYAEwALAAkABQACAA0ABQABAAIA"),
+"name": "sportsCar_yellow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AADkMIznAAD//+QwjOcAAP///3///wAAAAD/f///AAAAAP//jacAAP////+NpwAA/////3FYAAAAAP//cVgAAAAAAACNpwAA//8AAI2nAAAAAAAAcVgAAP//AABxWAAAAAAaz4znAAD//xrPjOcAAAAA5DBxGAAA///kMHEYAAAAAP9/AAAAAP///38AAAAAAAAaz3EYAAD//xrPcRgAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nu47w"]
+resource_name = "Mesh"
+_surfaces = [{
+"aabb": AABB(-0.191607, -0.27037, -0.284284, 0.383214, 0.54074, 0.568568),
+"attribute_data": PackedByteArray("8BPXOWgK1zloCvA/8BPwP/ATIkxoCiJMaAo7UvATO1LwE74zaAq+M2gK1znwE9c58BOfamgKn2poCrhw8BO4cPATCUZoCglG8BOGZGgKhmTwE21eaAptXmgKhmTwE4ZkaAoJRvATCUbwE1RYaApUWGgKVFjwE1RY26a/EdK2vxG0uPML+aTyC2O4nw9juIYJNamXBJ+lhgncpiYG0rYmBsqrVBXjsVUV47GRAsurkQIBr3AWzrSNFJ+lnw81qY0UzrSXBAGvtQI="),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("AAACAAEAAAADAAIABAAGAAUABAAHAAYACAAKAAkACAALAAoADAAOAA0ADAAPAA4AEAAFABEAEAAEAAUAEgANABMAEgAMAA0AFAAWABUAFAAXABYAAwAYAAIAAwAZABgAGgAVABsAGgAUABUABwAcAAYABwAdABwAHgAgAB8AHgAhACAAIgAkACMAIgAlACQAJgAgACEAJgAnACAAHgApACgAHgAfACkAJwArACoAJwAmACsALAAuAC0ALAAvAC4ALQAlACIALQAuACUAIwAxADAAIwAkADEA"),
+"material": SubResource("StandardMaterial3D_rso3r"),
+"name": "sportsCar_yellow",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 50,
+"vertex_data": PackedByteArray("AADkMIzn/////+QwjOf//////3//////AAD/f/////8AAP//jaf///////+Np////////3FY//8AAP//cVj//wAAAACNp/////8AAI2n/////+QwjOf//wAA5DCM5///AAAAAHFY/////wAAcVj/////AACNp///AAAAAI2n//8AABrPjOf/////Gs+M5///AADkMHEY/////+QwcRj//wAA/38AAP//////fwAA/////+QwcRj//wAA5DBxGP////8az4zn//8AABrPjOf//wAAGs9xGP////8az3EY/////xrPcRj//wAAGs9xGP//AAAaz3EYXc4AAAAAcVhdzgAAAACNp13OAAD//3FYXs7/////cVhU1f////+Np1TV///kMIznVNX//wAAjadU1QAA//+Np17OAADkMIznXc4AAP9/AABdzgAA5DBxGF3OAAD/f///Xc4AABrPjOddzv///38AAFTV//8az3EYVNX//wAAcVhU1f//5DBxGFTV//8az4znVNX///9///9U1f9/Y5//f2Of/3//f/9//3//fyLK/38iyv9/3LX/f9y13LX//9y1//9jn///Y5////9/Ikr/fyJK3LX//9y1////f5vg/3+b4P9/m2D/f5tg/3////9/////f5vg/3+b4P9/m2D/f5tgY5///2Of////f2Of/39jnxdaLrQXWi60F1outBdaLrSqKqoqqiqqKqoqqiqqKqoqF1outBdaLrQXWi60F1outBdaLrQXWi60qiqqKqoqqiqqKqoqqiqqKqoqqiqqKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_f3jxb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tr5fd"]
+albedo_texture = ExtResource("2_uuu66")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3pjot"]
+albedo_texture = ExtResource("2_uuu66")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r4qvl"]
+radius = 1.09148
+height = 3.9421
+
+[node name="Body" type="VehicleBody3D"]
+top_level = true
+collision_layer = 2
+mass = 100.0
+center_of_mass_mode = 1
+script = ExtResource("1_ijyx4")
+MAX_STEER = 0.6
+
+[node name="CollisionBox" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05948, 0.220596)
+shape = SubResource("BoxShape3D_e3vso")
+
+[node name="sportsCar" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_as662")
+mesh = ExtResource("3_xcat0")
+skeleton = NodePath("")
+
+[node name="WheelFrontLeft" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.342067, 1.483)
+use_as_steering = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+suspension_travel = 1.0
+suspension_stiffness = 80.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
+
+[node name="wheelFL" type="MeshInstance3D" parent="WheelFrontLeft"]
+transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+layers = 2
+material_override = SubResource("StandardMaterial3D_dv0xn")
+mesh = SubResource("ArrayMesh_y31eb")
+skeleton = NodePath("")
+
+[node name="WheelFrontRight" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.342067, 1.483)
+use_as_steering = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+suspension_travel = 1.0
+suspension_stiffness = 80.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
+
+[node name="wheelFR" type="MeshInstance3D" parent="WheelFrontRight"]
+transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
+layers = 2
+material_override = SubResource("StandardMaterial3D_plwsi")
+mesh = SubResource("ArrayMesh_nu47w")
+skeleton = NodePath("")
+
+[node name="WheelBackLeft" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.342067, -1.112)
+use_as_traction = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+suspension_travel = 1.0
+suspension_stiffness = 80.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
+
+[node name="wheelBL" type="MeshInstance3D" parent="WheelBackLeft"]
+transform = Transform3D(1.333, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+layers = 2
+material_override = SubResource("StandardMaterial3D_tr5fd")
+mesh = SubResource("ArrayMesh_y31eb")
+skeleton = NodePath("")
+
+[node name="WheelBackRight" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.342067, -1.112)
+use_as_traction = true
+wheel_roll_influence = 0.4
+wheel_radius = 0.6
+wheel_rest_length = 0.3
+suspension_travel = 1.0
+suspension_stiffness = 80.0
+suspension_max_force = 3000.0
+damping_compression = 0.88
+
+[node name="wheelBR" type="MeshInstance3D" parent="WheelBackRight"]
+transform = Transform3D(-1.333, 0, -3.01992e-07, 0, 2, 0, 2.01277e-07, 0, -2, 0, 0, 0)
+layers = 2
+material_override = SubResource("StandardMaterial3D_3pjot")
+mesh = SubResource("ArrayMesh_nu47w")
+skeleton = NodePath("")
+
+[node name="BlobShadow" type="Decal" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.46227, 0.131746)
+visible = false
+size = Vector3(5.02832, 3.08212, 6.34351)
+texture_albedo = ExtResource("4_nmhot")
+cull_mask = 1048573
+
+[node name="raycast_floor" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+target_position = Vector3(0, -3.35, 0)
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 5
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.872116, 0.207988)
+shape = SubResource("CapsuleShape3D_r4qvl")
+
+[node name="SmokeParticles" parent="." instance=ExtResource("6_6ucmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 2)
