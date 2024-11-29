@@ -88,7 +88,7 @@ func _physics_process(delta: float) -> void:
 	previous_speed = actual_speed
 	
 	# car fell-off
-	if transform.origin.y < -8:
+	if transform.origin.y < -7:
 		respawn_car()
 
 func _input(event: InputEvent) -> void:

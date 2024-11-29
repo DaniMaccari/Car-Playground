@@ -9,8 +9,8 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
 size = Vector3(2.23999, 1.96881, 3.67538)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uxan5"]
-albedo_color = Color(1, 0.337255, 0.290196, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
+albedo_texture = ExtResource("2_uuu66")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv0xn"]
 albedo_texture = ExtResource("2_uuu66")
@@ -116,7 +116,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-material_override = SubResource("StandardMaterial3D_uxan5")
+material_override = SubResource("StandardMaterial3D_as662")
 mesh = ExtResource("3_xcat0")
 skeleton = NodePath("")
 

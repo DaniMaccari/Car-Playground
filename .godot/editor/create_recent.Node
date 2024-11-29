@@ -1,7 +1,10 @@
+GPUParticles3D
+MeshInstance3D
+CPUParticles3D
 Control
+CenterContainer
 RichTextLabel
 Node3D
-MeshInstance3D
 Timer
 TextureProgressBar
 Decal
@@ -9,6 +12,3 @@ SubViewport
 SubViewportContainer
 StaticBody3D
 CollisionShape3D
-RayCast3D
-Area3D
-Marker3D
