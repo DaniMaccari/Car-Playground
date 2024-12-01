@@ -4,10 +4,10 @@ extends VehicleBody3D
 const STEER_SPEED : float = 1.5
 const STEER_LIMIT : float = 0.4
 @export var MAX_STEER : float = 0.9
-@export var ENGINE_POWER : float = 350
+@export var ENGINE_POWER : float = 300
 #@export var MAX_ENGINE_POWER : float = 500
 const BRAKE_STRENGTH : float = 4.0
-const DOWN_FORCE : float = -2200.0
+const DOWN_FORCE : float = -2100.0
 const MIN_MOVEMENT_SPEED : float = 1.0
 const FRICTION_IMPULSE : float = 1.0
 
@@ -22,6 +22,8 @@ var smoke_particles : GPUParticles3D
 var smoke_timer : Timer
 var chilly_effect : bool = false
 const CHILLY_POWER : float = 1.5
+var fire_particles : GPUParticles3D
+var chilly_timer : Timer
 
 func _ready() -> void:
 	floor_raycast = $raycast_floor
@@ -44,6 +46,14 @@ func _ready() -> void:
 	smoke_timer.one_shot = true
 	smoke_timer.timeout.connect(_on_smoke_timeout)
 	add_child(smoke_timer)
+	
+	fire_particles = $FireParticles
+	fire_particles.emitting = false
+	chilly_timer = Timer.new()
+	chilly_timer.wait_time = 10.0
+	chilly_timer.one_shot = true
+	chilly_timer.timeout.connect(_on_chilly_timeout)
+	add_child(chilly_timer)
 	pass
 	
 func _physics_process(delta: float) -> void:
@@ -90,7 +100,7 @@ func _physics_process(delta: float) -> void:
 		if actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
 			#print("Max accel") #DEBUG
 			#print(Input.get_action_strength("ui_accel"))
-			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER * 5.0
+			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER * 2.5
 		else:
 			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER
 	
@@ -99,7 +109,7 @@ func _physics_process(delta: float) -> void:
 		if direction > 0.0:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * BRAKE_STRENGTH
 		elif actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
-			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * 3.0
+			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * 2.0
 		else:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER
 	
@@ -134,3 +144,18 @@ func _on_smoke_timeout() -> void:
 	smoke_particles.emitting = false
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	var collider := area.get_parent().get_parent()
+	if collider.is_in_group("fruit"):
+		if collider.get_fruit() == 3: #CHANGE
+			activate_chilly()
+
+func activate_chilly() -> void:
+	fire_particles.emitting = true
+	chilly_effect = true
+	chilly_timer.start()
+
+func _on_chilly_timeout() -> void:
+	fire_particles.emitting = false
+	chilly_effect = false

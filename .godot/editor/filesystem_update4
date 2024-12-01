@@ -1,0 +1,10 @@
+res://Scenes/Vehicle_movement.tscn
+res://Materials/green_object.tres
+res://Scenes/Main.tscn
+res://Scenes/Collectable_object.tscn
+res://Scenes/Trees/tree_pine1.tscn
+res://Scenes/Ramp_Jump.tscn
+res://Scenes/Particles/Fire_Prarticles.tscn
+res://Scripts/vehicle_movement.gd
+res://Scenes/Particles/Smoke_Prarticles.tscn
+res://Scripts/collectable.gd
