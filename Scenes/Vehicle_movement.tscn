@@ -100,7 +100,7 @@ albedo_texture = ExtResource("2_uuu66")
 radius = 1.09148
 height = 3.9421
 
-[node name="Body" type="VehicleBody3D"]
+[node name="Body" type="VehicleBody3D" groups=["car"]]
 top_level = true
 collision_layer = 2
 mass = 100.0

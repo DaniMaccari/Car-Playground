@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://btydnrirhelh7"
+path="res://.godot/imported/eggplant_down.obj-1b3dce70b205a1d3c0c8f2fb181cef6b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/eggplant_down.obj-1b3dce70b205a1d3c0c8f2fb181cef6b.mesh"]
+
+source_file="res://Assets/Fruits/eggplant_down.obj"
+dest_files=["res://.godot/imported/eggplant_down.obj-1b3dce70b205a1d3c0c8f2fb181cef6b.mesh", "res://.godot/imported/eggplant_down.obj-1b3dce70b205a1d3c0c8f2fb181cef6b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

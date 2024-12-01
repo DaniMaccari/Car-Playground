@@ -4,22 +4,24 @@ extends VehicleBody3D
 const STEER_SPEED : float = 1.5
 const STEER_LIMIT : float = 0.4
 @export var MAX_STEER : float = 0.9
-@export var ENGINE_POWER : float = 300
+@export var ENGINE_POWER : float = 350
 #@export var MAX_ENGINE_POWER : float = 500
-const BRAKE_STRENGTH : float = 3.0
-const DOWN_FORCE : float = -2100.0
+const BRAKE_STRENGTH : float = 4.0
+const DOWN_FORCE : float = -2200.0
 const MIN_MOVEMENT_SPEED : float = 1.0
 const FRICTION_IMPULSE : float = 1.0
 
 var previous_speed := linear_velocity.length()
 var _steer_target := 0.0
-var initial_min_speed : float = 5.0
+var initial_min_speed : float = 8.0
 var floor_raycast : RayCast3D 
 
 var respawn_timer : Timer
 var respawning : bool = false
 var smoke_particles : GPUParticles3D
 var smoke_timer : Timer
+var chilly_effect : bool = false
+const CHILLY_POWER : float = 1.5
 
 func _ready() -> void:
 	floor_raycast = $raycast_floor
@@ -75,14 +77,20 @@ func _physics_process(delta: float) -> void:
 			var surface_normal : Vector3 = floor_raycast.get_collision_normal()
 			apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
 	
+	
+	if chilly_effect:
+		if actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
+			engine_force = ENGINE_POWER * CHILLY_POWER * 4.0
+		else:
+			engine_force = ENGINE_POWER * CHILLY_POWER
 	# initial accel faster
-	if Input.is_action_pressed("ui_accel"):
+	elif Input.is_action_pressed("ui_accel"):
 		
 		#print(int(actual_speed)) #DEBUG
 		if actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
 			#print("Max accel") #DEBUG
 			#print(Input.get_action_strength("ui_accel"))
-			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER * 2.5
+			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER * 5.0
 		else:
 			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER
 	
@@ -91,7 +99,7 @@ func _physics_process(delta: float) -> void:
 		if direction > 0.0:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * BRAKE_STRENGTH
 		elif actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
-			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * 2.0
+			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * 3.0
 		else:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER
 	

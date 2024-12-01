@@ -1,10 +1,16 @@
-[gd_scene load_steps=14 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=22 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
 [ext_resource type="Texture2D" uid="uid://dr32085ecldit" path="res://Assets/shadow2.png" id="4_djri1"]
 [ext_resource type="ArrayMesh" uid="uid://wp43v4542lsy" path="res://Assets/Fruits/turnip_down.obj" id="4_ywyhk"]
+[ext_resource type="Material" uid="uid://duyosomtrhacb" path="res://Materials/green_object.tres" id="5_ayy1q"]
 [ext_resource type="ArrayMesh" uid="uid://opn8126tpk75" path="res://Assets/Fruits/turnip_up.obj" id="5_gto8s"]
+[ext_resource type="ArrayMesh" uid="uid://hqtr7myc01kx" path="res://Assets/Fruits/banana.obj" id="6_hq1y4"]
+[ext_resource type="ArrayMesh" uid="uid://btydnrirhelh7" path="res://Assets/Fruits/eggplant_down.obj" id="8_7gnjm"]
+[ext_resource type="ArrayMesh" uid="uid://t1rurnkebveh" path="res://Assets/Fruits/eggplant_up.obj" id="9_76d8y"]
+[ext_resource type="ArrayMesh" uid="uid://bpn3tyjntthtr" path="res://Assets/Fruits/chilly_down.obj" id="10_jnykl"]
+[ext_resource type="ArrayMesh" uid="uid://dugdqtccgxmig" path="res://Assets/Fruits/chilly_up.obj" id="11_ycsjt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1pl3"]
 albedo_color = Color(1, 0.294118, 0, 1)
@@ -59,14 +65,19 @@ shading_mode = 2
 vertex_color_use_as_albedo = true
 albedo_color = Color(1, 0.258824, 0.454902, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q3i1r"]
-shading_mode = 2
-vertex_color_use_as_albedo = true
-albedo_color = Color(0, 0.910753, 0.352298, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jeiii"]
+albedo_color = Color(0.945098, 0.686275, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
+albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbw27"]
+albedo_color = Color(1, 0.184314, 0.333333, 1)
 
 [node name="CollectableObject" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 script = ExtResource("1_om0bk")
+total_fruits = 3
 
 [node name="VisualModel" type="MeshInstance3D" parent="."]
 visible = false
@@ -74,15 +85,15 @@ material_override = SubResource("StandardMaterial3D_k1pl3")
 mesh = SubResource("ArrayMesh_nqu00")
 skeleton = NodePath("")
 
-[node name="Turnip" type="StaticBody3D" parent="."]
+[node name="Body" type="StaticBody3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Turnip"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body"]
 shape = SubResource("SphereShape3D_p3xh3")
 disabled = true
 
-[node name="CollisionDetection" type="Area3D" parent="Turnip"]
+[node name="CollisionDetection" type="Area3D" parent="Body"]
 
-[node name="CollectedShape" type="CollisionShape3D" parent="Turnip/CollisionDetection"]
+[node name="CollectedShape" type="CollisionShape3D" parent="Body/CollisionDetection"]
 shape = SubResource("SphereShape3D_20d4o")
 
 [node name="RayCast_Distance" type="RayCast3D" parent="."]
@@ -100,16 +111,58 @@ emission_energy = 11.18
 [node name="Fruit" type="Node3D" parent="."]
 transform = Transform3D(0.34, 0, 0, 0, 0.34, 0, 0, 0, 0.34, 0, -1.80405, 0.0364494)
 
-[node name="TurnipDown" type="MeshInstance3D" parent="Fruit"]
+[node name="0" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="TurnipDown" type="MeshInstance3D" parent="Fruit/0"]
 transform = Transform3D(0.937276, -0.348588, 0, 0.344163, 0.925378, -0.15883, 0.0553663, 0.148868, 0.987306, 1.88659, 0.922642, -1.77671)
 material_override = SubResource("StandardMaterial3D_w631k")
 mesh = ExtResource("4_ywyhk")
-skeleton = NodePath("../..")
+skeleton = NodePath("../../..")
 
-[node name="TurnipUp" type="MeshInstance3D" parent="Fruit"]
+[node name="TurnipUp" type="MeshInstance3D" parent="Fruit/0"]
 transform = Transform3D(0.937276, -0.348588, 0, 0.344163, 0.925378, -0.15883, 0.0553663, 0.148868, 0.987306, 1.88659, 0.922642, -1.77671)
-material_override = SubResource("StandardMaterial3D_q3i1r")
+material_override = ExtResource("5_ayy1q")
 mesh = ExtResource("5_gto8s")
+skeleton = NodePath("../../..")
+
+[node name="1" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="Banana" type="MeshInstance3D" parent="Fruit/1"]
+transform = Transform3D(0.641187, 0.771917, 0, -0.631569, 0.783673, 0, 0, 0, 1.1, -2.49653, 2.8782, 0)
+material_override = SubResource("StandardMaterial3D_jeiii")
+mesh = ExtResource("6_hq1y4")
 skeleton = NodePath("../..")
 
-[connection signal="area_entered" from="Turnip/CollisionDetection" to="." method="_on_collision_detection_area_entered"]
+[node name="2" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="EggplantDown" type="MeshInstance3D" parent="Fruit/2"]
+transform = Transform3D(1.08479, 0.164079, 0, -0.18231, 0.976308, 0, 0, 0, 1.1, -1.07502, -1.21217, 0)
+material_override = SubResource("StandardMaterial3D_v2t2p")
+mesh = ExtResource("8_7gnjm")
+skeleton = NodePath("../..")
+
+[node name="EggplantUp" type="MeshInstance3D" parent="Fruit/2"]
+transform = Transform3D(1.08479, 0.164079, 0, -0.18231, 0.976308, 0, 0, 0, 1.1, -1.14797, -1.39691, 0)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("9_76d8y")
+skeleton = NodePath("../../..")
+
+[node name="3" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="ChillyDown" type="MeshInstance3D" parent="Fruit/3"]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, -0.901205, -2.76371, 1.26169)
+material_override = SubResource("StandardMaterial3D_cbw27")
+mesh = ExtResource("10_jnykl")
+skeleton = NodePath("../..")
+
+[node name="ChillyUp" type="MeshInstance3D" parent="Fruit/3"]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, -0.901205, -2.76371, 1.26169)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("11_ycsjt")
+skeleton = NodePath("../..")
+
+[connection signal="area_entered" from="Body/CollisionDetection" to="." method="_on_collision_detection_area_entered"]
