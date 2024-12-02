@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ce5txs3qq5dmu"
+path="res://.godot/imported/one_cherry_up.obj-f0efcba39dc903e10a60564ba02f2d2e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/one_cherry_up.obj-f0efcba39dc903e10a60564ba02f2d2e.mesh"]
+
+source_file="res://Assets/Fruits/one_cherry_up.obj"
+dest_files=["res://.godot/imported/one_cherry_up.obj-f0efcba39dc903e10a60564ba02f2d2e.mesh", "res://.godot/imported/one_cherry_up.obj-f0efcba39dc903e10a60564ba02f2d2e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

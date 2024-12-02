@@ -18,6 +18,12 @@ var floor_raycast : RayCast3D
 
 var respawn_timer : Timer
 var respawning : bool = false
+var smoke_particles : GPUParticles3D
+var smoke_timer : Timer
+var chilly_effect : bool = false
+const CHILLY_POWER : float = 1.5
+var fire_particles : GPUParticles3D
+var chilly_timer : Timer
 
 func _ready() -> void:
 	floor_raycast = $raycast_floor
@@ -30,6 +36,24 @@ func _ready() -> void:
 	respawn_timer.one_shot = true
 	respawn_timer.timeout.connect(_on_respawn_timeout)
 	add_child(respawn_timer)
+	
+	# set particles
+	smoke_particles = $SmokeParticles
+	smoke_particles.emitting = false
+	
+	smoke_timer = Timer.new()
+	smoke_timer.wait_time = 8.0
+	smoke_timer.one_shot = true
+	smoke_timer.timeout.connect(_on_smoke_timeout)
+	add_child(smoke_timer)
+	
+	fire_particles = $FireParticles
+	fire_particles.emitting = false
+	chilly_timer = Timer.new()
+	chilly_timer.wait_time = 6.0
+	chilly_timer.one_shot = true
+	chilly_timer.timeout.connect(_on_chilly_timeout)
+	add_child(chilly_timer)
 	pass
 	
 func _physics_process(delta: float) -> void:
@@ -44,6 +68,10 @@ func _physics_process(delta: float) -> void:
 	if abs(actual_speed - previous_speed) > 3.0:
 		print("big collision")
 		Input.vibrate_handheld(100)
+		
+		# activate smoke
+		smoke_particles.emitting = true
+		smoke_timer.start()
 		for joypad in Input.get_connected_joypads():
 			Input.start_joy_vibration(joypad, 0.0, 0.6, 0.1)
 	elif abs(actual_speed - previous_speed) > 1.0: # For softer bumps
@@ -59,8 +87,14 @@ func _physics_process(delta: float) -> void:
 			var surface_normal : Vector3 = floor_raycast.get_collision_normal()
 			apply_force(surface_normal * DOWN_FORCE, Vector3(0, 0, 0))
 	
+	
+	if chilly_effect:
+		if actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
+			engine_force = ENGINE_POWER * CHILLY_POWER * 4.0
+		else:
+			engine_force = ENGINE_POWER * CHILLY_POWER
 	# initial accel faster
-	if Input.is_action_pressed("ui_accel"):
+	elif Input.is_action_pressed("ui_accel"):
 		
 		#print(int(actual_speed)) #DEBUG
 		if actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
@@ -106,5 +140,22 @@ func respawn_car() -> void:
 func _on_respawn_timeout() -> void:
 	get_tree().paused = false
 
+func _on_smoke_timeout() -> void:
+	smoke_particles.emitting = false
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	var collider := area.get_parent().get_parent()
+	if collider.is_in_group("fruit"):
+		if collider.get_fruit() == 3: #CHANGE
+			activate_chilly()
+
+func activate_chilly() -> void:
+	fire_particles.emitting = true
+	chilly_effect = true
+	chilly_timer.start()
+
+func _on_chilly_timeout() -> void:
+	fire_particles.emitting = false
+	chilly_effect = false

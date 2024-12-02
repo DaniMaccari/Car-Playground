@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6emvqr8grvfe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ah3m"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_6sb70"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.163265, 0.340136, 0.744898)
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.831373, 0.0196078, 1, 1, 0.192157, 0.113725, 1, 0.572988, 0.572988, 0.572988, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_rww40"]
+gradient = SubResource("Gradient_6sb70")
+width = 100
+
+[sub_resource type="Curve" id="Curve_qvajs"]
+_data = [Vector2(0.00931676, 0.0314039), 0.0, 5.35345, 0, 0, Vector2(0.111801, 0.815887), 2.16185, 2.16185, 0, 0, Vector2(0.704969, 0.351601), -1.81947, -1.81947, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_0t2tb"]
+curve = SubResource("Curve_qvajs")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwmek"]
+lifetime_randomness = 0.3
+emission_shape = 3
+emission_box_extents = Vector3(1, 0, 0.5)
+direction = Vector3(0, 1, 0)
+spread = 5.0
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, -1, 0)
+scale_min = 0.5
+scale_max = 1.2
+scale_curve = SubResource("CurveTexture_0t2tb")
+color_ramp = SubResource("GradientTexture1D_rww40")
+turbulence_noise_strength = 0.2
+turbulence_noise_scale = 5.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqufg"]
+radial_segments = 10
+rings = 10
+
+[node name="FireParticles" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+layers = 16
+material_override = SubResource("StandardMaterial3D_6ah3m")
+amount = 15
+lifetime = 0.5
+randomness = 0.1
+process_material = SubResource("ParticleProcessMaterial_xwmek")
+draw_pass_1 = SubResource("SphereMesh_gqufg")

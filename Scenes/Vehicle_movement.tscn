@@ -1,15 +1,19 @@
-[gd_scene load_steps=18 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=20 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
 [ext_resource type="Texture2D" uid="uid://bdqtagqcmrma1" path="res://Assets/auto_racing_car/turnipCar2.tga" id="2_uuu66"]
 [ext_resource type="ArrayMesh" uid="uid://nf8dymeux4b4" path="res://Assets/auto_racing_car/orange/sportscar_orange.obj" id="3_xcat0"]
 [ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="4_nmhot"]
+[ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Prarticles.tscn" id="6_6ucmj"]
+[ext_resource type="PackedScene" uid="uid://c6emvqr8grvfe" path="res://Scenes/Particles/Fire_Prarticles.tscn" id="7_4i3ac"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_e3vso"]
-size = Vector3(2.23999, 1.96881, 3.67538)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yc58e"]
+radius = 1.0
+height = 4.3
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
+shading_mode = 2
 albedo_texture = ExtResource("2_uuu66")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv0xn"]
@@ -94,12 +98,10 @@ albedo_texture = ExtResource("2_uuu66")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3pjot"]
 albedo_texture = ExtResource("2_uuu66")
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r4qvl"]
-radius = 1.09148
-height = 3.9421
+[sub_resource type="BoxShape3D" id="BoxShape3D_ka46t"]
+size = Vector3(2, 3.7, 2)
 
 [node name="Body" type="VehicleBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.02243)
 top_level = true
 collision_layer = 2
 mass = 100.0
@@ -108,8 +110,8 @@ script = ExtResource("1_ijyx4")
 MAX_STEER = 0.6
 
 [node name="CollisionBox" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05948, 0.220596)
-shape = SubResource("BoxShape3D_e3vso")
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.19386, 0.220596)
+shape = SubResource("CapsuleShape3D_yc58e")
 
 [node name="sportsCar" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
@@ -209,4 +211,14 @@ debug_shape_thickness = 5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.872116, 0.207988)
-shape = SubResource("CapsuleShape3D_r4qvl")
+shape = SubResource("BoxShape3D_ka46t")
+
+[node name="SmokeParticles" parent="." instance=ExtResource("6_6ucmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 1.75)
+emitting = false
+
+[node name="FireParticles" parent="." instance=ExtResource("7_4i3ac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -1.5)
+emitting = false
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
