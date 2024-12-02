@@ -52,6 +52,8 @@ func check_heigth() -> void:
 			show()
 			print("colision detectada")
 	else:
+		position.z = 0
+		position.x = 0
 		print("no colision")
 	print("altura ", position.y)
 	

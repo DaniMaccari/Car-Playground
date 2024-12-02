@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://c6emvqr8grvfe" path="res://Scenes/Particles/Fire_Prarticles.tscn" id="7_4i3ac"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yc58e"]
-radius = 1.01043
-height = 4.29297
+radius = 1.0
+height = 4.3
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
 shading_mode = 2

@@ -50,7 +50,7 @@ func _ready() -> void:
 	fire_particles = $FireParticles
 	fire_particles.emitting = false
 	chilly_timer = Timer.new()
-	chilly_timer.wait_time = 10.0
+	chilly_timer.wait_time = 6.0
 	chilly_timer.one_shot = true
 	chilly_timer.timeout.connect(_on_chilly_timeout)
 	add_child(chilly_timer)

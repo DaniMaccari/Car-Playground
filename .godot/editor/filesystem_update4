@@ -9,3 +9,4 @@ res://Scenes/Particles/Fire_Prarticles.tscn
 res://Scenes/Particles/Smoke_Prarticles.tscn
 res://Scripts/collectable.gd
 res://Scripts/ui_scrip.gd
+res://Scripts/vehicle_movement.gd
