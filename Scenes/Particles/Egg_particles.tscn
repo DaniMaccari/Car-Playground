@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq42dh0g7yi4x"]
+
+[ext_resource type="Texture2D" uid="uid://3l0envjypycw" path="res://Assets/Images/Fried-Egg-PNG.png" id="1_nft1x"]
+
+[node name="Egg" type="Decal"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+size = Vector3(5, 7, 5)
+texture_albedo = ExtResource("1_nft1x")
+upper_fade = 0.01
+lower_fade = 0.01
+cull_mask = 1047553

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=24 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
+[ext_resource type="PackedScene" uid="uid://bq42dh0g7yi4x" path="res://Scenes/Particles/Egg_particles.tscn" id="17_gtcly"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -209,5 +210,8 @@ texture_under = ExtResource("9_h7shk")
 texture_progress = ExtResource("10_0hs6y")
 
 [node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]
+
+[node name="Egg" parent="." instance=ExtResource("17_gtcly")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.777669, -0.236333, 10.1133)
 
 [connection signal="catched_signal" from="PointsCounter" to="CollectSound" method="play_collect_sound"]
