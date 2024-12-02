@@ -26,7 +26,7 @@ func _ready() -> void:
 
 func select_fruit() -> void:
 	fruit_selected = randi_range(0, total_fruits)
-	#fruit_selected = 0
+	#fruit_selected = 3
 	$Fruit.get_child(fruit_selected).show()
 	pass
 	

@@ -39,6 +39,7 @@ func delay_ready() -> void:
 	timer.wait_time = 0.1
 	#timer.autostart = true
 	timer.one_shot = false
+	timer.process_mode = Node.PROCESS_MODE_ALWAYS
 	timer.timeout.connect(_on_timer_timeout)
 	add_child(timer)
 
