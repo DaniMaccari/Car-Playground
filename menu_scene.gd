@@ -21,6 +21,6 @@ func _ready() -> void:
 	start_tween = create_tween().set_loops()
 	start_tween.TRANS_ELASTIC
 	start_tween.tween_property(start_text, "modulate:a", 0.4, 1.5)
-	start_tween.tween_property(start_text, "modulate:a", 1.5, 3.0)
+	start_tween.tween_property(start_text, "modulate:a", 1.0, 2.5)
 	
 	

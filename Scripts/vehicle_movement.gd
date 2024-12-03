@@ -26,6 +26,7 @@ var fire_particles : GPUParticles3D
 var chilly_timer : Timer
 
 func _ready() -> void:
+	
 	floor_raycast = $raycast_floor
 	floor_raycast.enabled = true
 	

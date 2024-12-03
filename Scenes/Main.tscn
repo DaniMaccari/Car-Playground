@@ -37,6 +37,7 @@ albedo_texture = ExtResource("6_lfaja")
 [sub_resource type="PlaneMesh" id="PlaneMesh_uq350"]
 
 [node name="Node3D" type="Node3D"]
+process_mode = 3
 script = ExtResource("1_sbpb4")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -71,6 +72,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
 [node name="Road" type="Node3D" parent="."]
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
+process_mode = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38419e-07, -1.80438, -5.51343e-07)
 MAX_STEER = 0.45
 
@@ -96,6 +98,7 @@ transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 
 transform = Transform3D(30, 0, -1.13687e-13, 0, 30, 0, 1.13687e-13, 0, 30, -1.62, -4, -6.25849e-07)
 
 [node name="PointsCounter" type="Node3D" parent="."]
+process_mode = 1
 script = ExtResource("5_lcgfw")
 collectable_scene = ExtResource("2_1pi0d")
 
@@ -137,6 +140,7 @@ transform = Transform3D(0.286625, 0, -0.958043, 0, 1, 0, 0.958043, 0, 0.286625, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6662, 0.38375, 19.7764)
 
 [node name="ingame_UI" type="Control" parent="."]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -209,7 +213,18 @@ radial_initial_angle = 305.0
 texture_under = ExtResource("9_h7shk")
 texture_progress = ExtResource("10_0hs6y")
 
+[node name="Flash" type="ColorRect" parent="ingame_UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.938449, 0.93845, 0.93845, 1)
+
 [node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]
+process_mode = 3
 
 [node name="Egg" parent="." instance=ExtResource("17_gtcly")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.777669, -0.236333, 10.1133)

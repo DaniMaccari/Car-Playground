@@ -15,7 +15,7 @@ func spawn_collectable() -> void:
 	
 	var collectable_actual := collectable_scene.instantiate()
 	
-	get_parent().add_child(collectable_actual)
+	self.add_child(collectable_actual)
 	collectable_actual.start_position(max_z, max_x)
 	collectable_actual.collided.connect(_on_collectable_collided)
 
