@@ -8,7 +8,7 @@ var game_time : int
 var timer : Timer
 var init_timer : Timer
 var init_timeout : int = 1
-const MAX_TIME : int = 60
+const MAX_TIME : int = 360
 var flash_tween : Tween
 
 @onready var points_label := $PointsLabel
@@ -18,9 +18,10 @@ var flash_tween : Tween
 # Called when the node enters the scene tree for the first time.
 func delay_ready() -> void:
 	show()
+	game_points = 0
+	game_time = MAX_TIME
 	
 	# set start timer
-	$EndPointsLabel.visible = false
 	init_timer = Timer.new()
 	init_timer.process_mode = Node.PROCESS_MODE_ALWAYS
 	init_timer.wait_time = 0.6
@@ -72,7 +73,7 @@ func start_ui() -> void:
 	timer.start()
 
 func stop_ui() -> void:
-	
+
 	get_tree().paused = true
 	timer.stop()
 	
@@ -82,15 +83,8 @@ func stop_ui() -> void:
 	
 	emit_signal("end_signal")
 	
-	$StartLabel.clear()
-	$StartLabel.append_text("[center]STOP")
-	$EndPointsLabel.clear()
-	$EndPointsLabel.append_text("[center]%03d points" % game_points)
-	$EndPointsLabel.visible = true
-	
 	points_label.visible = false
 	timer_label.visible = false
-	pass
 
 func flash_effect() -> void:
 	print(flash)
@@ -109,3 +103,6 @@ func add_point() -> void:
 	timer_label.value = game_time
 	points_label.clear()
 	points_label.append_text( "%03d" % game_points)
+	
+func get_score() -> int:
+	return game_points

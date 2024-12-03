@@ -1,11 +1,13 @@
 res://Scenes/Main.tscn
 res://Materials/green_object.tres
-res://Scripts/ui_scrip.gd
+res://Scripts/main.gd
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
 res://Scenes/menu_scene.tscn
 res://Scenes/Particles/Egg_particles.tscn
-res://Scripts/main.gd
-res://menu_scene.gd
-res://Scripts/vehicle_movement.gd
+res://Scripts/ui_scrip.gd
+res://Scripts/ui_end.gd
 res://Scripts/points_counter.gd
+res://Scripts/vehicle_movement.gd
+res://Scripts/menu_script.gd
+res://Scenes/end_scene.tscn

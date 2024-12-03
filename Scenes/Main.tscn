@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=25 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="8_yu54q"]
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
+[ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
 [ext_resource type="PackedScene" uid="uid://bq42dh0g7yi4x" path="res://Scenes/Particles/Egg_particles.tscn" id="17_gtcly"]
 
@@ -139,6 +140,8 @@ transform = Transform3D(0.286625, 0, -0.958043, 0, 1, 0, 0.958043, 0, 0.286625, 
 [node name="tree_pine3" parent="." instance=ExtResource("8_7auv0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6662, 0.38375, 19.7764)
 
+[node name="end_UI" parent="." instance=ExtResource("12_22y6m")]
+
 [node name="ingame_UI" type="Control" parent="."]
 process_mode = 3
 layout_mode = 3
@@ -166,25 +169,6 @@ theme_override_fonts/normal_font = ExtResource("8_yu54q")
 theme_override_font_sizes/normal_font_size = 150
 bbcode_enabled = true
 text = "[center]READY"
-fit_content = true
-
-[node name="EndPointsLabel" type="RichTextLabel" parent="ingame_UI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -255.0
-offset_top = 77.0
-offset_right = 255.0
-offset_bottom = 163.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/normal_font = ExtResource("8_yu54q")
-theme_override_font_sizes/normal_font_size = 50
-bbcode_enabled = true
-text = "[center]points 100"
 fit_content = true
 
 [node name="PointsLabel" type="RichTextLabel" parent="ingame_UI"]
@@ -225,6 +209,7 @@ color = Color(0.938449, 0.93845, 0.93845, 1)
 
 [node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]
 process_mode = 3
+visible = false
 
 [node name="Egg" parent="." instance=ExtResource("17_gtcly")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.777669, -0.236333, 10.1133)

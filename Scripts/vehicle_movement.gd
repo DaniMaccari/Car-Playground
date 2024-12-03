@@ -130,9 +130,17 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_respawn"):
 		respawn_car()
 
+func spawn_car() -> void:
+	show()
+	transform.origin = Vector3(0, -0.2, 0)
+	transform.basis = Basis()
+	previous_speed = 0.0
+	linear_velocity = Vector3.ZERO
+	angular_velocity = Vector3.ZERO
+
 func respawn_car() -> void:
 	print("respawn")
-	transform.origin = Vector3.ZERO
+	transform.origin = Vector3(0, -0.2, 0)
 	transform.basis = Basis()
 	previous_speed = 0.0
 	respawn_timer.start()

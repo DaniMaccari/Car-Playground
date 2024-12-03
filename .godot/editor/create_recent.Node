@@ -1,10 +1,11 @@
+Sprite2D
 ColorRect
+Control
 Decal
 Node3D
 GPUParticles3D
 MeshInstance3D
 CPUParticles3D
-Control
 CenterContainer
 RichTextLabel
 Timer
@@ -12,4 +13,3 @@ TextureProgressBar
 SubViewport
 SubViewportContainer
 StaticBody3D
-CollisionShape3D

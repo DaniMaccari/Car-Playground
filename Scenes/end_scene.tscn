@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6as1rcvvwj4y"]
+
+[ext_resource type="Script" path="res://Scripts/ui_end.gd" id="1_lmje2"]
+[ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="2_vuup4"]
+[ext_resource type="Texture2D" uid="uid://dcnwbm678aqfi" path="res://Assets/Images/endPhoto.png" id="3_musp7"]
+
+[node name="end_UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lmje2")
+
+[node name="endText" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="YourScoreText" type="RichTextLabel" parent="endText"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 106.0
+offset_top = -266.0
+offset_right = 106.0
+offset_bottom = -238.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_vuup4")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[center]your score"
+fit_content = true
+
+[node name="FinalScore" type="RichTextLabel" parent="endText"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 106.0
+offset_top = -232.0
+offset_right = 106.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_vuup4")
+theme_override_font_sizes/normal_font_size = 140
+bbcode_enabled = true
+text = "[center]000"
+fit_content = true
+
+[node name="MaxScoreText" type="RichTextLabel" parent="endText"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 106.0
+offset_top = -89.0
+offset_right = 106.0
+offset_bottom = -61.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_vuup4")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[center]your max 000"
+fit_content = true
+
+[node name="StartLabel" type="RichTextLabel" parent="endText"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 7.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_vuup4")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[center]press any button to restart"
+fit_content = true
+
+[node name="endPhoto" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="endPhoto"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 37.0
+offset_right = 334.0
+offset_bottom = 272.0
+rotation = -0.0531185
+color = Color(0.980392, 0.980392, 0.980392, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="endPhoto/ColorRect"]
+position = Vector2(103.016, 96.6057)
+scale = Vector2(0.694706, 0.694706)
+texture = ExtResource("3_musp7")

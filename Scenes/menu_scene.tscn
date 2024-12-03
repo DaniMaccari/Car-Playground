@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://l7rd14u5o0hj"]
 
-[ext_resource type="Script" path="res://menu_scene.gd" id="1_bba2d"]
+[ext_resource type="Script" path="res://Scripts/menu_script.gd" id="1_bba2d"]
 [ext_resource type="Texture2D" uid="uid://28xcmg12g74q" path="res://letterIcon_FruitRush2.png" id="2_4knmb"]
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="2_tdyvm"]
 

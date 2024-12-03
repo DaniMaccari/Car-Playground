@@ -12,27 +12,33 @@ const  INGAME_CAM_SIZE : int = 58
 @onready var menu_ui := $menu_UI
 @onready var points_manager := $PointsCounter
 @onready var ui_manager := $ingame_UI
+@onready var ui_end := $end_UI
 
 @onready var water_position := $WaterMesh
 
 func _ready() -> void:
 	
 	print("ready game")
-	menu_ui.visible = true
-	ui_manager.visible = false
+	menu_ui.show()
+	ui_manager.hide()
+	ui_end.hide()
 	camera.rotation_degrees = MENU_CAM_DEG
 	$VehicleBody3D.visible = false
 	points_manager.catched_signal.connect(ui_manager.add_point)
 	ui_manager.start_signal.connect(start_game)
 	ui_manager.end_signal.connect(end_game)
 
-func start_game() -> void:	
+func start_game() -> void:
 	get_tree().paused = false
-	$VehicleBody3D.visible = true
+	
 	points_manager.spawn_collectable()
 
 func menu_to_game() -> void:
+	ui_end.change_scene()
 	menu_ui.change_scene()
+	
+	$VehicleBody3D.spawn_car()
+	points_manager.clear_collectable()
 	camera_transition()
 	$WaterMesh.show()
 
@@ -60,11 +66,14 @@ func end_game() -> void:
 	camera.rotation_degrees = MENU_CAM_DEG
 	camera.size = MENU_CAM_SIZE
 	
-	await get_tree().create_timer(1.0).timeout
+	ui_end.set_score(ui_manager.get_score())
+	
+	await get_tree().create_timer(1.5).timeout
 	game_started = false
 
 func _input(event: InputEvent) -> void:
 	if !game_started && event is InputEventKey:
+		ui_manager.hide()
 		game_started = true
 		menu_to_game()
 		

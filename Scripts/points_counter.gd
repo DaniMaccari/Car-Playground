@@ -23,5 +23,8 @@ func _on_collectable_collided() -> void:
 	emit_signal("catched_signal")
 	spawn_collectable()
 	pass
-	
-	
+
+func clear_collectable() -> void:
+	for child in get_children():
+		if child.is_in_group("fruit"):
+			child.queue_free()
