@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://blpa163xfnarp"]
+
+[ext_resource type="ArrayMesh" uid="uid://0hlrf7itsqgo" path="res://Assets/Models/Traffic_Cone.obj" id="1_lmyid"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4csnl"]
+albedo_color = Color(0.945098, 0.427451, 0.243137, 1)
+roughness = 0.4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r8adm"]
+size = Vector3(1.8, 2.3, 1.8)
+
+[node name="Cone" type="RigidBody3D"]
+collision_layer = 2
+collision_mask = 3
+mass = 2.0
+
+[node name="Traffic Cone_001" type="MeshInstance3D" parent="."]
+layers = 2
+material_override = SubResource("StandardMaterial3D_4csnl")
+mesh = ExtResource("1_lmyid")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+shape = SubResource("BoxShape3D_r8adm")

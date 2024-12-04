@@ -8,9 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Prarticles.tscn" id="6_6ucmj"]
 [ext_resource type="PackedScene" uid="uid://c6emvqr8grvfe" path="res://Scenes/Particles/Fire_Prarticles.tscn" id="7_4i3ac"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yc58e"]
-radius = 1.0
-height = 4.3
+[sub_resource type="BoxShape3D" id="BoxShape3D_3cq40"]
+size = Vector3(2, 3.7, 2)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
 shading_mode = 2
@@ -111,7 +110,7 @@ MAX_STEER = 0.6
 
 [node name="CollisionBox" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.19386, 0.220596)
-shape = SubResource("CapsuleShape3D_yc58e")
+shape = SubResource("BoxShape3D_3cq40")
 
 [node name="sportsCar" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)

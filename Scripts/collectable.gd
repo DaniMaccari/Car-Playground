@@ -13,8 +13,6 @@ var fruit_selected : int
 const CHILLY_NUM : int = 3
 
 func _ready() -> void:
-	select_fruit()
-	
 	hide()
 	raycast = $RayCast_Distance
 	raycast.enabled = true
@@ -24,8 +22,15 @@ func _ready() -> void:
 	tween.TRANS_LINEAR
 	tween.tween_property(model, "rotation_degrees", Vector3(0, 360, 0), 3.0).as_relative()
 
-func select_fruit() -> void:
-	fruit_selected = randi_range(0, total_fruits)
+func select_fruit(fruit_num : int) -> void:
+	var max_fruit : int
+	if (fruit_num / 10) >= total_fruits:
+		max_fruit = total_fruits
+	else:
+		fruit_num / 10
+	
+	fruit_selected = randi_range(0, max_fruit)
+	#fruit_selected = randi_range(0, total_fruits)
 	#fruit_selected = 3
 	$Fruit.get_child(fruit_selected).show()
 	pass

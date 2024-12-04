@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
 [ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
-[ext_resource type="PackedScene" uid="uid://bq42dh0g7yi4x" path="res://Scenes/Particles/Egg_particles.tscn" id="17_gtcly"]
+[ext_resource type="PackedScene" uid="uid://blpa163xfnarp" path="res://Scenes/Particles/Cone.tscn" id="18_1fmbb"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -211,7 +211,10 @@ color = Color(0.938449, 0.93845, 0.93845, 1)
 process_mode = 3
 visible = false
 
-[node name="Egg" parent="." instance=ExtResource("17_gtcly")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.777669, -0.236333, 10.1133)
+[node name="Cone" parent="." instance=ExtResource("18_1fmbb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7863, -2.53674, 0.436073)
+
+[node name="Cone2" parent="." instance=ExtResource("18_1fmbb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5123, -1.69034, 20.895)
 
 [connection signal="catched_signal" from="PointsCounter" to="CollectSound" method="play_collect_sound"]

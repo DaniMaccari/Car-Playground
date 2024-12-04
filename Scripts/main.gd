@@ -30,14 +30,13 @@ func _ready() -> void:
 
 func start_game() -> void:
 	get_tree().paused = false
-	
+	$VehicleBody3D.spawn_car()
 	points_manager.spawn_collectable()
 
 func menu_to_game() -> void:
 	ui_end.change_scene()
 	menu_ui.change_scene()
 	
-	$VehicleBody3D.spawn_car()
 	points_manager.clear_collectable()
 	camera_transition()
 	$WaterMesh.show()
