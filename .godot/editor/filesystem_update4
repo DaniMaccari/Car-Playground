@@ -8,3 +8,5 @@ res://Scenes/Particles/Egg_particles.tscn
 res://Scenes/end_scene.tscn
 res://Scenes/tree_test.tscn
 res://Scripts/ui_scrip.gd
+res://Scripts/collectable.gd
+res://Scripts/Sound/engine.sound.gd
