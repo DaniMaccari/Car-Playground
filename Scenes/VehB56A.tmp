@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bb87ii470kyi2" path="res://Assets/shadow.png" id="4_nmhot"]
 [ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Particles.tscn" id="6_6ucmj"]
 [ext_resource type="PackedScene" uid="uid://c6emvqr8grvfe" path="res://Scenes/Particles/Fire_Particles.tscn" id="7_4i3ac"]
-[ext_resource type="PackedScene" uid="uid://dbqov2ebodyr1" path="res://Scenes/Particles/Drift_Particles.tscn" id="8_vxjjv"]
+[ext_resource type="PackedScene" uid="uid://klx1hx8ejiqe" path="res://Scenes/Particles/Drift_Effect.tscn" id="8_nrfmm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3cq40"]
 size = Vector3(2, 3.7, 2)
@@ -268,14 +268,8 @@ wait_time = 2.0
 [node name="banana_timer" type="Timer" parent="."]
 wait_time = 6.0
 
-[node name="Drift" type="Node3D" parent="."]
+[node name="Drift_Effect" parent="." instance=ExtResource("8_nrfmm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
-
-[node name="DriftParticlesL" parent="Drift" instance=ExtResource("8_vxjjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0)
-
-[node name="DriftParticlesR" parent="Drift" instance=ExtResource("8_vxjjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0, 0)
 
 [connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
 [connection signal="timeout" from="carrot_timer" to="." method="_on_timer_carrot_timeout"]

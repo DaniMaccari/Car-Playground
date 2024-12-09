@@ -1,14 +1,14 @@
+Node3D
+Timer
 RigidBody3D
 CollisionShape3D
 Sprite2D
 ColorRect
 Control
 Decal
-Node3D
 GPUParticles3D
 MeshInstance3D
 CPUParticles3D
 CenterContainer
 RichTextLabel
-Timer
 TextureProgressBar

@@ -12,7 +12,8 @@ size = Vector3(1.8, 2.3, 1.8)
 [node name="Cone" type="RigidBody3D"]
 collision_layer = 2
 collision_mask = 3
-mass = 1.5
+mass = 5.0
+gravity_scale = 2.0
 
 [node name="Traffic Cone_001" type="MeshInstance3D" parent="."]
 layers = 2

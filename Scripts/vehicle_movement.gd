@@ -20,10 +20,18 @@ var respawn_timer : Timer
 var respawning : bool = false
 var smoke_particles : GPUParticles3D
 var smoke_timer : Timer
+
+# chilly
 var chilly_effect : bool = false
 const CHILLY_POWER : float = 1.5
 var fire_particles : GPUParticles3D
 var chilly_timer : Timer
+# carrot
+var carrot_counter : int = 0
+var carrot_timer : Timer
+var carrot_jumps : int = 4
+# banana
+var banana_effect : int = 1
 
 func _ready() -> void:
 	
@@ -55,6 +63,8 @@ func _ready() -> void:
 	chilly_timer.one_shot = true
 	chilly_timer.timeout.connect(_on_chilly_timeout)
 	add_child(chilly_timer)
+	
+	carrot_timer = $carrot_timer
 	pass
 	
 func _physics_process(delta: float) -> void:
@@ -66,7 +76,8 @@ func _physics_process(delta: float) -> void:
 	var direction := global_transform.basis.z.dot(linear_velocity.normalized())
 	
 	# drastic speed change -> collision
-	if abs(actual_speed - previous_speed) > 3.0:
+	var speed_change := actual_speed - previous_speed
+	if abs(speed_change) > 5.0:
 		print("big collision")
 		Input.vibrate_handheld(100)
 		
@@ -75,7 +86,7 @@ func _physics_process(delta: float) -> void:
 		smoke_timer.start()
 		for joypad in Input.get_connected_joypads():
 			Input.start_joy_vibration(joypad, 0.0, 0.6, 0.1)
-	elif abs(actual_speed - previous_speed) > 1.0: # For softer bumps
+	elif abs(speed_change) > 1.0: # For softer bumps
 		print("small collision")
 		for joypad in Input.get_connected_joypads():
 			Input.start_joy_vibration(joypad, 0.5, 0.0, 0.1)
@@ -117,8 +128,15 @@ func _physics_process(delta: float) -> void:
 	else:
 		engine_force = 0.0
 
-	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 10)
-	
+	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER * banana_effect, delta * 10)
+	# tocando suelo
+	if actual_speed > 14.0 && $WheelBackLeft.is_in_contact() && $WheelBackRight.is_in_contact() && abs(Input.get_axis("ui_right", "ui_left")) > 0.5:
+		$Drift/DriftParticlesL.emitting = true
+		$Drift/DriftParticlesR.emitting = true
+	else:
+		$Drift/DriftParticlesL.emitting = false
+		$Drift/DriftParticlesR.emitting = false
+	print(actual_speed)
 	#print("direction", direction)
 	previous_speed = actual_speed
 	
@@ -159,6 +177,18 @@ func _on_smoke_timeout() -> void:
 	#if collider.is_in_group("fruit"):
 		#if collider.get_fruit() == 3: #CHANGE
 			#activate_chilly()
+func activate_carrot() -> void:
+	carrot_counter = carrot_jumps
+	carrot_timer.start()
+	
+func _on_timer_carrot_timeout() -> void:
+	carrot_counter -= 1
+	floor_raycast.enabled = false
+	apply_impulse(Vector3(0, 700, 0), Vector3.ZERO)
+	floor_raycast.enabled = true
+	
+	if carrot_counter <= 0:
+		carrot_timer.stop()
 
 func activate_chilly() -> void:
 	fire_particles.emitting = true
@@ -168,3 +198,9 @@ func activate_chilly() -> void:
 func _on_chilly_timeout() -> void:
 	fire_particles.emitting = false
 	chilly_effect = false
+
+func activate_banana() -> void:
+	banana_effect = -1
+
+func _on_banana_timer_timeout() -> void:
+	banana_effect = 1

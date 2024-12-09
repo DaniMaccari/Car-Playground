@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
 [ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
-[ext_resource type="PackedScene" uid="uid://blpa163xfnarp" path="res://Scenes/Particles/Cone.tscn" id="18_1fmbb"]
+[ext_resource type="PackedScene" uid="uid://blpa163xfnarp" path="res://Scenes/Particles/Cone.tscn" id="18_ib4xd"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -211,10 +211,7 @@ color = Color(0.938449, 0.93845, 0.93845, 1)
 process_mode = 3
 visible = false
 
-[node name="Cone" parent="." instance=ExtResource("18_1fmbb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1174, -1.56472, -16.654)
-
-[node name="Cone2" parent="." instance=ExtResource("18_1fmbb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5123, -1.69034, 20.895)
+[node name="Cone" parent="." instance=ExtResource("18_ib4xd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3, 4, -15.57)
 
 [connection signal="catched_signal" from="PointsCounter" to="CollectSound" method="play_collect_sound"]

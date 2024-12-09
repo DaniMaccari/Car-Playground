@@ -7,6 +7,7 @@ const MENU_CAM_DEG : Vector3 = Vector3(-15, 0, 0)
 const INGAME_CAM_DEG : Vector3 = Vector3(-44, 0, 0)
 const MENU_CAM_SIZE : int = 43
 const  INGAME_CAM_SIZE : int = 58
+@onready var car_player : VehicleBody3D = $VehicleBody3D
 @onready var camera : Camera3D = $Camera3D
 
 @onready var menu_ui := $menu_UI
@@ -23,7 +24,7 @@ func _ready() -> void:
 	ui_manager.hide()
 	ui_end.hide()
 	camera.rotation_degrees = MENU_CAM_DEG
-	$VehicleBody3D.visible = false
+	car_player.visible = false
 	points_manager.catched_signal.connect(ui_manager.add_point)
 	points_manager.activate_fruit.connect(fruit_effect)
 	ui_manager.start_signal.connect(start_game)
@@ -31,7 +32,7 @@ func _ready() -> void:
 
 func start_game() -> void:
 	get_tree().paused = false
-	$VehicleBody3D.spawn_car()
+	car_player.spawn_car()
 	points_manager.spawn_collectable()
 
 func menu_to_game() -> void:
@@ -77,6 +78,16 @@ func _input(event: InputEvent) -> void:
 		game_started = true
 		menu_to_game()
 		
-func fruit_effect(num_fruit : int) -> void:
-	print(num_fruit)
-	pass
+func fruit_effect(num_fruit : int, pos : Vector3) -> void:
+	match num_fruit:
+		0,1,2:
+			print(num_fruit)
+		3:
+			points_manager.spawn_cone(pos)
+		4:
+			car_player.activate_chilly()
+		5:
+			car_player.activate_carrot()
+		6:
+			car_player.activate_banana()
+	

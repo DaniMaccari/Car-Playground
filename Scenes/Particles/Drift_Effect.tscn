@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://klx1hx8ejiqe"]
+
+[ext_resource type="PackedScene" uid="uid://dbqov2ebodyr1" path="res://Scenes/Particles/Drift_Particles.tscn" id="1_hcwri"]
+
+[node name="Drift_Effect" type="Node3D"]
+
+[node name="DriftParticlesR" parent="." instance=ExtResource("1_hcwri")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0)
+
+[node name="DriftParticlesL" parent="." instance=ExtResource("1_hcwri")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0, 0)

@@ -2,6 +2,7 @@ extends Node3D
 
 signal collided
 
+var rng : RandomNumberGenerator
 var raycast : RayCast3D 
 var is_positioned : bool = false
 var object_heigth : float = 2.3
@@ -21,6 +22,8 @@ func _ready() -> void:
 	tween = create_tween().set_loops()
 	tween.TRANS_LINEAR
 	tween.tween_property(model, "rotation_degrees", Vector3(0, 360, 0), 3.0).as_relative()
+	rng = RandomNumberGenerator.new()
+	rng.randomize()
 
 func select_fruit(fruit_num : int) -> void:
 	var max_fruit : int
@@ -31,13 +34,13 @@ func select_fruit(fruit_num : int) -> void:
 	
 	fruit_selected = randi_range(0, max_fruit)
 	#fruit_selected = randi_range(0, total_fruits)
-	#fruit_selected = 3
+	#fruit_selected = 5
 	$Fruit.get_child(fruit_selected).show()
 	pass
 	
 func start_position(max_z : float, max_x : float) -> void:
-	position.z = randf_range(max_z, -max_z)
-	position.x = randf_range(max_x, -max_x)
+	position.z = rng.randf_range(max_z, -max_z)
+	position.x = rng.randf_range(max_x, -max_x)
 		
 	
 func _process(delta: float) -> void:
@@ -60,11 +63,11 @@ func check_heigth() -> void:
 		position.z = 0
 		position.x = 0
 		print("no colision")
-	print("altura ", position.y)
+	print("posicion ", position)
 	
 
 func _on_collision_detection_area_entered(area: Area3D) -> void:
-	emit_signal("collided", get_fruit())
+	emit_signal("collided", get_fruit(), global_position)
 	queue_free()
 
 func get_fruit() -> int:
