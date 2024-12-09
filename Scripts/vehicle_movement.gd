@@ -154,11 +154,11 @@ func _on_smoke_timeout() -> void:
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index
 
-func _on_area_3d_area_entered(area: Area3D) -> void:
-	var collider := area.get_parent().get_parent()
-	if collider.is_in_group("fruit"):
-		if collider.get_fruit() == 3: #CHANGE
-			activate_chilly()
+#func _on_area_3d_area_entered(area: Area3D) -> void:
+	#var collider := area.get_parent().get_parent()
+	#if collider.is_in_group("fruit"):
+		#if collider.get_fruit() == 3: #CHANGE
+			#activate_chilly()
 
 func activate_chilly() -> void:
 	fire_particles.emitting = true

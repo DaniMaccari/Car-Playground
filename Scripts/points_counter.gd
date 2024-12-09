@@ -1,6 +1,7 @@
 extends Node3D
 
 signal catched_signal
+signal activate_fruit
 
 @export var collectable_scene : PackedScene
 var max_z : int
@@ -20,7 +21,8 @@ func spawn_collectable() -> void:
 	collectable_actual.start_position(max_z, max_x)
 	collectable_actual.collided.connect(_on_collectable_collided)
 
-func _on_collectable_collided() -> void:
+func _on_collectable_collided(num_fruit: int) -> void:
+	emit_signal("activate_fruit", num_fruit)
 	emit_signal("catched_signal")
 	spawn_collectable()
 	pass

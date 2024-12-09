@@ -64,7 +64,7 @@ func check_heigth() -> void:
 	
 
 func _on_collision_detection_area_entered(area: Area3D) -> void:
-	emit_signal("collided")
+	emit_signal("collided", get_fruit())
 	queue_free()
 
 func get_fruit() -> int:

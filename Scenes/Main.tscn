@@ -212,7 +212,7 @@ process_mode = 3
 visible = false
 
 [node name="Cone" parent="." instance=ExtResource("18_1fmbb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7863, -2.53674, 0.436073)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1174, -1.56472, -16.654)
 
 [node name="Cone2" parent="." instance=ExtResource("18_1fmbb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5123, -1.69034, 20.895)

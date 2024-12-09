@@ -1,12 +1,12 @@
-res://Materials/green_object.tres
 res://Scenes/Particles/Cone.tscn
+res://Materials/green_object.tres
 res://Scenes/Main.tscn
-res://Scenes/Vehicle_movement.tscn
 res://Scenes/Collectable_object.tscn
 res://Scenes/menu_scene.tscn
 res://Scenes/Particles/Egg_particles.tscn
 res://Scenes/end_scene.tscn
-res://Scenes/tree_test.tscn
-res://Scripts/ui_scrip.gd
 res://Scripts/collectable.gd
+res://Scripts/points_counter.gd
+res://Scripts/vehicle_movement.gd
+res://Scripts/main.gd
 res://Scripts/Sound/engine.sound.gd

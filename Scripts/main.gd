@@ -25,6 +25,7 @@ func _ready() -> void:
 	camera.rotation_degrees = MENU_CAM_DEG
 	$VehicleBody3D.visible = false
 	points_manager.catched_signal.connect(ui_manager.add_point)
+	points_manager.activate_fruit.connect(fruit_effect)
 	ui_manager.start_signal.connect(start_game)
 	ui_manager.end_signal.connect(end_game)
 
@@ -76,3 +77,6 @@ func _input(event: InputEvent) -> void:
 		game_started = true
 		menu_to_game()
 		
+func fruit_effect(num_fruit : int) -> void:
+	print(num_fruit)
+	pass

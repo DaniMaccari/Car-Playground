@@ -46,7 +46,7 @@ func _get_speed_value(delta: float) -> void:
 		speed_lerper -= delta
 	
 	speed_lerper = clamp(abs(speed_lerper), -1, 1)
-	print(speed_lerper)
+	#print(speed_lerper)
 	car_speed = speed_lerper
 
 func update_engine_streams() -> void:

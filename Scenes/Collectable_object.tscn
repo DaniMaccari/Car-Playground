@@ -62,17 +62,20 @@ radius = 1.84236
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w631k"]
 shading_mode = 2
-vertex_color_use_as_albedo = true
-albedo_color = Color(1, 0.258824, 0.454902, 1)
+albedo_color = Color(1, 0.258824, 0.592157, 1)
+roughness = 0.8
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jeiii"]
 albedo_color = Color(0.945098, 0.686275, 0, 1)
+roughness = 0.8
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
 albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
+roughness = 0.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbw27"]
 albedo_color = Color(1, 0.184314, 0.333333, 1)
+roughness = 0.8
 
 [node name="CollectableObject" type="Node3D" groups=["fruit"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
