@@ -136,7 +136,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		$Drift/DriftParticlesL.emitting = false
 		$Drift/DriftParticlesR.emitting = false
-	print(actual_speed)
+	#print(actual_speed)
 	#print("direction", direction)
 	previous_speed = actual_speed
 	
@@ -178,6 +178,7 @@ func _on_smoke_timeout() -> void:
 		#if collider.get_fruit() == 3: #CHANGE
 			#activate_chilly()
 func activate_carrot() -> void:
+	$Ears.show()
 	carrot_counter = carrot_jumps
 	carrot_timer.start()
 	
@@ -189,6 +190,7 @@ func _on_timer_carrot_timeout() -> void:
 	
 	if carrot_counter <= 0:
 		carrot_timer.stop()
+		$Ears.hide()
 
 func activate_chilly() -> void:
 	fire_particles.emitting = true

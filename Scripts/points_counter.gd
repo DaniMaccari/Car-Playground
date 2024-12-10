@@ -4,6 +4,7 @@ signal catched_signal
 signal activate_fruit
 
 @export var collectable_scene : PackedScene
+@export var points_manager : Control
 var max_z : int
 var max_x : int
 
@@ -20,7 +21,7 @@ func spawn_collectable() -> void:
 	await get_tree().create_timer(0.2).timeout
 	
 	var collectable_actual := collectable_scene.instantiate()
-	collectable_actual.select_fruit(100) #DEBUG
+	collectable_actual.select_fruit(points_manager.get_score()) #DEBUG
 	
 	self.add_child(collectable_actual)
 	collectable_actual.start_position(max_z, max_x)

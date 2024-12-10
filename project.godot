@@ -29,6 +29,7 @@ window/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)
 
 floor="the vehicle should ride above"
 fruit=""
+prop=""
 
 [input]
 

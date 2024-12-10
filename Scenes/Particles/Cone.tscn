@@ -9,7 +9,7 @@ roughness = 0.3
 [sub_resource type="BoxShape3D" id="BoxShape3D_r8adm"]
 size = Vector3(1.8, 2.3, 1.8)
 
-[node name="Cone" type="RigidBody3D"]
+[node name="Cone" type="RigidBody3D" groups=["prop"]]
 collision_layer = 2
 collision_mask = 3
 mass = 5.0

@@ -80,13 +80,13 @@ func _input(event: InputEvent) -> void:
 		
 func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 	match num_fruit:
-		0,1,2:
+		0,2:
 			print(num_fruit)
-		3:
+		5:
 			points_manager.spawn_cone(pos)
 		4:
 			car_player.activate_chilly()
-		5:
+		1:
 			car_player.activate_carrot()
 		6:
 			car_player.activate_banana()

@@ -26,11 +26,13 @@ func _ready() -> void:
 	rng.randomize()
 
 func select_fruit(fruit_num : int) -> void:
-	var max_fruit : int
-	if (fruit_num / 10) >= total_fruits:
+	var max_fruit : int = fruit_num / 10
+	print(max_fruit)
+	
+	if max_fruit >= total_fruits:
 		max_fruit = total_fruits
-	else:
-		fruit_num / 10
+	
+	
 	
 	fruit_selected = randi_range(0, max_fruit)
 	#fruit_selected = randi_range(0, total_fruits)

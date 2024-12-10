@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=30 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://c3mfsr6utvnq8" path="res://Scenes/Particles/Smoke_Particles.tscn" id="6_6ucmj"]
 [ext_resource type="PackedScene" uid="uid://c6emvqr8grvfe" path="res://Scenes/Particles/Fire_Particles.tscn" id="7_4i3ac"]
 [ext_resource type="PackedScene" uid="uid://dbqov2ebodyr1" path="res://Scenes/Particles/Drift_Particles.tscn" id="8_vxjjv"]
+[ext_resource type="ArrayMesh" uid="uid://b5mcm1hegysvb" path="res://Assets/Models/Bunny_Ears_1.obj" id="9_np0y6"]
+[ext_resource type="ArrayMesh" uid="uid://8q4r208dmcae" path="res://Assets/Models/Bunny_Ears_2.obj" id="10_b4c84"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3cq40"]
 size = Vector3(2, 3.7, 2)
@@ -136,6 +138,16 @@ turbulence_noise_scale = 5.0
 [sub_resource type="SphereMesh" id="SphereMesh_gqufg"]
 radial_segments = 10
 rings = 10
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2fc6n"]
+shading_mode = 2
+albedo_color = Color(0.937255, 0.866667, 0.886275, 1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6r35"]
+shading_mode = 2
+albedo_color = Color(1, 0.505882, 0.988235, 1)
+roughness = 0.8
 
 [node name="Body" type="VehicleBody3D"]
 top_level = true
@@ -276,6 +288,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0)
 
 [node name="DriftParticlesR" parent="Drift" instance=ExtResource("8_vxjjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0, 0)
+
+[node name="Ears" type="Node3D" parent="."]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 2.6, 0)
+visible = false
+
+[node name="BunnyEars1" type="MeshInstance3D" parent="Ears"]
+material_override = SubResource("StandardMaterial3D_2fc6n")
+mesh = ExtResource("9_np0y6")
+skeleton = NodePath("../..")
+
+[node name="BunnyEars2" type="MeshInstance3D" parent="Ears"]
+material_override = SubResource("StandardMaterial3D_q6r35")
+mesh = ExtResource("10_b4c84")
+skeleton = NodePath("../..")
 
 [connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
 [connection signal="timeout" from="carrot_timer" to="." method="_on_timer_carrot_timeout"]
