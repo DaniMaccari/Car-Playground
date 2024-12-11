@@ -1,7 +1,7 @@
 extends Node3D
 
 var car_speed : float
-@export_range(0, 1) var maximum_volume : float
+@export_range(0, 0.7) var maximum_volume : float
 
 var maximum_db :float
 
@@ -16,6 +16,7 @@ func logWithBase(value: float, base: float) -> float:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	_process(false)
 	speed_lerper = 0
 	maximum_db = linear_to_db(maximum_volume)
 	
@@ -90,7 +91,7 @@ func update_engine_streams() -> void:
 	for i in range (engines.size() - 1):
 		#if car speed is inside the possible lerp range
 		if(car_speed > (i - 1) * 0.1 && car_speed < (i + 1) * 0.1):
-			#loop all other engines and lower volume
+			# loop all other engines and lower volume
 			for j in range (engines.size()):
 				if i != i || i != i + 1:
 					engines[i].volume_db = -80

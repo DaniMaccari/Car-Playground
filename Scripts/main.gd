@@ -73,10 +73,15 @@ func end_game() -> void:
 	game_started = false
 
 func _input(event: InputEvent) -> void:
-	if !game_started && event is InputEventKey:
+	if !game_started && (event is InputEventKey || event is InputEventJoypadButton):
+		$ButtonSound.play() #SOUND
+		
 		ui_manager.hide()
 		game_started = true
 		menu_to_game()
+		
+		await get_tree().create_timer(1.1).timeout
+		$StartSound.play() #SOUND
 		
 func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 	match num_fruit:

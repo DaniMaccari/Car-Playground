@@ -54,7 +54,14 @@ func _on_timer_timeout() -> void:
 
 func _on_timer_start() -> void:
 	print("timer")
-	if init_timeout == 0:
+	
+	if init_timeout == 2:
+		$StartLabel.clear()
+		$StartLabel.append_text("[center]SET")
+	elif init_timeout == 1:
+		$StartLabel.clear()
+		$StartLabel.append_text("[center]READY")
+	elif init_timeout == 0:
 		$StartLabel.clear()
 		$StartLabel.append_text("[center]GO!")
 	elif init_timeout < 0:

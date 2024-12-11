@@ -1,8 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=26 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
 [ext_resource type="PackedScene" uid="uid://b1lv72wgq2xnc" path="res://Scenes/Collectable_object.tscn" id="2_1pi0d"]
+[ext_resource type="AudioStream" uid="uid://nnqmqh43ervq" path="res://Assets/sounds/Start.wav" id="2_7jegh"]
+[ext_resource type="AudioStream" uid="uid://wuyn3t14l8ic" path="res://Assets/sounds/Press_start.wav" id="2_32c2q"]
 [ext_resource type="PackedScene" uid="uid://blf53tseq5hq4" path="res://Scenes/Sound/SoundManager.tscn" id="3_0xp82"]
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
 [ext_resource type="PackedScene" uid="uid://b2p25076emcvk" path="res://Scenes/Sound/CollectSound.tscn" id="4_fr1yy"]
@@ -39,6 +41,18 @@ albedo_texture = ExtResource("6_lfaja")
 [node name="Node3D" type="Node3D"]
 process_mode = 3
 script = ExtResource("1_sbpb4")
+
+[node name="StartSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7jegh")
+volume_db = -10.0
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_32c2q")
+
+[node name="CollectEffect" type="AudioStreamPlayer" parent="."]
+pitch_scale = 0.8
+
+[node name="CollectSound" parent="." instance=ExtResource("4_fr1yy")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sn5f3")
@@ -78,8 +92,6 @@ MAX_STEER = 0.45
 
 [node name="EngineSound" parent="VehicleBody3D" instance=ExtResource("3_0xp82")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38419e-07, 1.80438, 5.51343e-07)
-
-[node name="CollectSound" parent="." instance=ExtResource("4_fr1yy")]
 
 [node name="Camera3D" type="Camera3D" parent="."]
 process_mode = 3
@@ -168,7 +180,7 @@ grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("8_yu54q")
 theme_override_font_sizes/normal_font_size = 150
 bbcode_enabled = true
-text = "[center]READY"
+text = "[center]SET"
 fit_content = true
 
 [node name="PointsLabel" type="RichTextLabel" parent="ingame_UI"]

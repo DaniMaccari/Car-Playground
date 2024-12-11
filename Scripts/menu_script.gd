@@ -20,7 +20,7 @@ func change_scene() -> void:
 func _ready() -> void:
 	start_tween = create_tween().set_loops()
 	start_tween.TRANS_ELASTIC
-	start_tween.tween_property($menuText/StartLabel, "modulate:a", 0.4, 1.0)
-	start_tween.tween_property($menuText/StartLabel, "modulate:a", 1.0, 1.5)
+	start_tween.tween_property($menuText/StartLabel, "modulate:a", 0.4, 0.8)
+	start_tween.tween_property($menuText/StartLabel, "modulate:a", 1.0, 1.2)
 	
 	
