@@ -21,10 +21,10 @@ func spawn_collectable() -> void:
 	await get_tree().create_timer(0.2).timeout
 	
 	var collectable_actual := collectable_scene.instantiate()
-	collectable_actual.select_fruit(points_manager.get_score()) #DEBUG
-	
-	self.add_child(collectable_actual)
 	collectable_actual.start_position(max_z, max_x)
+	collectable_actual.select_fruit(points_manager.get_score(), max_z, max_x) #DEBUG
+	self.add_child(collectable_actual)
+	
 	collectable_actual.collided.connect(_on_collectable_collided)
 
 func _on_collectable_collided(num_fruit: int, pos: Vector3) -> void:

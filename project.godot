@@ -23,6 +23,8 @@ gdscript/warnings/untyped_declaration=2
 
 window/size/viewport_width=800
 window/size/viewport_height=600
+window/size/resizable=false
+window/size/borderless=true
 window/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)
 
 [global_group]
@@ -30,6 +32,7 @@ window/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)
 floor="the vehicle should ride above"
 fruit=""
 prop=""
+car=""
 
 [input]
 

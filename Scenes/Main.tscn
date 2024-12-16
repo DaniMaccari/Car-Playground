@@ -61,9 +61,10 @@ environment = SubResource("Environment_sn5f3")
 transform = Transform3D(0.733267, -0.268672, -0.624608, 0.619974, -0.113015, 0.77644, -0.279199, -0.956579, 0.0836999, 2.38419e-07, 10, -5.51343e-07)
 light_color = Color(0.988235, 0.760784, 0.780392, 1)
 light_indirect_energy = 4.0
+light_bake_mode = 1
 shadow_enabled = true
-shadow_normal_bias = 10.0
-shadow_opacity = 0.9
+shadow_opacity = 0.8
+shadow_blur = 2.0
 directional_shadow_max_distance = 80.0
 sky_mode = 1
 
@@ -131,7 +132,7 @@ transform = Transform3D(0.0572155, 0, 0.998362, 0, 1, 0, -0.998362, 0, 0.0572155
 transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 23.4096, -2.17263, 7.15186)
 
 [node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.37027, 8.66702)
+transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.98183, 8.66702)
 
 [node name="WaterMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 2.38419e-07, -4, 0.920999)
