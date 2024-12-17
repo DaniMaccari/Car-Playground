@@ -1,5 +1,6 @@
-Area3D
 AudioStreamPlayer
+AudioStreamPlayer3D
+Area3D
 Node3D
 Timer
 RigidBody3D
@@ -11,5 +12,3 @@ Decal
 GPUParticles3D
 MeshInstance3D
 CPUParticles3D
-CenterContainer
-RichTextLabel

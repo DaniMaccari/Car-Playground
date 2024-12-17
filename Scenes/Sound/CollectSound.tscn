@@ -1,14 +1,14 @@
 [gd_scene load_steps=7 format=3 uid="uid://b2p25076emcvk"]
 
-[ext_resource type="AudioStream" uid="uid://bjdj1y3cyyaqs" path="res://Assets/sounds/Fruit_get.wav" id="1_eitwv"]
+[ext_resource type="AudioStream" uid="uid://becl3ot3g08es" path="res://Assets/sound_effects/catch/catch_1.wav" id="1_bx6yb"]
 [ext_resource type="Script" path="res://Scripts/Sound/collect_sound.gd" id="2_svngj"]
-[ext_resource type="AudioStream" uid="uid://dm4cwq162fy85" path="res://Assets/sounds/Fruit_get_2.wav" id="3_n5fu6"]
-[ext_resource type="AudioStream" uid="uid://k1vggatxr44c" path="res://Assets/sounds/Fruit_get_3.wav" id="4_qkcl1"]
-[ext_resource type="AudioStream" uid="uid://dr4fko1e2doal" path="res://Assets/sounds/Fruit_get_4.wav" id="5_g4sa6"]
-[ext_resource type="AudioStream" uid="uid://cl8fovi4gj6r0" path="res://Assets/sounds/Fruit_get_5.wav" id="6_afy5u"]
+[ext_resource type="AudioStream" uid="uid://c3q6rarju5gnv" path="res://Assets/sound_effects/catch/catch_2,3.wav" id="3_hk283"]
+[ext_resource type="AudioStream" uid="uid://wpqw6mtykt3t" path="res://Assets/sound_effects/catch/catch_4,5.wav" id="4_bu5ge"]
+[ext_resource type="AudioStream" uid="uid://ctukc8mypo2rd" path="res://Assets/sound_effects/catch/catch_6,7.wav" id="5_kljhv"]
+[ext_resource type="AudioStream" uid="uid://db8y1xdjk1n1g" path="res://Assets/sound_effects/catch/catch_8,9.wav" id="6_4opgs"]
 
 [node name="CollectSound" type="AudioStreamPlayer"]
-stream = ExtResource("1_eitwv")
+stream = ExtResource("1_bx6yb")
 pitch_scale = 1.3
 script = ExtResource("2_svngj")
-collect_sounds = Array[AudioStream]([ExtResource("1_eitwv"), ExtResource("3_n5fu6"), ExtResource("4_qkcl1"), ExtResource("5_g4sa6"), ExtResource("6_afy5u")])
+collect_sounds = Array[AudioStream]([ExtResource("1_bx6yb"), ExtResource("3_hk283"), ExtResource("4_bu5ge"), ExtResource("5_kljhv"), ExtResource("6_4opgs")])

@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734368498
+::res://::1734439822
 export_presets.cfg::TextFile::-1::1732012912::0::1::::<><>::
 icon.svg::CompressedTexture2D::8445948122843711016::1730135459::1733753198::1::::<><>::
 letterIcon_FruitRush2.png::CompressedTexture2D::1964623947298989578::1733137507::1733137591::1::::<><>::
 letterIcon_FruitRush.png::CompressedTexture2D::2867265116940578151::1732880998::1732902797::1::::<><>::
 portada.tscn::PackedScene::4051207191083260836::1733773714::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://icqo0ewds2pv::::res://Scenes/Trees/tree_pine1.tscn
 README.md::TextFile::-1::1730196857::0::1::::<><>::
-::res://Assets/::1733874713
+::res://Assets/::1734372427
 shadow2.png::CompressedTexture2D::8411960753491382055::1732880998::1732902797::1::::<><>::
 shadow.png::CompressedTexture2D::2526691689808764331::1715793212::1731370562::1::::<><>::
 ::res://Assets/auto_racing_car/::1732902798
@@ -57,9 +57,9 @@ SportsCar_Yellow.obj::Mesh::8475949138614177743::1470514182::1730195498::1::::<>
 sportsCar_yellow.png::CompressedTexture2D::1780412628892661599::1470512797::1730195507::1::::<><>::
 SportsCar_Yellow_collada_14.dae::PackedScene::5688594115860263825::1470514114::1730195503::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png
 SportsCar_Yellow_collada_15.dae::PackedScene::451025993547661501::1470514155::1730195503::1::::<><>::
-::res://Assets/fonts/::1734353070
+::res://Assets/fonts/::1734368505
 namaku.regular.ttf::FontFile::2043883892719369457::1732880998::1734368505::1::::<><>::
-::res://Assets/Fruits/::1733830426
+::res://Assets/Fruits/::1734430328
 banana.obj::Mesh::525537631269122619::1733137507::1733137591::1::::<><>::
 carrot.obj::Mesh::3239272243732692325::1733830403::1733830426::1::::<><>::
 carrot_up.obj::Mesh::8748962190722749214::1733830423::1733830426::1::::<><>::
@@ -71,10 +71,10 @@ mango_down.obj::Mesh::8247947687821388949::1733738183::1733738265::1::::<><>::
 mango_up.obj::Mesh::2988146642143496919::1733738262::1733738265::1::::<><>::
 one_cherry_down.obj::Mesh::8474341103818515613::1733137507::1733137591::1::::<><>::
 one_cherry_up.obj::Mesh::5116723760106857768::1733137507::1733137591::1::::<><>::
-turnip.obj::Mesh::8712603393825540699::1732880995::1732902801::1::::<><>::
-turnip_down.obj::Mesh::1576932170559745744::1732880995::1732902801::1::::<><>::
-turnip_up.obj::Mesh::1014459138099489358::1732880995::1732902801::1::::<><>::
-water.obj::Mesh::181525583440014255::1732893439::1732902801::1::::<><>::
+turnip.obj::Mesh::183030459160446609::1732880995::1734430328::1::::<><>::
+turnip_down.obj::Mesh::2164898977555006981::1732880995::1734430328::1::::<><>::
+turnip_up.obj::Mesh::4368204687232792272::1732880995::1734430328::1::::<><>::
+water.obj::Mesh::1153381619888901238::1732893439::1734430328::1::::<><>::
 ::res://Assets/Images/::1733224050
 endPhoto.png::CompressedTexture2D::7327814888460102082::1733224046::1733224050::1::::<><>::
 Fried-Egg-PNG.png::CompressedTexture2D::1989521560840398354::1733142312::1733142365::1::::<><>::
@@ -82,11 +82,39 @@ Fried-Egg-PNG.png::CompressedTexture2D::1989521560840398354::1733142312::1733142
 Bunny_Ears_1.obj::Mesh::4517002766006640755::1733827722::1733827785::1::::<><>::
 Bunny_Ears_2.obj::Mesh::2351054493661052028::1733827783::1733827785::1::::<><>::
 Traffic_Cone.obj::Mesh::1769870293086134362::1733308753::1733308760::1::::<><>::
-::res://Assets/road/::1557901222
-::res://Assets/road/assets/::1733309377
-lowpoly_road.png::CompressedTexture2D::1980525158324549206::1557901128::1730195507::1::::<><>::
-roadRampUp.fbx::PackedScene::3615954539442895616::1493877326::1730195506::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/assets/lowpoly_road.png
-roadRampUp.obj::Mesh::6108061731334705899::1557900878::1730195498::1::::<><>::
+::res://Assets/music-loop-bundle-download_2024_q3/::1734372666
+_LICENSE.txt::TextFile::-1::1733183588::0::1::::<><>::
+_README.txt::TextFile::-1::1733183588::0::1::::<><>::
+FreeLoopsMetadata.png::CompressedTexture2D::4916309802340969248::1733183587::1734372666::1::::<><>::
+Interior Birdecorator Decorate.ogg::AudioStreamOggVorbis::2266487065413696004::1733183587::1734372666::1::::<><>::
+Interior Birdecorator Explore.ogg::AudioStreamOggVorbis::7395017522698760524::1733183587::1734372665::1::::<><>::
+Interior Birdecorator Explore_CUTE.ogg::AudioStreamOggVorbis::4767657893862575239::1733183587::1734372665::1::::<><>::
+Interior Birdecorator Explore_FESTIVE.ogg::AudioStreamOggVorbis::4689349827688207163::1733183587::1734372665::1::::<><>::
+Interior Birdecorator Explore_SILLY.ogg::AudioStreamOggVorbis::714240162280361101::1733183587::1734372665::1::::<><>::
+Interior Birdecorator Menu_IN.ogg::AudioStreamOggVorbis::132075763978816624::1733183587::1734372665::1::::<><>::
+Interior Birdecorator Menu_LOOP.ogg::AudioStreamOggVorbis::2763827388293873143::1733183587::1734372665::1::::<><>::
+Sketchbook2024Metadata.jpg::CompressedTexture2D::4674711500156594102::1733183588::1734372666::1::::<><>::
+Sketchbook 2024-07-03.ogg::AudioStreamOggVorbis::967624302872934724::1733183587::1734372665::1::::<><>::
+Sketchbook 2024-07-04.ogg::AudioStreamOggVorbis::6245935098111925155::1733183587::1734372665::1::::<><>::
+Sketchbook 2024-07-07.ogg::AudioStreamOggVorbis::4585234311104571162::1733183587::1734372665::1::::<><>::
+Sketchbook 2024-07-19_L01.ogg::AudioStreamOggVorbis::4405937320411168610::1733183587::1734372665::1::::<><>::
+Sketchbook 2024-07-19_L02.ogg::AudioStreamOggVorbis::4017498340154451335::1733183587::1734372665::1::::<><>::
+Sketchbook 2024-07-19_L03.ogg::AudioStreamOggVorbis::4852762414100637170::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-07-19_L04.ogg::AudioStreamOggVorbis::73370729451935::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-08-01.ogg::AudioStreamOggVorbis::8621010731417663940::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-08-07.ogg::AudioStreamOggVorbis::8486460732794242077::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-08-13.ogg::AudioStreamOggVorbis::5246526782794125500::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-08-21.ogg::AudioStreamOggVorbis::462841709302125516::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-04_IN.ogg::AudioStreamOggVorbis::1265412997756508539::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-04_LOOP.ogg::AudioStreamOggVorbis::2550302743306654079::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-12.ogg::AudioStreamOggVorbis::8060663214559354490::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-18.ogg::AudioStreamOggVorbis::9070941260119987061::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-22.ogg::AudioStreamOggVorbis::3094038006474644852::1733183588::1734372665::1::::<><>::
+Sketchbook 2024-09-25.ogg::AudioStreamOggVorbis::7450344752852394439::1733183588::1734372666::1::::<><>::
+::res://Assets/road/::1734433767
+lowpoly_road.png::CompressedTexture2D::1980525158324549206::1557901128::1734433766::1::::<><>::
+roadRampUp.fbx::PackedScene::3615954539442895616::1493877326::1734433767::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/lowpoly_road.png
+roadRampUp.obj::Mesh::6108061731334705899::1557900878::1734433767::1::::<><>::
 ::res://Assets/sounds/::1733137591
 Engine_0.wav::AudioStreamWAV::300811340604007614::1733136439::1733137591::1::::<><>::
 Engine_1.wav::AudioStreamWAV::1312746086513726155::1733136439::1733137591::1::::<><>::
@@ -106,9 +134,25 @@ Fruit_get_4.wav::AudioStreamWAV::8412661566406242187::1733136439::1733137591::1:
 Fruit_get_5.wav::AudioStreamWAV::5613372816041855647::1733136439::1733137591::1::::<><>::
 Press_start.wav::AudioStreamWAV::1586924039490700222::1733136439::1733137591::1::::<><>::
 Start.wav::AudioStreamWAV::940285632050775774::1733136439::1733137591::1::::<><>::
-::res://Assets/Terrain/::1733309399
-1601.m10.i311.n029.S.c10.164511620 Seamless green grass vector pattern.jpg::CompressedTexture2D::7358791951639811060::1732880998::1732902799::1::::<><>::
-grassTexture.jpg::CompressedTexture2D::2916877407945443892::1732880998::1732902797::1::::<><>::
+::res://Assets/sound_effects/::1734438166
+bubblepop.wav::AudioStreamWAV::4088925272469285715::1734369329::1734369334::1::::<><>::
+flash.mp3::AudioStreamMP3::8470821421788628476::1734438157::1734438166::1::::<><>::
+Rise02.wav::AudioStreamWAV::4201787099495197691::1734371020::1734371024::1::::<><>::
+rock-smash-6304.mp3::AudioStreamMP3::2843952050652914199::1734371352::1734371404::1::::<><>::
+rock-smash.wav::AudioStreamWAV::4885440133761787739::1734371403::1734371404::1::::<><>::
+Sketchbook 2024-08-01.wav::AudioStreamWAV::2913494568742984043::1734372641::1734428858::1::::<><>::
+::res://Assets/sound_effects/catch/::1734434807
+catch_1.wav::AudioStreamWAV::2672023468862535046::1734432464::1734432466::1::::<><>::
+catch_2,3.wav::AudioStreamWAV::6773071645286716023::1734432442::1734432466::1::::<><>::
+catch_4,5.wav::AudioStreamWAV::1576132633355048775::1734432421::1734432466::1::::<><>::
+catch_6,7.wav::AudioStreamWAV::6148329446024772369::1734432403::1734432466::1::::<><>::
+catch_8,9.wav::AudioStreamWAV::7299080212164017150::1734432286::1734432289::1::::<><>::
+::res://Assets/sound_effects/impact/::1734433247
+impact_1.wav::AudioStreamWAV::4273317288637127235::1734429552::1734433240::1::::<><>::
+impact_2.wav::AudioStreamWAV::1955666362054842566::1734429559::1734433242::1::::<><>::
+impact_3.wav::AudioStreamWAV::595668179517586970::1734429563::1734433244::1::::<><>::
+impact_4.wav::AudioStreamWAV::5833099473224137163::1734429567::1734433247::1::::<><>::
+::res://Assets/Terrain/::1734433738
 mapa_grises2.png::CompressedTexture2D::2682355209618683724::1731763048::1731783374::1::::<><>::
 mapa_grises.png::CompressedTexture2D::7945401227767018522::1731370539::1731419519::1::::<><>::
 mapa_grises_blanco.png::CompressedTexture2D::197891522634123989::1731763048::1731783374::1::::<><>::
@@ -121,10 +165,10 @@ waterTexture.png::CompressedTexture2D::2388891520297317461::1732893439::17331375
 ::res://Assets/Timer/::1732902797
 timer_progress.png::CompressedTexture2D::4850508891539467782::1732880998::1732902797::1::::<><>::
 timer_under.png::CompressedTexture2D::4169530481969319492::1732880998::1732902797::1::::<><>::
-::res://Assets/tree_set/::1732902805
-tree01.dae::PackedScene::5051825350363011000::1471122258::1730195499::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-tree01.fbx::PackedScene::8556256541892343880::1471121952::1732902805::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-tree01.obj::Mesh::1355100776589894228::1471122161::1730195498::1::::<><>::
+::res://Assets/tree_set/::1734432839
+tree01.dae::PackedScene::891803496043093333::1471122258::1734432838::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
+tree01.fbx::PackedScene::1187890181069926666::1471121952::1734432839::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
+tree01.obj::Mesh::2035880902125024012::1471122161::1734432838::1::::<><>::
 tree02.dae::PackedScene::1173758129881801003::1471122260::1730195499::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 tree02.fbx::PackedScene::3178752938244977085::1471121955::1730195499::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 tree02.obj::Mesh::5766905516138761279::1471122164::1730195498::1::::<><>::
@@ -153,43 +197,43 @@ treeSet_pine1.obj::Mesh::5275392076723220363::1471122140::1730195498::1::::<><>:
 treeSet_pine2.dae::PackedScene::5696840749889720089::1471122270::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.fbx::PackedScene::314090825589050912::1471121971::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.obj::Mesh::4997888647085511052::1471122146::1730195498::1::::<><>::
-::res://Materials/::1734352786
-green_object.tres::StandardMaterial3D::8613466926877225069::1734352786::0::1::::<><>::
+::res://Materials/::1734429362
+green_object.tres::StandardMaterial3D::8613466926877225069::1734429362::0::1::::<><>::
 white_outline.tres::StandardMaterial3D::8468086941860159889::1733137507::0::1::::<><>::
-::res://Scenes/::1734356913
-Collectable_object.tscn::PackedScene::4235372428240886192::1734356912::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://dr32085ecldit::::res://Assets/shadow2.png<>uid://wp43v4542lsy::::res://Assets/Fruits/turnip_down.obj<>uid://duyosomtrhacb::::res://Materials/green_object.tres<>uid://opn8126tpk75::::res://Assets/Fruits/turnip_up.obj<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://btydnrirhelh7::::res://Assets/Fruits/eggplant_down.obj<>uid://t1rurnkebveh::::res://Assets/Fruits/eggplant_up.obj<>uid://bpn3tyjntthtr::::res://Assets/Fruits/chilly_down.obj<>uid://dugdqtccgxmig::::res://Assets/Fruits/chilly_up.obj<>uid://bitqlrphlapch::::res://Assets/Fruits/mango_up.obj<>uid://dprmq1l0a2hu0::::res://Assets/Fruits/mango_down.obj<>uid://bmfeltytt7du8::::res://Assets/Fruits/carrot.obj<>uid://dwwcenf4ijruk::::res://Assets/Fruits/carrot_up.obj
+::res://Scenes/::1734439498
+Collectable_object.tscn::PackedScene::4235372428240886192::1734439244::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://dr32085ecldit::::res://Assets/shadow2.png<>uid://53xtm07vf5cr::::res://Assets/Fruits/turnip_down.obj<>uid://duyosomtrhacb::::res://Materials/green_object.tres<>uid://b3h8xtdrss1ke::::res://Assets/Fruits/turnip_up.obj<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://btydnrirhelh7::::res://Assets/Fruits/eggplant_down.obj<>uid://t1rurnkebveh::::res://Assets/Fruits/eggplant_up.obj<>uid://bpn3tyjntthtr::::res://Assets/Fruits/chilly_down.obj<>uid://dugdqtccgxmig::::res://Assets/Fruits/chilly_up.obj<>uid://bitqlrphlapch::::res://Assets/Fruits/mango_up.obj<>uid://dprmq1l0a2hu0::::res://Assets/Fruits/mango_down.obj<>uid://bmfeltytt7du8::::res://Assets/Fruits/carrot.obj<>uid://dwwcenf4ijruk::::res://Assets/Fruits/carrot_up.obj
 Collectable_Test.tscn::PackedScene::3815224660341214811::1731800782::0::1::::<><>::res://Scripts/collectable.gd
-end_scene.tscn::PackedScene::6949835753646174006::1734356912::0::1::::<><>::res://Scripts/ui_end.gd<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://dcnwbm678aqfi::::res://Assets/Images/endPhoto.png
-Main.tscn::PackedScene::4779548486523294006::1734356912::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>res://Scripts/main.gd<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://nnqmqh43ervq::::res://Assets/sounds/Start.wav<>uid://wuyn3t14l8ic::::res://Assets/sounds/Press_start.wav<>uid://blf53tseq5hq4::::res://Scenes/Sound/SoundManager.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://b2p25076emcvk::::res://Scenes/Sound/CollectSound.tscn<>uid://bcv1gb63g1d2t::::res://Scenes/tree_test.tscn<>res://Scripts/points_counter.gd<>uid://babgxuvp8ftuj::::res://Assets/Terrain/waterTexture.png<>uid://icqo0ewds2pv::::res://Scenes/Trees/tree_pine1.tscn<>res://Scripts/ui_scrip.gd<>uid://sgnjqag75kd::::res://Scenes/Ramp_Jump.tscn<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://b0n0s75hc3uto::::res://Assets/Timer/timer_under.png<>uid://cbdvf4y1bibso::::res://Assets/Timer/timer_progress.png<>uid://c6as1rcvvwj4y::::res://Scenes/end_scene.tscn<>uid://l7rd14u5o0hj::::res://Scenes/menu_scene.tscn
-menu_scene.tscn::PackedScene::839176325762823403::1734356912::0::1::::<><>::res://Scripts/menu_script.gd<>uid://28xcmg12g74q::::res://letterIcon_FruitRush2.png<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf
+end_scene.tscn::PackedScene::6949835753646174006::1734439244::0::1::::<><>::res://Scripts/ui_end.gd<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://dcnwbm678aqfi::::res://Assets/Images/endPhoto.png
+Main.tscn::PackedScene::4779548486523294006::1734439498::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>res://Scripts/main.gd<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://nnqmqh43ervq::::res://Assets/sounds/Start.wav<>uid://wuyn3t14l8ic::::res://Assets/sounds/Press_start.wav<>uid://blf53tseq5hq4::::res://Scenes/Sound/SoundManager.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://b2p25076emcvk::::res://Scenes/Sound/CollectSound.tscn<>uid://dsxlgrbqvslfg::::res://Assets/sound_effects/flash.mp3<>uid://bcv1gb63g1d2t::::res://Scenes/tree_test.tscn<>res://Scripts/points_counter.gd<>uid://byiyaceillavb::::res://Assets/sound_effects/bubblepop.wav<>uid://babgxuvp8ftuj::::res://Assets/Terrain/waterTexture.png<>uid://db8y1xdjk1n1g::::res://Assets/sound_effects/catch/catch_8,9.wav<>uid://becl3ot3g08es::::res://Assets/sound_effects/catch/catch_1.wav<>uid://icqo0ewds2pv::::res://Scenes/Trees/tree_pine1.tscn<>res://Scripts/ui_scrip.gd<>uid://sgnjqag75kd::::res://Scenes/Ramp_Jump.tscn<>uid://c3q6rarju5gnv::::res://Assets/sound_effects/catch/catch_2,3.wav<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://wpqw6mtykt3t::::res://Assets/sound_effects/catch/catch_4,5.wav<>uid://b0n0s75hc3uto::::res://Assets/Timer/timer_under.png<>uid://cbdvf4y1bibso::::res://Assets/Timer/timer_progress.png<>uid://ctukc8mypo2rd::::res://Assets/sound_effects/catch/catch_6,7.wav<>uid://c6as1rcvvwj4y::::res://Scenes/end_scene.tscn<>uid://l7rd14u5o0hj::::res://Scenes/menu_scene.tscn<>uid://bhrk3hlu65vo2::::res://Assets/sound_effects/Sketchbook 2024-08-01.wav
+menu_scene.tscn::PackedScene::839176325762823403::1734439244::0::1::::<><>::res://Scripts/menu_script.gd<>uid://28xcmg12g74q::::res://letterIcon_FruitRush2.png<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf
 Pixel_Shader_Test.tscn::PackedScene::1025401895679803382::1732880998::0::1::::<><>::uid://cadip24ccwo6q::::res://Scenes/Main.tscn
 Ramp_Jump.tscn::PackedScene::37546814286771119::1733878145::0::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/assets/lowpoly_road.png
-Splash_Particles.tscn::PackedScene::5456313379811571793::1733137538::0::1::::<><>::
-Terrain_test.tscn::PackedScene::4839375129353731758::1734356912::0::1::::<><>::uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png<>uid://dn45a4gbxptf2::::res://Assets/Terrain/playgroundTerrainMapa3.obj
+Terrain_test.tscn::PackedScene::4839375129353731758::1734439244::0::1::::<><>::uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png<>uid://dn45a4gbxptf2::::res://Assets/Terrain/playgroundTerrainMapa3.obj
 tree_test.tscn::PackedScene::2571739762073301797::1733309126::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-Vehicle_movement.tscn::PackedScene::7422262263913703112::1734356913::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://bdqtagqcmrma1::::res://Assets/auto_racing_car/turnipCar2.tga<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png<>uid://c3mfsr6utvnq8::::res://Scenes/Particles/Smoke_Particles.tscn<>uid://c6emvqr8grvfe::::res://Scenes/Particles/Fire_Particles.tscn<>uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn<>uid://b5mcm1hegysvb::::res://Assets/Models/Bunny_Ears_1.obj<>uid://8q4r208dmcae::::res://Assets/Models/Bunny_Ears_2.obj
-::res://Scenes/Particles/::1734356913
-Cone.tscn::PackedScene::3189511733194467305::1734356913::0::1::::<><>::uid://0hlrf7itsqgo::::res://Assets/Models/Traffic_Cone.obj
+Vehicle_movement.tscn::PackedScene::7422262263913703112::1734439244::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://bdqtagqcmrma1::::res://Assets/auto_racing_car/turnipCar2.tga<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png<>uid://c3mfsr6utvnq8::::res://Scenes/Particles/Smoke_Particles.tscn<>uid://c6emvqr8grvfe::::res://Scenes/Particles/Fire_Particles.tscn<>uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn<>uid://b5mcm1hegysvb::::res://Assets/Models/Bunny_Ears_1.obj<>uid://8q4r208dmcae::::res://Assets/Models/Bunny_Ears_2.obj<>uid://b15a58t3qvf3p::::res://Assets/sound_effects/impact/impact_1.wav<>uid://24lslm7a2n63::::res://Assets/sound_effects/impact/impact_2.wav<>uid://iqstkqj1i2x7::::res://Assets/sound_effects/impact/impact_3.wav<>uid://cpdukcj20uawp::::res://Assets/sound_effects/impact/impact_4.wav
+::res://Scenes/Particles/::1734439245
+Cone.tscn::PackedScene::3189511733194467305::1734428860::0::1::::<><>::uid://0hlrf7itsqgo::::res://Assets/Models/Traffic_Cone.obj
 Drift_Effect.tscn::PackedScene::726039917849167788::1733755236::0::1::::<><>::uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn
 Drift_Particles.tscn::PackedScene::7263369902726987220::1733878144::0::1::::<><>::
 Egg_Particles.tscn::PackedScene::3570954259555652177::1733769057::0::1::::<><>::uid://3l0envjypycw::::res://Assets/Images/Fried-Egg-PNG.png
 Fire_Particles.tscn::PackedScene::6957720004910002506::1733754427::0::1::::<><>::
 Smoke_Particles.tscn::PackedScene::6763238193274775821::1733744657::0::1::::<><>::
-::res://Scenes/Sound/::1734356913
-CollectSound.tscn::PackedScene::4314179424784526556::1733878145::0::1::::<><>::uid://bjdj1y3cyyaqs::::res://Assets/sounds/Fruit_get.wav<>res://Scripts/Sound/collect_sound.gd<>uid://dm4cwq162fy85::::res://Assets/sounds/Fruit_get_2.wav<>uid://k1vggatxr44c::::res://Assets/sounds/Fruit_get_3.wav<>uid://dr4fko1e2doal::::res://Assets/sounds/Fruit_get_4.wav<>uid://cl8fovi4gj6r0::::res://Assets/sounds/Fruit_get_5.wav
-SoundManager.tscn::PackedScene::3170692390448530249::1734356913::0::1::::<><>::res://Scripts/Sound/engine.sound.gd<>uid://ejyk3tk5jiwk::::res://Assets/sounds/Engine_0.wav<>uid://sx50bdt0r812::::res://Assets/sounds/Engine_1.wav<>uid://br1i7xgojupnx::::res://Assets/sounds/Engine_2.wav<>uid://d2gbvxi3gliwy::::res://Assets/sounds/Engine_3.wav<>uid://hif1ieoxk2am::::res://Assets/sounds/Engine_4.wav<>uid://blgup18flxiju::::res://Assets/sounds/Engine_5.wav<>uid://bwbhlnbwyc06d::::res://Assets/sounds/Engine_6.wav<>uid://b1tidhnopijbj::::res://Assets/sounds/Engine_7.wav<>uid://jkmyfb8o75oi::::res://Assets/sounds/Engine_8.wav<>uid://dfpg5iv7mitxo::::res://Assets/sounds/Engine_9.wav<>uid://cki6h3s5e7r8o::::res://Assets/sounds/Engine_10.wav
-::res://Scenes/Trees/::1734356913
+Splash_Particles.tscn::PackedScene::5456313379811571793::1734439245::0::1::::<><>::
+::res://Scenes/Sound/::1734439245
+CollectSound.tscn::PackedScene::4314179424784526556::1734439245::0::1::::<><>::uid://becl3ot3g08es::::res://Assets/sound_effects/catch/catch_1.wav<>res://Scripts/Sound/collect_sound.gd<>uid://c3q6rarju5gnv::::res://Assets/sound_effects/catch/catch_2,3.wav<>uid://wpqw6mtykt3t::::res://Assets/sound_effects/catch/catch_4,5.wav<>uid://ctukc8mypo2rd::::res://Assets/sound_effects/catch/catch_6,7.wav<>uid://db8y1xdjk1n1g::::res://Assets/sound_effects/catch/catch_8,9.wav
+SoundManager.tscn::PackedScene::3170692390448530249::1734439244::0::1::::<><>::res://Scripts/Sound/engine.sound.gd<>uid://ejyk3tk5jiwk::::res://Assets/sounds/Engine_0.wav<>uid://sx50bdt0r812::::res://Assets/sounds/Engine_1.wav<>uid://br1i7xgojupnx::::res://Assets/sounds/Engine_2.wav<>uid://d2gbvxi3gliwy::::res://Assets/sounds/Engine_3.wav<>uid://hif1ieoxk2am::::res://Assets/sounds/Engine_4.wav<>uid://blgup18flxiju::::res://Assets/sounds/Engine_5.wav<>uid://bwbhlnbwyc06d::::res://Assets/sounds/Engine_6.wav<>uid://b1tidhnopijbj::::res://Assets/sounds/Engine_7.wav<>uid://jkmyfb8o75oi::::res://Assets/sounds/Engine_8.wav<>uid://dfpg5iv7mitxo::::res://Assets/sounds/Engine_9.wav<>uid://cki6h3s5e7r8o::::res://Assets/sounds/Engine_10.wav
+::res://Scenes/Trees/::1734428860
 tree_green1.tscn::PackedScene::6673572041245616726::1732880998::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-tree_pine1.tscn::PackedScene::566637297878609407::1734356913::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-::res://Scripts/::1734356676
-collectable.gd::GDScript::-1::1734356676::0::1::::<>Node3D<>::
-main.gd::GDScript::-1::1734264140::0::1::::<>Node3D<>::
+tree_pine1.tscn::PackedScene::566637297878609407::1734428860::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
+::res://Scripts/::1734439446
+collectable.gd::GDScript::-1::1734368604::0::1::::<>Node3D<>::
+main.gd::GDScript::-1::1734439446::0::1::::<>Node3D<>::
 menu_script.gd::GDScript::-1::1733874629::0::1::::<>Control<>::
-points_counter.gd::GDScript::-1::1734355771::0::1::::<>Node3D<>::
+points_counter.gd::GDScript::-1::1734439127::0::1::::<>Node3D<>::
 tree_script.gd::GDScript::-1::1733948010::0::1::::<>StaticBody3D<>::
 ui_end.gd::GDScript::-1::1733228047::0::1::::<>Control<>::
-ui_scrip.gd::GDScript::-1::1733875691::0::1::::<>Control<>::
-vehicle_movement.gd::GDScript::-1::1733948085::0::1::::<>VehicleBody3D<>::
-::res://Scripts/Sound/::1733877805
-collect_sound.gd::GDScript::-1::1733876288::0::1::::<>AudioStreamPlayer<>::
+ui_scrip.gd::GDScript::-1::1734438301::0::1::::<>Control<>::
+vehicle_movement.gd::GDScript::-1::1734429928::0::1::::<>VehicleBody3D<>::
+::res://Scripts/Sound/::1734437599
+collect_sound.gd::GDScript::-1::1734437599::0::1::::<>AudioStreamPlayer<>::
 engine.sound.gd::GDScript::-1::1733877805::0::1::::<>Node3D<>::

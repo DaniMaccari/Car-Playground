@@ -35,8 +35,9 @@ func _on_collectable_collided(num_fruit: int, pos: Vector3) -> void:
 
 func clear_collectable() -> void:
 	for child in get_children():
-		if child.is_in_group("fruit"):
+		if child.is_in_group("fruit") || child.is_in_group("prop"):
 			child.queue_free()
+			
 
 func spawn_cone(pos : Vector3) -> void:
 	var new_cone := cone_object.instantiate()

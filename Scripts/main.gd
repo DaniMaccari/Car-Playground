@@ -61,8 +61,16 @@ func camera_transition() -> void:
 func start_ingameUI() -> void:
 	print("timeout")
 	ui_manager.delay_ready()
+	
+	await get_tree().create_timer(2.0).timeout
+	
+	$BackMusic.pitch_scale = 1
+	$BackMusic.play()
 
 func end_game() -> void:
+	#$BackMusic.volume_db = -30
+	$EndSound.play()
+	$BackMusic.pitch_scale = 0.8
 	
 	camera.rotation_degrees = MENU_CAM_DEG
 	camera.size = MENU_CAM_SIZE

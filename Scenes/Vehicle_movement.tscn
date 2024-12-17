@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=35 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://dbqov2ebodyr1" path="res://Scenes/Particles/Drift_Particles.tscn" id="8_vxjjv"]
 [ext_resource type="ArrayMesh" uid="uid://b5mcm1hegysvb" path="res://Assets/Models/Bunny_Ears_1.obj" id="9_np0y6"]
 [ext_resource type="ArrayMesh" uid="uid://8q4r208dmcae" path="res://Assets/Models/Bunny_Ears_2.obj" id="10_b4c84"]
+[ext_resource type="AudioStream" uid="uid://b15a58t3qvf3p" path="res://Assets/sound_effects/impact/impact_1.wav" id="11_gvosg"]
+[ext_resource type="AudioStream" uid="uid://24lslm7a2n63" path="res://Assets/sound_effects/impact/impact_2.wav" id="12_uhxkp"]
+[ext_resource type="AudioStream" uid="uid://iqstkqj1i2x7" path="res://Assets/sound_effects/impact/impact_3.wav" id="13_1ja0o"]
+[ext_resource type="AudioStream" uid="uid://cpdukcj20uawp" path="res://Assets/sound_effects/impact/impact_4.wav" id="14_gobrt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3cq40"]
 size = Vector3(2, 3.7, 2)
@@ -148,6 +152,14 @@ roughness = 0.7
 shading_mode = 2
 albedo_color = Color(1, 0.505882, 0.988235, 1)
 roughness = 0.8
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4d3r8"]
+streams_count = 4
+stream_0/stream = ExtResource("11_gvosg")
+stream_1/stream = ExtResource("12_uhxkp")
+stream_2/stream = ExtResource("13_1ja0o")
+stream_2/weight = 0.8
+stream_3/stream = ExtResource("14_gobrt")
 
 [node name="Body" type="VehicleBody3D" groups=["car"]]
 top_level = true
@@ -302,6 +314,12 @@ skeleton = NodePath("../..")
 material_override = SubResource("StandardMaterial3D_q6r35")
 mesh = ExtResource("10_b4c84")
 skeleton = NodePath("../..")
+
+[node name="ImpactSound" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_4d3r8")
+volume_db = -8.0
+unit_size = 30.0
+pitch_scale = 1.4
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="carrot_timer" to="." method="_on_timer_carrot_timeout"]

@@ -77,18 +77,17 @@ func _physics_process(delta: float) -> void:
 	
 	# drastic speed change -> collision
 	var speed_change := actual_speed - previous_speed
-	if abs(speed_change) > 10.0:
+	if abs(speed_change) > 9.0:
 		print("big collision")
+		$ImpactSound.play()
 		Input.vibrate_handheld(100)
-		
 		# activate smoke
 		smoke_particles.emitting = true
 		smoke_timer.start()
-		#for joypad in Input.get_connected_joypads():
-			#Input.start_joy_vibration(joypad, 0.0, 0.6, 0.1)
 		Input.start_joy_vibration(0, 0.5, 1.0, 0.15)
 	elif abs(speed_change) > 1.0: # For softer bumps
 		print("small collision")
+		#$ImpactSound.play()
 		for joypad in Input.get_connected_joypads():
 			Input.start_joy_vibration(joypad, 0.5, 0.1, 0.1)
 	

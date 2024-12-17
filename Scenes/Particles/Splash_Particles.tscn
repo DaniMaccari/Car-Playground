@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj0cxi6liarg8"]
+
+[ext_resource type="Script" path="res://Scripts/splash_particles.gd" id="1_cxosp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ah3m"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_ou2yg"]
+min_value = 0.1
+bake_resolution = 10
+_data = [Vector2(0, 0), 0.0, 10.4635, 0, 0, Vector2(0.215686, 1), 0.271277, 0.271277, 0, 0, Vector2(0.861244, 0.772528), -0.886782, -0.886782, 0, 0, Vector2(1, 0.198901), -4.34077, 1.86033, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_0t2tb"]
+curve = SubResource("Curve_ou2yg")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwmek"]
+lifetime_randomness = 0.3
+direction = Vector3(0, 1, 0)
+spread = 25.0
+initial_velocity_min = 8.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, -15, 0)
+scale_min = 0.6
+scale_curve = SubResource("CurveTexture_0t2tb")
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqufg"]
+
+[node name="SplashParticles" type="Node3D"]
+script = ExtResource("1_cxosp")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+material_override = SubResource("StandardMaterial3D_6ah3m")
+emitting = false
+amount = 6
+lifetime = 0.8
+one_shot = true
+explosiveness = 0.9
+randomness = 0.1
+draw_order = 3
+process_material = SubResource("ParticleProcessMaterial_xwmek")
+draw_pass_1 = SubResource("SphereMesh_gqufg")
+
+[connection signal="finished" from="GPUParticles3D" to="." method="_on_gpu_particles_3d_finished"]

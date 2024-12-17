@@ -8,7 +8,7 @@ var game_time : int
 var timer : Timer
 var init_timer : Timer
 var init_timeout : int = 1
-const MAX_TIME : int = 360
+@export var MAX_TIME : int = 360
 var flash_tween : Tween
 
 @onready var points_label := $PointsLabel

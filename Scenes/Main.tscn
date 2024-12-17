@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=31 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -8,30 +8,31 @@
 [ext_resource type="PackedScene" uid="uid://blf53tseq5hq4" path="res://Scenes/Sound/SoundManager.tscn" id="3_0xp82"]
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
 [ext_resource type="PackedScene" uid="uid://b2p25076emcvk" path="res://Scenes/Sound/CollectSound.tscn" id="4_fr1yy"]
+[ext_resource type="AudioStream" uid="uid://dsxlgrbqvslfg" path="res://Assets/sound_effects/flash.mp3" id="4_gl1ap"]
 [ext_resource type="PackedScene" uid="uid://bcv1gb63g1d2t" path="res://Scenes/tree_test.tscn" id="5_l2gm7"]
 [ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
+[ext_resource type="AudioStream" uid="uid://byiyaceillavb" path="res://Assets/sound_effects/bubblepop.wav" id="5_t8iqd"]
 [ext_resource type="Texture2D" uid="uid://babgxuvp8ftuj" path="res://Assets/Terrain/waterTexture.png" id="6_lfaja"]
+[ext_resource type="AudioStream" uid="uid://db8y1xdjk1n1g" path="res://Assets/sound_effects/catch/catch_8,9.wav" id="7_74mds"]
+[ext_resource type="AudioStream" uid="uid://becl3ot3g08es" path="res://Assets/sound_effects/catch/catch_1.wav" id="7_fdyik"]
 [ext_resource type="PackedScene" uid="uid://icqo0ewds2pv" path="res://Scenes/Trees/tree_pine1.tscn" id="8_7auv0"]
 [ext_resource type="Script" path="res://Scripts/ui_scrip.gd" id="8_ccuvy"]
 [ext_resource type="PackedScene" uid="uid://sgnjqag75kd" path="res://Scenes/Ramp_Jump.tscn" id="8_g2yf7"]
+[ext_resource type="AudioStream" uid="uid://c3q6rarju5gnv" path="res://Assets/sound_effects/catch/catch_2,3.wav" id="8_hsj0x"]
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="8_yu54q"]
+[ext_resource type="AudioStream" uid="uid://wpqw6mtykt3t" path="res://Assets/sound_effects/catch/catch_4,5.wav" id="9_1p673"]
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
+[ext_resource type="AudioStream" uid="uid://ctukc8mypo2rd" path="res://Assets/sound_effects/catch/catch_6,7.wav" id="10_1cb22"]
 [ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
+[ext_resource type="AudioStream" uid="uid://bhrk3hlu65vo2" path="res://Assets/sound_effects/Sketchbook 2024-08-01.wav" id="26_bps6j"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
 background_color = Color(0.207725, 0.43982, 0.841102, 1)
 ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
 tonemap_mode = 2
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_d18de"]
-size = Vector3(16.0916, 0.2, 16.1094)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_a85fd"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlxl5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oggjv"]
 albedo_texture = ExtResource("6_lfaja")
@@ -42,17 +43,25 @@ albedo_texture = ExtResource("6_lfaja")
 process_mode = 3
 script = ExtResource("1_sbpb4")
 
+[node name="BackMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_bps6j")
+volume_db = -20.0
+
 [node name="StartSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_7jegh")
 volume_db = -10.0
 
+[node name="EndSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_gl1ap")
+volume_db = -10.0
+pitch_scale = 0.95
+
 [node name="ButtonSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_32c2q")
 
-[node name="CollectEffect" type="AudioStreamPlayer" parent="."]
-pitch_scale = 0.8
-
 [node name="CollectSound" parent="." instance=ExtResource("4_fr1yy")]
+volume_db = -5.0
+collect_sounds = Array[AudioStream]([ExtResource("7_fdyik"), ExtResource("8_hsj0x"), ExtResource("9_1p673"), ExtResource("10_1cb22"), ExtResource("7_74mds"), ExtResource("5_t8iqd")])
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sn5f3")
@@ -67,24 +76,6 @@ shadow_opacity = 0.8
 shadow_blur = 2.0
 directional_shadow_max_distance = 80.0
 sky_mode = 1
-
-[node name="PlaneWorld" type="StaticBody3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -2.78114, 0)
-visible = false
-collision_layer = 0
-collision_mask = 0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="PlaneWorld"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.101741, 0)
-shape = SubResource("BoxShape3D_d18de")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PlaneWorld"]
-transform = Transform3D(8, 0, 0, 0, 0.533, 0, 0, 0, 8, 0, 0, 0)
-cast_shadow = 0
-mesh = SubResource("PlaneMesh_a85fd")
-surface_material_override/0 = SubResource("StandardMaterial3D_mlxl5")
-
-[node name="Road" type="Node3D" parent="."]
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
 process_mode = 1
@@ -164,6 +155,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_ccuvy")
+MAX_TIME = 100
 
 [node name="StartLabel" type="RichTextLabel" parent="ingame_UI"]
 layout_mode = 1

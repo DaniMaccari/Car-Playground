@@ -1,11 +1,12 @@
-[gd_scene load_steps=28 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=29 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
+[ext_resource type="PackedScene" uid="uid://cj0cxi6liarg8" path="res://Scenes/Particles/Splash_Particles.tscn" id="2_74ck8"]
 [ext_resource type="Texture2D" uid="uid://dr32085ecldit" path="res://Assets/shadow2.png" id="4_djri1"]
-[ext_resource type="ArrayMesh" uid="uid://wp43v4542lsy" path="res://Assets/Fruits/turnip_down.obj" id="4_ywyhk"]
+[ext_resource type="ArrayMesh" uid="uid://53xtm07vf5cr" path="res://Assets/Fruits/turnip_down.obj" id="4_ywyhk"]
 [ext_resource type="Material" uid="uid://duyosomtrhacb" path="res://Materials/green_object.tres" id="5_ayy1q"]
-[ext_resource type="ArrayMesh" uid="uid://opn8126tpk75" path="res://Assets/Fruits/turnip_up.obj" id="5_gto8s"]
+[ext_resource type="ArrayMesh" uid="uid://b3h8xtdrss1ke" path="res://Assets/Fruits/turnip_up.obj" id="5_gto8s"]
 [ext_resource type="ArrayMesh" uid="uid://hqtr7myc01kx" path="res://Assets/Fruits/banana.obj" id="6_hq1y4"]
 [ext_resource type="ArrayMesh" uid="uid://btydnrirhelh7" path="res://Assets/Fruits/eggplant_down.obj" id="8_7gnjm"]
 [ext_resource type="ArrayMesh" uid="uid://t1rurnkebveh" path="res://Assets/Fruits/eggplant_up.obj" id="9_76d8y"]
@@ -92,6 +93,7 @@ roughness = 0.6
 [node name="CollectableObject" type="Node3D" groups=["fruit"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 script = ExtResource("1_om0bk")
+particles = ExtResource("2_74ck8")
 total_fruits = 5
 
 [node name="VisualModel" type="MeshInstance3D" parent="."]

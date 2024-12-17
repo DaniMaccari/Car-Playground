@@ -1,6 +1,7 @@
 extends Node3D
 
 signal collided
+@export var particles : PackedScene
 
 var rng : RandomNumberGenerator
 var raycast : RayCast3D 
@@ -77,6 +78,9 @@ func check_heigth() -> void:
 
 func _on_collision_detection_area_entered(area: Area3D) -> void:
 	emit_signal("collided", get_fruit(), global_position)
+	var instance_particles := particles.instantiate()
+	get_parent().add_child(instance_particles)
+	instance_particles.global_position = global_position
 	queue_free()
 
 func get_fruit() -> int:
