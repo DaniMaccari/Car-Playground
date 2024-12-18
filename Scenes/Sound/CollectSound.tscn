@@ -9,6 +9,7 @@
 
 [node name="CollectSound" type="AudioStreamPlayer"]
 stream = ExtResource("1_bx6yb")
+volume_db = 10.0
 pitch_scale = 1.3
 script = ExtResource("2_svngj")
 collect_sounds = Array[AudioStream]([ExtResource("1_bx6yb"), ExtResource("3_hk283"), ExtResource("4_bu5ge"), ExtResource("5_kljhv"), ExtResource("6_4opgs")])

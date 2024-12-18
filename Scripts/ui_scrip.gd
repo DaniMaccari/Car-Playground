@@ -50,6 +50,21 @@ func _on_timer_timeout() -> void:
 	game_time -= 1
 	if game_time <= 0:
 		stop_ui()
+	elif game_time <= 30:
+		$StartLabel.modulate = Color(1, 1, 1, 0.4)
+		if game_time == 10:
+			$StartLabel.clear()
+			$StartLabel.append_text("[center]1")
+		elif game_time == 20:
+			$StartLabel.clear()
+			$StartLabel.append_text("[center]2")
+		elif game_time == 30:
+			$StartLabel.clear()
+			$StartLabel.append_text("[center]3")
+	else:
+		$StartLabel.modulate = Color(1, 1, 1, 1)
+		$StartLabel.clear()
+	
 	timer_label.value = game_time
 
 func _on_timer_start() -> void:
@@ -66,7 +81,6 @@ func _on_timer_start() -> void:
 		$StartLabel.append_text("[center]GO!")
 	elif init_timeout < 0:
 		$StartLabel.clear()
-		$StartLabel.append_text("")
 		if init_timer != null:
 			init_timer.queue_free()
 		start_ui()
@@ -80,14 +94,13 @@ func start_ui() -> void:
 	timer.start()
 
 func stop_ui() -> void:
-
 	get_tree().paused = true
 	timer.stop()
+	$StartLabel.clear()
 	
 	flash_effect()
 	
 	await get_tree().create_timer(0.2).timeout
-	
 	emit_signal("end_signal")
 	
 	points_label.visible = false

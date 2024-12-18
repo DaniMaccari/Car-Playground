@@ -42,6 +42,7 @@ func menu_to_game() -> void:
 	points_manager.clear_collectable()
 	camera_transition()
 	$WaterMesh.show()
+	$CollectSound.restart_points()
 
 func camera_transition() -> void:
 	var timer := Timer.new()

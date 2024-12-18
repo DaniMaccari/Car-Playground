@@ -317,7 +317,7 @@ skeleton = NodePath("../..")
 
 [node name="ImpactSound" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamRandomizer_4d3r8")
-volume_db = -8.0
+volume_db = -5.0
 unit_size = 30.0
 pitch_scale = 1.4
 

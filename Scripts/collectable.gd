@@ -62,7 +62,7 @@ func check_heigth() -> void:
 	
 	if raycast.is_colliding():
 		var collider := raycast.get_collider()
-		if collider.is_in_group("floor"):
+		if collider.is_in_group("floor") || collider.is_in_group("ramp"):
 			is_positioned = true
 			position.y = raycast.get_collision_point().y + object_heigth
 			show()

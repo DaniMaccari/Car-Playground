@@ -33,6 +33,7 @@ floor="the vehicle should ride above"
 fruit=""
 prop=""
 car=""
+ramp=""
 
 [input]
 

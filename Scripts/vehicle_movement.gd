@@ -165,6 +165,8 @@ func respawn_car() -> void:
 	get_tree().paused = true
 	
 func _on_respawn_timeout() -> void:
+	# BUG - si el timer acaba cuando se ha acabado el
+	# tiempo de juego, se tiene que quedar pausado
 	get_tree().paused = false
 
 func _on_smoke_timeout() -> void:

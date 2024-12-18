@@ -3,11 +3,13 @@ extends AudioStreamPlayer
 @export var collect_sounds : Array[AudioStream]
 
 @export var base_pitch : float = 0.6
-var current_pitch : float = base_pitch
 var collected_counter : int = 0
+var current_pitch : float = base_pitch
 @onready var current_stream_index : int = 0
 
-
+func restart_points() -> void:
+	collected_counter = 0
+	current_pitch = base_pitch
 
 func play_collect_sound() -> void:
 	collected_counter += 1

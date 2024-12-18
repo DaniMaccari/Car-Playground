@@ -145,6 +145,7 @@ transform = Transform3D(0.286625, 0, -0.958043, 0, 1, 0, 0.958043, 0, 0.286625, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6662, 0.38375, 19.7764)
 
 [node name="end_UI" parent="." instance=ExtResource("12_22y6m")]
+visible = false
 
 [node name="ingame_UI" type="Control" parent="."]
 process_mode = 3
@@ -170,6 +171,7 @@ offset_right = 255.0
 offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("8_yu54q")
 theme_override_font_sizes/normal_font_size = 150
 bbcode_enabled = true
