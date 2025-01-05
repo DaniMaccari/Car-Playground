@@ -1,9 +1,9 @@
-res://Scenes/Main.tscn
+res://Scenes/menu_scene.tscn
 res://Materials/green_object.tres
+res://Scenes/Main.tscn
 res://Scenes/Collectable_object.tscn
 res://Scenes/Sound/SoundManager.tscn
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/Sound/CollectSound.tscn
 res://Scenes/Particles/Splash_Particles.tscn
 res://Scenes/portada_test.tscn
-res://Scripts/collectable.gd

@@ -87,7 +87,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38419e-07, 1.80438, 5.5134
 
 [node name="Camera3D" type="Camera3D" parent="."]
 process_mode = 3
-transform = Transform3D(1, 0, 0, 0, 0.71934, 0.694658, 0, -0.694658, 0.71934, 0, 27, 29)
+transform = Transform3D(1, 0, 0, 0, 0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 27, 29)
 projection = 1
 size = 43.0
 far = 80.0

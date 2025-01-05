@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://l7rd14u5o0hj"]
 
 [ext_resource type="Script" path="res://Scripts/menu_script.gd" id="1_bba2d"]
-[ext_resource type="Texture2D" uid="uid://28xcmg12g74q" path="res://letterIcon_FruitRush2.png" id="2_4knmb"]
+[ext_resource type="Texture2D" uid="uid://dr2q5ebiklem8" path="res://letterIcon_FruitRush3.png" id="2_pe71t"]
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="2_tdyvm"]
 
 [node name="Control" type="Control"]
@@ -14,9 +14,9 @@ grow_vertical = 2
 script = ExtResource("1_bba2d")
 
 [node name="LetterIconFruitRush" type="Sprite2D" parent="."]
-position = Vector2(397, 138)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_4knmb")
+position = Vector2(397, 172)
+scale = Vector2(0.598319, 0.598319)
+texture = ExtResource("2_pe71t")
 
 [node name="menuText" type="Control" parent="."]
 layout_mode = 1
@@ -32,8 +32,8 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = 8.0
-offset_bottom = 69.0
+offset_top = 49.0
+offset_bottom = 110.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_tdyvm")
@@ -54,4 +54,4 @@ grow_horizontal = 2
 theme_override_fonts/normal_font = ExtResource("2_tdyvm")
 theme_override_font_sizes/normal_font_size = 15
 bbcode_enabled = true
-text = "[right]v1.01"
+text = "[right]v0.01"
