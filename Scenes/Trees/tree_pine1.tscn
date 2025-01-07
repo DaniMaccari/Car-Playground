@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://icqo0ewds2pv"]
+[gd_scene load_steps=15 format=4 uid="uid://icqo0ewds2pv"]
 
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_8vbyb"]
+[ext_resource type="Script" path="res://Scripts/tree_script.gd" id="1_s43ud"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_seok8"]
 radius = 0.529865
@@ -182,6 +183,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rbdar")
 
 [node name="tree_pine1" type="StaticBody3D"]
+script = ExtResource("1_s43ud")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0419816, 2.01386, 0.00075943)
@@ -213,3 +215,5 @@ skeleton = NodePath("")
 transform = Transform3D(-0.180519, 2.42909e-16, 0.983572, 2.21065e-17, 1, -2.42909e-16, -0.983572, -2.21065e-17, -0.180519, 0, 0, 0)
 mesh = SubResource("ArrayMesh_hgkss")
 skeleton = NodePath("")
+
+[node name="TreeModel" type="Node3D" parent="."]
