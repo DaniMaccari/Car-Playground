@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=30 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -9,13 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://ca7h2il3ay43c" path="res://Scenes/Terrain_test.tscn" id="3_cmosh"]
 [ext_resource type="PackedScene" uid="uid://b2p25076emcvk" path="res://Scenes/Sound/CollectSound.tscn" id="4_fr1yy"]
 [ext_resource type="AudioStream" uid="uid://dsxlgrbqvslfg" path="res://Assets/sound_effects/flash.mp3" id="4_gl1ap"]
-[ext_resource type="PackedScene" uid="uid://bcv1gb63g1d2t" path="res://Scenes/tree_test.tscn" id="5_l2gm7"]
 [ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
 [ext_resource type="AudioStream" uid="uid://byiyaceillavb" path="res://Assets/sound_effects/bubblepop.wav" id="5_t8iqd"]
 [ext_resource type="Texture2D" uid="uid://babgxuvp8ftuj" path="res://Assets/Terrain/waterTexture.png" id="6_lfaja"]
 [ext_resource type="AudioStream" uid="uid://db8y1xdjk1n1g" path="res://Assets/sound_effects/catch/catch_8,9.wav" id="7_74mds"]
 [ext_resource type="AudioStream" uid="uid://becl3ot3g08es" path="res://Assets/sound_effects/catch/catch_1.wav" id="7_fdyik"]
-[ext_resource type="PackedScene" uid="uid://icqo0ewds2pv" path="res://Scenes/Trees/tree_pine1.tscn" id="8_7auv0"]
 [ext_resource type="Script" path="res://Scripts/ui_scrip.gd" id="8_ccuvy"]
 [ext_resource type="PackedScene" uid="uid://sgnjqag75kd" path="res://Scenes/Ramp_Jump.tscn" id="8_g2yf7"]
 [ext_resource type="AudioStream" uid="uid://c3q6rarju5gnv" path="res://Assets/sound_effects/catch/catch_2,3.wav" id="8_hsj0x"]
@@ -27,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
 [ext_resource type="AudioStream" uid="uid://bhrk3hlu65vo2" path="res://Assets/sound_effects/Sketchbook 2024-08-01.wav" id="26_bps6j"]
+[ext_resource type="PackedScene" uid="uid://be6npkqj16mv7" path="res://Scenes/Trees/base_tree.tscn" id="27_1f1v1"]
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
@@ -113,18 +112,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38419e-07, 0, -25)
 [node name="MarkerX" type="Marker3D" parent="PointsCounter"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, -6.4075e-07)
 
-[node name="Node3D" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.608, -3.83086, 14.1127)
-
-[node name="Node3D2" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(0.0572155, 0, 0.998362, 0, 1, 0, -0.998362, 0, 0.0572155, -4.06981, -2.71304, -24.6354)
-
-[node name="Node3D3" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(0.950548, 0, -0.310577, 0, 1, 0, 0.310577, 0, 0.950548, 23.4096, -2.17263, 7.15186)
-
-[node name="Node3D4" parent="." instance=ExtResource("5_l2gm7")]
-transform = Transform3D(-0.602066, 0, -0.798446, 0, 1, 0, 0.798446, 0, -0.602066, -18.2265, -2.98183, 8.66702)
-
 [node name="WaterMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 2.38419e-07, -4, 0.920999)
 visible = false
@@ -134,15 +121,6 @@ mesh = SubResource("PlaneMesh_uq350")
 
 [node name="RampaSalto" parent="." instance=ExtResource("8_g2yf7")]
 transform = Transform3D(0.707107, -7.61989e-09, 0.707107, -0.185086, 0.965136, 0.185086, -0.682454, -0.261751, 0.682454, -13.118, -1.6366, -14.7084)
-
-[node name="tree_pine1" parent="." instance=ExtResource("8_7auv0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8339, -2.62016, -12.1478)
-
-[node name="tree_pine2" parent="." instance=ExtResource("8_7auv0")]
-transform = Transform3D(0.286625, 0, -0.958043, 0, 1, 0, 0.958043, 0, 0.286625, 15.0896, 0.660991, 22.7181)
-
-[node name="tree_pine3" parent="." instance=ExtResource("8_7auv0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6662, 0.38375, 19.7764)
 
 [node name="end_UI" parent="." instance=ExtResource("12_22y6m")]
 visible = false
@@ -217,5 +195,29 @@ color = Color(0.938449, 0.93845, 0.93845, 1)
 [node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]
 process_mode = 3
 visible = false
+
+[node name="tree_base" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0379, -0.489191, -23.8641)
+
+[node name="tree_base2" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96143, -0.629077, 23.0431)
+
+[node name="tree_base3" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2103, -1.67911, 12.1845)
+
+[node name="tree_base4" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2633, 0.661999, 20.5707)
+
+[node name="tree_base5" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1669, -3.4954, 11.845)
+
+[node name="tree_base6" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.1111, -3.25072, -4.70473)
+
+[node name="tree_base7" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1975, -2.55053, 6.06478)
+
+[node name="tree_base8" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4028, -2.47713, -16.2593)
 
 [connection signal="catched_signal" from="PointsCounter" to="CollectSound" method="play_collect_sound"]
