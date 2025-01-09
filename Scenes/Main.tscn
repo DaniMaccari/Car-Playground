@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=32 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -27,11 +27,22 @@
 [ext_resource type="AudioStream" uid="uid://bhrk3hlu65vo2" path="res://Assets/sound_effects/Sketchbook 2024-08-01.wav" id="26_bps6j"]
 [ext_resource type="PackedScene" uid="uid://be6npkqj16mv7" path="res://Scenes/Trees/base_tree.tscn" id="27_1f1v1"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_iymry"]
+sky_top_color = Color(0.207843, 0.4, 0.839216, 1)
+sky_horizon_color = Color(0.207843, 0.439216, 0.839216, 1)
+ground_bottom_color = Color(0.207843, 0.439216, 0.839216, 1)
+ground_horizon_color = Color(0.207843, 0.439216, 0.839216, 1)
+ground_curve = 0.0400001
+
+[sub_resource type="Sky" id="Sky_3aueq"]
+sky_material = SubResource("ProceduralSkyMaterial_iymry")
+
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
-background_color = Color(0.207725, 0.43982, 0.841102, 1)
+background_color = Color(0.207843, 0.431373, 0.839216, 1)
+sky = SubResource("Sky_3aueq")
 ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
-tonemap_mode = 2
+tonemap_exposure = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oggjv"]
 albedo_texture = ExtResource("6_lfaja")
@@ -120,7 +131,31 @@ material_override = SubResource("StandardMaterial3D_oggjv")
 mesh = SubResource("PlaneMesh_uq350")
 
 [node name="RampaSalto" parent="." instance=ExtResource("8_g2yf7")]
-transform = Transform3D(0.707107, -7.61989e-09, 0.707107, -0.185086, 0.965136, 0.185086, -0.682454, -0.261751, 0.682454, -13.118, -1.6366, -14.7084)
+transform = Transform3D(-0.934306, -0.00605235, -0.356422, 0.033814, 0.993843, -0.105515, 0.354866, -0.110635, -0.928348, 15.7305, -0.122283, 17.3048)
+
+[node name="tree_base" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7341, 0.110704, -24.928)
+
+[node name="tree_base2" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96143, -0.629077, 23.0431)
+
+[node name="tree_base8" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4028, -2.47713, -16.2593)
+
+[node name="tree_base5" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.10718, -2.6067, -18.4887)
+
+[node name="tree_base7" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.4742, -3.60433, 12.632)
+
+[node name="tree_base9" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7148, -2.06422, 5.33894)
+
+[node name="tree_base3" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3206, -2.57189, 8.1843)
+
+[node name="tree_base4" parent="." instance=ExtResource("27_1f1v1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.2549, -2.57132, -14.6715)
 
 [node name="end_UI" parent="." instance=ExtResource("12_22y6m")]
 visible = false
@@ -134,7 +169,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_ccuvy")
-MAX_TIME = 100
+metadata/_edit_use_anchors_ = true
 
 [node name="StartLabel" type="RichTextLabel" parent="ingame_UI"]
 layout_mode = 1
@@ -195,29 +230,5 @@ color = Color(0.938449, 0.93845, 0.93845, 1)
 [node name="menu_UI" parent="." instance=ExtResource("14_wo6fb")]
 process_mode = 3
 visible = false
-
-[node name="tree_base" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0379, -0.489191, -23.8641)
-
-[node name="tree_base2" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96143, -0.629077, 23.0431)
-
-[node name="tree_base3" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2103, -1.67911, 12.1845)
-
-[node name="tree_base4" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2633, 0.661999, 20.5707)
-
-[node name="tree_base5" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1669, -3.4954, 11.845)
-
-[node name="tree_base6" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.1111, -3.25072, -4.70473)
-
-[node name="tree_base7" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1975, -2.55053, 6.06478)
-
-[node name="tree_base8" parent="." instance=ExtResource("27_1f1v1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4028, -2.47713, -16.2593)
 
 [connection signal="catched_signal" from="PointsCounter" to="CollectSound" method="play_collect_sound"]

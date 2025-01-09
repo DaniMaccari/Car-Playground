@@ -13,6 +13,28 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lmje2")
 
+[node name="endPhoto" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="endPhoto"]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 37.0
+offset_right = 336.0
+offset_bottom = 272.0
+rotation = -0.0531185
+color = Color(0.980392, 0.980392, 0.980392, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="endPhoto/ColorRect"]
+position = Vector2(103.016, 96.6057)
+scale = Vector2(0.694706, 0.694706)
+texture = ExtResource("3_musp7")
+
 [node name="endText" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -81,8 +103,8 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = 7.0
-offset_bottom = 35.0
+offset_top = 39.0
+offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_vuup4")
@@ -90,25 +112,3 @@ theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = "[center]press any button to restart"
 fit_content = true
-
-[node name="endPhoto" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="endPhoto"]
-layout_mode = 0
-offset_left = 131.0
-offset_top = 37.0
-offset_right = 336.0
-offset_bottom = 272.0
-rotation = -0.0531185
-color = Color(0.980392, 0.980392, 0.980392, 1)
-
-[node name="Sprite2D" type="Sprite2D" parent="endPhoto/ColorRect"]
-position = Vector2(103.016, 96.6057)
-scale = Vector2(0.694706, 0.694706)
-texture = ExtResource("3_musp7")

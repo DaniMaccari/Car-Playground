@@ -205,6 +205,8 @@ func _on_chilly_timeout() -> void:
 
 func activate_banana() -> void:
 	banana_effect = -1
+	$Banana.show()
 
 func _on_banana_timer_timeout() -> void:
 	banana_effect = 1
+	$Banana.hide()

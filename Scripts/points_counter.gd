@@ -10,12 +10,14 @@ var max_x : int
 
 # spawn objects
 var cone_object : PackedScene
+var fence_object : PackedScene
 
 func _ready() -> void:
 	max_z = $MarkerZ.position.z
 	max_x = $MarkerX.position.x
 	
 	cone_object = preload("res://Scenes/Particles/Cone.tscn")
+	fence_object = preload("res://Scenes/Particles/Fence.tscn")
 
 func spawn_collectable() -> void:
 	await get_tree().create_timer(0.2).timeout
@@ -44,3 +46,10 @@ func spawn_cone(pos : Vector3) -> void:
 	
 	self.add_child(new_cone)
 	new_cone.position = pos
+
+func spawn_fence(pos : Vector3) -> void:
+	var new_fence := fence_object.instantiate()
+	
+	self.add_child(new_fence)
+	new_fence.position = pos
+	

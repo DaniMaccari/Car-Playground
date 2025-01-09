@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://dd0nts174s84k"]
+[gd_scene load_steps=37 format=4 uid="uid://dd0nts174s84k"]
 
 [ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
@@ -11,6 +11,7 @@
 [ext_resource type="ArrayMesh" uid="uid://b5mcm1hegysvb" path="res://Assets/Models/Bunny_Ears_1.obj" id="9_np0y6"]
 [ext_resource type="ArrayMesh" uid="uid://8q4r208dmcae" path="res://Assets/Models/Bunny_Ears_2.obj" id="10_b4c84"]
 [ext_resource type="AudioStream" uid="uid://b15a58t3qvf3p" path="res://Assets/sound_effects/impact/impact_1.wav" id="11_gvosg"]
+[ext_resource type="ArrayMesh" uid="uid://hqtr7myc01kx" path="res://Assets/Fruits/banana.obj" id="11_lpyin"]
 [ext_resource type="AudioStream" uid="uid://24lslm7a2n63" path="res://Assets/sound_effects/impact/impact_2.wav" id="12_uhxkp"]
 [ext_resource type="AudioStream" uid="uid://iqstkqj1i2x7" path="res://Assets/sound_effects/impact/impact_3.wav" id="13_1ja0o"]
 [ext_resource type="AudioStream" uid="uid://cpdukcj20uawp" path="res://Assets/sound_effects/impact/impact_4.wav" id="14_gobrt"]
@@ -153,6 +154,10 @@ shading_mode = 2
 albedo_color = Color(1, 0.505882, 0.988235, 1)
 roughness = 0.8
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ix20s"]
+albedo_color = Color(0.945098, 0.686275, 0, 1)
+roughness = 0.8
+
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4d3r8"]
 streams_count = 4
 stream_0/stream = ExtResource("11_gvosg")
@@ -290,7 +295,8 @@ emitting = false
 wait_time = 2.0
 
 [node name="banana_timer" type="Timer" parent="."]
-wait_time = 6.0
+wait_time = 4.5
+one_shot = true
 
 [node name="Drift" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
@@ -313,6 +319,15 @@ skeleton = NodePath("../..")
 [node name="BunnyEars2" type="MeshInstance3D" parent="Ears"]
 material_override = SubResource("StandardMaterial3D_q6r35")
 mesh = ExtResource("10_b4c84")
+skeleton = NodePath("../..")
+
+[node name="Banana" type="Node3D" parent="."]
+visible = false
+
+[node name="Banana" type="MeshInstance3D" parent="Banana"]
+transform = Transform3D(-6.22826e-09, -6.13484e-09, 0.2, -0.103665, 0.171037, 2.01814e-09, -0.171037, -0.103665, -8.50615e-09, 0, 1.90286, -1.06336)
+material_override = SubResource("StandardMaterial3D_ix20s")
+mesh = ExtResource("11_lpyin")
 skeleton = NodePath("../..")
 
 [node name="ImpactSound" type="AudioStreamPlayer3D" parent="."]
