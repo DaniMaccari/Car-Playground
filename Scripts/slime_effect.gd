@@ -12,4 +12,4 @@ func show_slime() -> void:
 	await get_tree().create_timer(1.0).timeout
 	slime_tween = create_tween()
 	slime_tween.set_trans(Tween.TRANS_LINEAR)
-	slime_tween.tween_property($Sprite2D, "modulate:a", 0.0, 2.5)
+	slime_tween.tween_property($Sprite2D, "modulate:a", 0.0, 1.8)

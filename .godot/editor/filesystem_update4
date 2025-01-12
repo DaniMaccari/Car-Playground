@@ -1,4 +1,4 @@
-res://Scenes/Main.tscn
+res://Scenes/Collectable_object.tscn
 res://Materials/green_object.tres
 res://Scripts/Sound/collect_sound.gd
 res://Scenes/Trees/bark2.tres
@@ -10,11 +10,12 @@ res://Scenes/Trees/yellow2.tres
 res://Scenes/Trees/green3.tres
 res://Scenes/Trees/green4.tres
 res://Scripts/main.gd
-res://Scripts/slime_effect.gd
-res://Scenes/Collectable_object.tscn
+res://Scenes/Main.tscn
 res://Scenes/menu_scene.tscn
 res://Scenes/Trees/base_tree.tscn
 res://Scenes/Vehicle_movement.tscn
 res://Scenes/end_scene.tscn
 res://Scenes/Terrain_test.tscn
 res://Scenes/Sound/CollectSound.tscn
+res://Scripts/collectable.gd
+res://Scripts/slime_effect.gd

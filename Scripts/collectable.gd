@@ -67,15 +67,14 @@ func check_heigth() -> void:
 			position.y = raycast.get_collision_point().y + object_heigth
 			show()
 			await get_tree().create_timer(1.0).timeout
+			return
 			print("colision detectada")
-	else:
-		position.z = randf_range(22, -22)
-		position.x = randf_range(22, -22)
-		#position.z = 0
-		#position.x = 0
-		print("no colision")
 	
-	print("is_positioned ", is_positioned)
+	position.z = randf_range(22, -22)
+	position.x = randf_range(22, -22)
+	#position.z = 0
+	#position.x = 0
+	print("no colision")
 	print("posicion ", position)
 	
 

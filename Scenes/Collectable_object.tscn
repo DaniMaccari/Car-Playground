@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://b1lv72wgq2xnc"]
+[gd_scene load_steps=35 format=4 uid="uid://b1lv72wgq2xnc"]
 
 [ext_resource type="Script" path="res://Scripts/collectable.gd" id="1_om0bk"]
 [ext_resource type="Texture2D" uid="uid://4id1juuifsd4" path="res://Assets/tree_set/treebase_color.png" id="1_s8vmp"]
@@ -16,6 +16,11 @@
 [ext_resource type="ArrayMesh" uid="uid://dprmq1l0a2hu0" path="res://Assets/Fruits/mango_down.obj" id="13_5a80i"]
 [ext_resource type="ArrayMesh" uid="uid://bmfeltytt7du8" path="res://Assets/Fruits/carrot.obj" id="14_7h516"]
 [ext_resource type="ArrayMesh" uid="uid://dwwcenf4ijruk" path="res://Assets/Fruits/carrot_up.obj" id="15_3x1bj"]
+[ext_resource type="ArrayMesh" uid="uid://ds0bfo2i5qr3b" path="res://Assets/Fruits/one_cherry_down.obj" id="17_1tn84"]
+[ext_resource type="ArrayMesh" uid="uid://ce5txs3qq5dmu" path="res://Assets/Fruits/one_cherry_up.obj" id="18_nf75j"]
+[ext_resource type="ArrayMesh" uid="uid://b1pje3l80c4fd" path="res://Assets/Fruits/brocoli_down.obj" id="19_23f1o"]
+[ext_resource type="Material" uid="uid://colhytyytyhof" path="res://Scenes/Trees/green3.tres" id="20_5hnhj"]
+[ext_resource type="ArrayMesh" uid="uid://pnr51bkmyn63" path="res://Assets/Fruits/brocoli_up.obj" id="21_503ec"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1pl3"]
 albedo_color = Color(1, 0.294118, 0, 1)
@@ -78,17 +83,22 @@ roughness = 0.6
 albedo_color = Color(1, 0.184314, 0.333333, 1)
 roughness = 0.8
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
+albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
+roughness = 0.6
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eml7t"]
 albedo_color = Color(1, 0.576471, 0.0313726, 1)
+roughness = 0.7
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_adr7n"]
+shading_mode = 2
+albedo_color = Color(0.811765, 0, 0.25098, 1)
 roughness = 0.7
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jeiii"]
 albedo_color = Color(0.945098, 0.686275, 0, 1)
 roughness = 0.8
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
-albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
-roughness = 0.6
 
 [node name="CollectableObject" type="Node3D" groups=["fruit"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
@@ -111,6 +121,7 @@ disabled = true
 [node name="CollisionDetection" type="Area3D" parent="Body"]
 
 [node name="CollectedShape" type="CollisionShape3D" parent="Body/CollisionDetection"]
+transform = Transform3D(1, 0, 0, 0, 0.989206, -0.146532, 0, 0.146532, 0.989206, 0, 0.0473251, -0.169151)
 shape = SubResource("SphereShape3D_20d4o")
 
 [node name="RayCast_Distance" type="RayCast3D" parent="."]
@@ -173,29 +184,6 @@ material_override = ExtResource("5_ayy1q")
 mesh = ExtResource("11_ycsjt")
 skeleton = NodePath("../..")
 
-[node name="Carrot" type="Node3D" parent="Fruit"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72776, 0)
-visible = false
-
-[node name="Carrot" type="MeshInstance3D" parent="Fruit/Carrot"]
-transform = Transform3D(0.797349, -0.0650777, 0, 0.0650777, 0.797349, 0, 0, 0, 0.8, 0.20916, 0, -0.616504)
-material_override = SubResource("StandardMaterial3D_eml7t")
-mesh = ExtResource("14_7h516")
-
-[node name="CarrotUp" type="MeshInstance3D" parent="Fruit/Carrot"]
-transform = Transform3D(0.797349, -0.0650777, 0, 0.0650777, 0.797349, 0, 0, 0, 0.8, 0.20916, 0, -0.616504)
-material_override = ExtResource("5_ayy1q")
-mesh = ExtResource("15_3x1bj")
-
-[node name="Banana" type="Node3D" parent="Fruit"]
-visible = false
-
-[node name="Banana" type="MeshInstance3D" parent="Fruit/Banana"]
-transform = Transform3D(0.641187, 0.771917, 0, -0.631569, 0.783673, 0, 0, 0, 1.1, -2.49653, 2.8782, 0)
-material_override = SubResource("StandardMaterial3D_jeiii")
-mesh = ExtResource("6_hq1y4")
-skeleton = NodePath("../..")
-
 [node name="Eggplant" type="Node3D" parent="Fruit"]
 visible = false
 
@@ -210,5 +198,59 @@ transform = Transform3D(1.03548, 0.15662, 0, -0.174023, 0.931931, 0, 0, 0, 1.05,
 material_override = ExtResource("5_ayy1q")
 mesh = ExtResource("9_76d8y")
 skeleton = NodePath("../../..")
+
+[node name="Brocolli" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="BrocoliDown" type="MeshInstance3D" parent="Fruit/Brocolli"]
+transform = Transform3D(1.2, 0, 0, 0, 1.08813, -0.175838, 0, 0.161185, 1.18705, 0, 0.180757, -1.27616)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("19_23f1o")
+skeleton = NodePath("../..")
+
+[node name="BrocoliUp" type="MeshInstance3D" parent="Fruit/Brocolli"]
+transform = Transform3D(1.5, 0, 0, 0, 1.49597, 0.109936, 0, -0.109936, 1.49597, 0.17145, -1.68501, 2.00342)
+material_override = ExtResource("20_5hnhj")
+mesh = ExtResource("21_503ec")
+skeleton = NodePath("../..")
+
+[node name="Carrot" type="Node3D" parent="Fruit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72776, 0)
+visible = false
+
+[node name="Carrot" type="MeshInstance3D" parent="Fruit/Carrot"]
+transform = Transform3D(0.797349, -0.0650777, 0, 0.0650777, 0.797349, 0, 0, 0, 0.8, 0.20916, 0, -0.616504)
+material_override = SubResource("StandardMaterial3D_eml7t")
+mesh = ExtResource("14_7h516")
+
+[node name="CarrotUp" type="MeshInstance3D" parent="Fruit/Carrot"]
+transform = Transform3D(0.797349, -0.0650777, 0, 0.0650777, 0.797349, 0, 0, 0, 0.8, 0.20916, 0, -0.616504)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("15_3x1bj")
+
+[node name="Cherry" type="Node3D" parent="Fruit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.764566, 0, 0)
+visible = false
+
+[node name="OneCherryDown" type="MeshInstance3D" parent="Fruit/Cherry"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1.1034, 0)
+material_override = SubResource("StandardMaterial3D_adr7n")
+mesh = ExtResource("17_1tn84")
+skeleton = NodePath("../..")
+
+[node name="OneCherryUp" type="MeshInstance3D" parent="Fruit/Cherry"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1.1034, 0)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("18_nf75j")
+skeleton = NodePath("../..")
+
+[node name="Banana" type="Node3D" parent="Fruit"]
+visible = false
+
+[node name="Banana" type="MeshInstance3D" parent="Fruit/Banana"]
+transform = Transform3D(0.641187, 0.771917, 0, -0.631569, 0.783673, 0, 0, 0, 1.1, -2.49653, 2.8782, 0)
+material_override = SubResource("StandardMaterial3D_jeiii")
+mesh = ExtResource("6_hq1y4")
+skeleton = NodePath("../..")
 
 [connection signal="area_entered" from="Body/CollisionDetection" to="." method="_on_collision_detection_area_entered"]

@@ -96,19 +96,20 @@ func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 	match num_fruit:
 		0:
 			print(num_fruit)
-			
-			
 		1:
 			points_manager.spawn_cone(pos)
 		2:
 			car_player.activate_chilly()
 		3:
-			car_player.activate_carrot()
+			$slime.show_slime() #working
 		4:
+			points_manager.spawn_fence(pos) #working
+		5:
+			car_player.activate_carrot()
+		6:
+			print(num_fruit) #confeti cereza
+		7:
 			car_player.activate_banana()
-		#5:
-			#points_manager.spawn_fence(pos) #working
-			#$slime.show_slime() #working
 			
 			#points_manager.spawn_mud(pos)
 	

@@ -23,9 +23,9 @@ grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="endPhoto"]
 layout_mode = 0
-offset_left = 131.0
+offset_left = 139.0
 offset_top = 37.0
-offset_right = 336.0
+offset_right = 344.0
 offset_bottom = 272.0
 rotation = -0.0531185
 color = Color(0.980392, 0.980392, 0.980392, 1)
