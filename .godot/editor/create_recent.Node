@@ -1,3 +1,5 @@
+Sprite2D
+Control
 RayCast3D
 CollisionShape3D
 Area3D
@@ -8,8 +10,5 @@ AudioStreamPlayer
 AudioStreamPlayer3D
 Timer
 RigidBody3D
-Sprite2D
 ColorRect
-Control
 Decal
-GPUParticles3D
