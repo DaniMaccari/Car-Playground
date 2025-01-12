@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7sm1w77vhj8q"]
+
+[ext_resource type="PackedScene" uid="uid://dgnb86ldr825h" path="res://Scenes/Particles/Mud_Particles.tscn" id="1_bo5y2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4slol"]
+radius = 2.83831
+
+[node name="Mud" type="Node3D" groups=["mud", "prop"]]
+
+[node name="Mud" parent="." instance=ExtResource("1_bo5y2")]
+layers = 513
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 32
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_4slol")

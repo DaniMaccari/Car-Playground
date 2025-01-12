@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgnb86ldr825h"]
+
+[ext_resource type="Texture2D" uid="uid://0t473ihq15ye" path="res://Assets/Images/Mud-PNG.png" id="1_esk7u"]
+
+[node name="Mud" type="Decal"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+size = Vector3(5, 7, 5)
+texture_albedo = ExtResource("1_esk7u")
+upper_fade = 0.01
+lower_fade = 0.01
+cull_mask = 1048064

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cadip24ccwo6q"]
+[gd_scene load_steps=26 format=3 uid="uid://cadip24ccwo6q"]
 
 [ext_resource type="PackedScene" uid="uid://dd0nts174s84k" path="res://Scenes/Vehicle_movement.tscn" id="1_j6e7n"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_sbpb4"]
@@ -10,18 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://b2p25076emcvk" path="res://Scenes/Sound/CollectSound.tscn" id="4_fr1yy"]
 [ext_resource type="AudioStream" uid="uid://dsxlgrbqvslfg" path="res://Assets/sound_effects/flash.mp3" id="4_gl1ap"]
 [ext_resource type="Script" path="res://Scripts/points_counter.gd" id="5_lcgfw"]
-[ext_resource type="AudioStream" uid="uid://byiyaceillavb" path="res://Assets/sound_effects/bubblepop.wav" id="5_t8iqd"]
 [ext_resource type="Texture2D" uid="uid://babgxuvp8ftuj" path="res://Assets/Terrain/waterTexture.png" id="6_lfaja"]
-[ext_resource type="AudioStream" uid="uid://db8y1xdjk1n1g" path="res://Assets/sound_effects/catch/catch_8,9.wav" id="7_74mds"]
-[ext_resource type="AudioStream" uid="uid://becl3ot3g08es" path="res://Assets/sound_effects/catch/catch_1.wav" id="7_fdyik"]
 [ext_resource type="Script" path="res://Scripts/ui_scrip.gd" id="8_ccuvy"]
 [ext_resource type="PackedScene" uid="uid://sgnjqag75kd" path="res://Scenes/Ramp_Jump.tscn" id="8_g2yf7"]
-[ext_resource type="AudioStream" uid="uid://c3q6rarju5gnv" path="res://Assets/sound_effects/catch/catch_2,3.wav" id="8_hsj0x"]
 [ext_resource type="FontFile" uid="uid://4ecp7joovjcb" path="res://Assets/fonts/namaku.regular.ttf" id="8_yu54q"]
-[ext_resource type="AudioStream" uid="uid://wpqw6mtykt3t" path="res://Assets/sound_effects/catch/catch_4,5.wav" id="9_1p673"]
 [ext_resource type="Texture2D" uid="uid://b0n0s75hc3uto" path="res://Assets/Timer/timer_under.png" id="9_h7shk"]
 [ext_resource type="Texture2D" uid="uid://cbdvf4y1bibso" path="res://Assets/Timer/timer_progress.png" id="10_0hs6y"]
-[ext_resource type="AudioStream" uid="uid://ctukc8mypo2rd" path="res://Assets/sound_effects/catch/catch_6,7.wav" id="10_1cb22"]
 [ext_resource type="PackedScene" uid="uid://c6as1rcvvwj4y" path="res://Scenes/end_scene.tscn" id="12_22y6m"]
 [ext_resource type="PackedScene" uid="uid://l7rd14u5o0hj" path="res://Scenes/menu_scene.tscn" id="14_wo6fb"]
 [ext_resource type="AudioStream" uid="uid://bhrk3hlu65vo2" path="res://Assets/sound_effects/Sketchbook 2024-08-01.wav" id="26_bps6j"]
@@ -71,7 +65,6 @@ stream = ExtResource("2_32c2q")
 
 [node name="CollectSound" parent="." instance=ExtResource("4_fr1yy")]
 volume_db = -5.0
-collect_sounds = Array[AudioStream]([ExtResource("7_fdyik"), ExtResource("8_hsj0x"), ExtResource("9_1p673"), ExtResource("10_1cb22"), ExtResource("7_74mds"), ExtResource("5_t8iqd")])
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sn5f3")

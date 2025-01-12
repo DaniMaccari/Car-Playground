@@ -32,6 +32,8 @@ var carrot_timer : Timer
 var carrot_jumps : int = 4
 # banana
 var banana_effect : int = 1
+#eggplant
+var in_mud : bool = false
 
 func _ready() -> void:
 	
@@ -77,7 +79,7 @@ func _physics_process(delta: float) -> void:
 	
 	# drastic speed change -> collision
 	var speed_change := actual_speed - previous_speed
-	if abs(speed_change) > 9.0:
+	if abs(speed_change) > 7.0:
 		print("big collision")
 		$ImpactSound.play()
 		Input.vibrate_handheld(100)
@@ -105,6 +107,7 @@ func _physics_process(delta: float) -> void:
 			engine_force = ENGINE_POWER * CHILLY_POWER * 4.0
 		else:
 			engine_force = ENGINE_POWER * CHILLY_POWER
+	
 	# initial accel faster
 	elif Input.is_action_pressed("ui_accel"):
 		
@@ -117,7 +120,6 @@ func _physics_process(delta: float) -> void:
 			engine_force = Input.get_action_strength("ui_accel") * ENGINE_POWER
 	
 	elif Input.is_action_pressed("ui_decel"):
-
 		if direction > 0.0:
 			engine_force = -Input.get_action_strength("ui_decel") * ENGINE_POWER * BRAKE_STRENGTH
 		elif actual_speed < initial_min_speed && not is_zero_approx(actual_speed):
@@ -128,7 +130,10 @@ func _physics_process(delta: float) -> void:
 	else:
 		engine_force = 0.0
 
-	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER * banana_effect, delta * 10)
+	if in_mud:
+		steering = move_toward(steering, 0, delta * 10)
+	else:
+		steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER * banana_effect, delta * 10)
 	# tocando suelo
 	if actual_speed > 14.0 && $WheelBackLeft.is_in_contact() && $WheelBackRight.is_in_contact() && abs(Input.get_axis("ui_right", "ui_left")) > 0.5:
 		$Drift/DriftParticlesL.emitting = true
@@ -174,11 +179,15 @@ func _on_smoke_timeout() -> void:
 #func this_controller(input_action) -> bool:
 	#return input_action is player_index
 
-#func _on_area_3d_area_entered(area: Area3D) -> void:
-	#var collider := area.get_parent().get_parent()
-	#if collider.is_in_group("fruit"):
-		#if collider.get_fruit() == 3: #CHANGE
-			#activate_chilly()
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	var collider := area.get_parent().get_parent()
+	if collider.is_in_group("mud"):
+		print("MUD")
+		in_mud = true
+
+func _on_area_3d_body_exited(body: Node3D) -> void:
+	in_mud = false
+
 func activate_carrot() -> void:
 	$Ears.show()
 	carrot_counter = carrot_jumps

@@ -1,12 +1,13 @@
-StaticBody3D
+RayCast3D
+CollisionShape3D
+Area3D
 Node3D
+StaticBody3D
 MeshInstance3D
 AudioStreamPlayer
 AudioStreamPlayer3D
-Area3D
 Timer
 RigidBody3D
-CollisionShape3D
 Sprite2D
 ColorRect
 Control

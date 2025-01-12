@@ -168,7 +168,7 @@ stream_3/stream = ExtResource("14_gobrt")
 
 [node name="Body" type="VehicleBody3D" groups=["car"]]
 top_level = true
-collision_layer = 2
+collision_layer = 18
 mass = 100.0
 gravity_scale = 2.0
 center_of_mass_mode = 1
@@ -337,5 +337,6 @@ unit_size = 30.0
 pitch_scale = 1.4
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
 [connection signal="timeout" from="carrot_timer" to="." method="_on_timer_carrot_timeout"]
 [connection signal="timeout" from="banana_timer" to="." method="_on_banana_timer_timeout"]

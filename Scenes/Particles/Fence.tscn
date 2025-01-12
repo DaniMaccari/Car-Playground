@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://curptv4f0f6he"]
+[gd_scene load_steps=7 format=4 uid="uid://curptv4f0f6he"]
 
+[ext_resource type="Script" path="res://Scripts/fence.gd" id="1_0dkew"]
 [ext_resource type="Material" uid="uid://sbsw6cglgd" path="res://Scenes/Trees/bark2.tres" id="1_7dkxn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r8adm"]
-size = Vector3(3.66699, 2.61914, 0.549805)
+size = Vector3(3.02441, 2.61914, 0.549805)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slkhf"]
 
@@ -40,13 +41,19 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lb68g")
 
 [node name="Fence" type="StaticBody3D" groups=["prop"]]
+script = ExtResource("1_0dkew")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.33203, -0.0470703)
 shape = SubResource("BoxShape3D_r8adm")
 
 [node name="fence14" type="MeshInstance3D" parent="."]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0.5, 0)
+transform = Transform3D(2, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -0.0804482, 0.5, 0)
 material_override = ExtResource("1_7dkxn")
 mesh = SubResource("ArrayMesh_wevbm")
 skeleton = NodePath("")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 5

@@ -1,15 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2p25076emcvk"]
+[gd_scene load_steps=12 format=3 uid="uid://b2p25076emcvk"]
 
 [ext_resource type="AudioStream" uid="uid://becl3ot3g08es" path="res://Assets/sound_effects/catch/catch_1.wav" id="1_bx6yb"]
 [ext_resource type="Script" path="res://Scripts/Sound/collect_sound.gd" id="2_svngj"]
-[ext_resource type="AudioStream" uid="uid://c3q6rarju5gnv" path="res://Assets/sound_effects/catch/catch_2,3.wav" id="3_hk283"]
-[ext_resource type="AudioStream" uid="uid://wpqw6mtykt3t" path="res://Assets/sound_effects/catch/catch_4,5.wav" id="4_bu5ge"]
-[ext_resource type="AudioStream" uid="uid://ctukc8mypo2rd" path="res://Assets/sound_effects/catch/catch_6,7.wav" id="5_kljhv"]
-[ext_resource type="AudioStream" uid="uid://db8y1xdjk1n1g" path="res://Assets/sound_effects/catch/catch_8,9.wav" id="6_4opgs"]
+[ext_resource type="AudioStream" uid="uid://byi6u46cfctil" path="res://Assets/sound_effects/catch/level-up.mp3" id="3_tc0ml"]
+[ext_resource type="AudioStream" uid="uid://bsweho30xq6cs" path="res://Assets/sound_effects/catch/catch_2.wav" id="4_xjapp"]
+[ext_resource type="AudioStream" uid="uid://yqnukjacapoe" path="res://Assets/sound_effects/catch/catch_3.wav" id="5_5r8kp"]
+[ext_resource type="AudioStream" uid="uid://df622a0myexlj" path="res://Assets/sound_effects/catch/catch_4.wav" id="6_nmofe"]
+[ext_resource type="AudioStream" uid="uid://cfljelnlovxn0" path="res://Assets/sound_effects/catch/catch_5.wav" id="7_v01qn"]
+[ext_resource type="AudioStream" uid="uid://cy47yrw3qe5m6" path="res://Assets/sound_effects/catch/catch_6.wav" id="8_hinvr"]
+[ext_resource type="AudioStream" uid="uid://dsr6vjcfa0tgp" path="res://Assets/sound_effects/catch/catch_7.wav" id="9_is1bn"]
+[ext_resource type="AudioStream" uid="uid://bnod3uf5160vi" path="res://Assets/sound_effects/catch/catch_8.wav" id="10_vpj86"]
+[ext_resource type="AudioStream" uid="uid://c5opmtadaaaka" path="res://Assets/sound_effects/catch/catch_9.wav" id="11_ww30q"]
 
 [node name="CollectSound" type="AudioStreamPlayer"]
 stream = ExtResource("1_bx6yb")
 volume_db = 10.0
-pitch_scale = 1.3
 script = ExtResource("2_svngj")
-collect_sounds = Array[AudioStream]([ExtResource("1_bx6yb"), ExtResource("3_hk283"), ExtResource("4_bu5ge"), ExtResource("5_kljhv"), ExtResource("6_4opgs")])
+collect_sounds_array = Array[AudioStream]([ExtResource("3_tc0ml"), ExtResource("1_bx6yb"), ExtResource("4_xjapp"), ExtResource("5_5r8kp"), ExtResource("6_nmofe"), ExtResource("7_v01qn"), ExtResource("8_hinvr"), ExtResource("9_is1bn"), ExtResource("10_vpj86"), ExtResource("11_ww30q")])
