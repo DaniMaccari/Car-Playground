@@ -1,6 +1,5 @@
 [gd_scene load_steps=37 format=4 uid="uid://dd0nts174s84k"]
 
-[ext_resource type="Texture2D" uid="uid://0mpevcqojxn8" path="res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png" id="1_dao8p"]
 [ext_resource type="Script" path="res://Scripts/vehicle_movement.gd" id="1_ijyx4"]
 [ext_resource type="Texture2D" uid="uid://bdqtagqcmrma1" path="res://Assets/auto_racing_car/turnipCar2.tga" id="2_uuu66"]
 [ext_resource type="ArrayMesh" uid="uid://nf8dymeux4b4" path="res://Assets/auto_racing_car/orange/sportscar_orange.obj" id="3_xcat0"]
@@ -19,17 +18,19 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_3cq40"]
 size = Vector3(2, 3.7, 2)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as662"]
-shading_mode = 2
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_acpnx"]
 albedo_texture = ExtResource("2_uuu66")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv0xn"]
 albedo_texture = ExtResource("2_uuu66")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tp1qo"]
+load_path = "res://.godot/imported/sportsCar_yellow.png-4a8cac2ea46dd3c76a08e7b42d06ed25.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rso3r"]
 resource_name = "sportsCar_yellow"
 cull_mode = 2
-albedo_texture = ExtResource("1_dao8p")
+albedo_texture = SubResource("CompressedTexture2D_tp1qo")
 roughness = 0.0764706
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_t6hbg"]
@@ -182,12 +183,10 @@ shape = SubResource("BoxShape3D_3cq40")
 [node name="sportsCar" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
-[node name="sportsCar_yellow_body" type="MeshInstance3D" parent="sportsCar"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-layers = 2
-material_override = SubResource("StandardMaterial3D_as662")
+[node name="SportscarOrange" type="MeshInstance3D" parent="sportsCar"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_acpnx")
 mesh = ExtResource("3_xcat0")
-skeleton = NodePath("")
 
 [node name="WheelFrontLeft" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.342067, 1.483)

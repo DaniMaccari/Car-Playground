@@ -32,7 +32,6 @@ func start_engine_sound() -> void:
 		engine.play()
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	_get_speed_value(delta)
 	update_engine_streams()
@@ -88,7 +87,7 @@ func update_engine_streams() -> void:
 			#var fade_1 : float = clamp(remap(car_speed, 0, 0.25, 0, 1), 0, 1)
 			#crossfade(engines[0], engines[1], fade_1) 
 
-	for i in range (engines.size() - 1):
+	for i in range (engines.size() - 2):
 		#if car speed is inside the possible lerp range
 		if(car_speed > (i - 1) * 0.1 && car_speed < (i + 1) * 0.1):
 			# loop all other engines and lower volume

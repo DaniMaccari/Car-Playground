@@ -72,13 +72,13 @@ volume_db = -5.0
 environment = SubResource("Environment_sn5f3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.733267, -0.268672, -0.624608, 0.619974, -0.113015, 0.77644, -0.279199, -0.956579, 0.0836999, 2.38419e-07, 10, -5.51343e-07)
+transform = Transform3D(0.736401, -0.218348, -0.640342, 0.633022, -0.111619, 0.766044, -0.238738, -0.969467, 0.0560227, 2.38419e-07, 10, -5.51343e-07)
 light_color = Color(0.988235, 0.760784, 0.780392, 1)
 light_indirect_energy = 4.0
 light_bake_mode = 1
 shadow_enabled = true
 shadow_opacity = 0.8
-shadow_blur = 2.0
+shadow_blur = 3.0
 directional_shadow_max_distance = 80.0
 sky_mode = 1
 

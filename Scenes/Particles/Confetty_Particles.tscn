@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://ulyo60ew46pd"]
+
+[ext_resource type="Script" path="res://Scripts/confetty_particles.gd" id="1_tv0kb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ah3m"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_ts5ob"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.160221, 0.298343, 0.469613, 0.635359, 0.767956, 0.900553)
+colors = PackedColorArray(1, 0.0862745, 0, 1, 1, 0.529412, 0.917647, 1, 0.0941176, 0.435294, 1, 1, 0.0941176, 1, 1, 1, 1, 0.513726, 0, 1, 1, 0.933333, 0.2, 1, 0, 0.901961, 0.290196, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ktsup"]
+gradient = SubResource("Gradient_ts5ob")
+
+[sub_resource type="Curve" id="Curve_qvajs"]
+_data = [Vector2(0.00931676, 0.0314039), 0.0, 7.90082, 0, 0, Vector2(0.258373, 0.923077), 0.471119, 0.471119, 0, 0, Vector2(0.995215, 0.32967), -2.58379, -1.88658, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_0t2tb"]
+curve = SubResource("Curve_qvajs")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwmek"]
+lifetime_randomness = 0.3
+direction = Vector3(0, 1.2, 0)
+spread = 25.0
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, -15, 0)
+scale_min = 0.5
+scale_curve = SubResource("CurveTexture_0t2tb")
+color_initial_ramp = SubResource("GradientTexture1D_ktsup")
+turbulence_noise_strength = 0.2
+turbulence_noise_scale = 5.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_gqufg"]
+radial_segments = 10
+rings = 10
+
+[node name="ConfettyParticles" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+layers = 16
+material_override = SubResource("StandardMaterial3D_6ah3m")
+emitting = false
+amount = 20
+one_shot = true
+explosiveness = 0.8
+randomness = 0.1
+process_material = SubResource("ParticleProcessMaterial_xwmek")
+draw_pass_1 = SubResource("SphereMesh_gqufg")
+script = ExtResource("1_tv0kb")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

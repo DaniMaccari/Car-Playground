@@ -97,17 +97,17 @@ func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 		0:
 			print(num_fruit)
 		1:
-			points_manager.spawn_cone(pos)
+			$slime.show_slime() #working
 		2:
 			car_player.activate_chilly()
 		3:
-			$slime.show_slime() #working
+			points_manager.spawn_cone(pos)
 		4:
 			points_manager.spawn_fence(pos) #working
 		5:
 			car_player.activate_carrot()
 		6:
-			print(num_fruit) #confeti cereza
+			points_manager.spawn_confetty(pos)
 		7:
 			car_player.activate_banana()
 			

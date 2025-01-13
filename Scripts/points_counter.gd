@@ -12,6 +12,7 @@ var max_x : int
 var cone_object : PackedScene
 var mud_object : PackedScene
 var fence_object : PackedScene
+var confetty_object : PackedScene
 
 func _ready() -> void:
 	max_z = $MarkerZ.position.z
@@ -20,6 +21,7 @@ func _ready() -> void:
 	cone_object = preload("res://Scenes/Particles/Cone.tscn")
 	mud_object = preload("res://Scenes/Particles/Mud.tscn")
 	fence_object = preload("res://Scenes/Particles/Fence.tscn")
+	confetty_object = preload("res://Scenes/Particles/Confetty_Particles.tscn")
 
 func spawn_collectable() -> void:
 	await get_tree().create_timer(0.2).timeout
@@ -61,4 +63,8 @@ func spawn_fence(pos : Vector3) -> void:
 	new_fence.position = pos + Vector3(0, 3, 0)
 	self.add_child(new_fence)
 	
+func spawn_confetty(pos : Vector3) -> void:
+	var new_conffety := confetty_object.instantiate()
 	
+	new_conffety.position = pos
+	self.add_child(new_conffety)

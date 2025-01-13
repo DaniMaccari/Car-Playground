@@ -75,16 +75,16 @@ shading_mode = 2
 albedo_color = Color(1, 0.258824, 0.592157, 1)
 roughness = 0.8
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2iwh1"]
-albedo_color = Color(1, 0.376471, 0.152941, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
+albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
 roughness = 0.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cbw27"]
 albedo_color = Color(1, 0.184314, 0.333333, 1)
 roughness = 0.8
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t2p"]
-albedo_color = Color(0.537255, 0.27451, 0.921569, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2iwh1"]
+albedo_color = Color(1, 0.376471, 0.152941, 1)
 roughness = 0.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eml7t"]
@@ -154,20 +154,20 @@ material_override = ExtResource("5_ayy1q")
 mesh = ExtResource("5_gto8s")
 skeleton = NodePath("../../..")
 
-[node name="Mango" type="Node3D" parent="Fruit"]
+[node name="Eggplant" type="Node3D" parent="Fruit"]
 visible = false
 
-[node name="MangoUp" type="MeshInstance3D" parent="Fruit/Mango"]
-transform = Transform3D(0.9, 0, 0, 0, 0.886327, 0.156283, 0, -0.156283, 0.886327, 0, -0.7, 0.646043)
-material_override = ExtResource("5_ayy1q")
-mesh = ExtResource("12_0adww")
+[node name="EggplantDown" type="MeshInstance3D" parent="Fruit/Eggplant"]
+transform = Transform3D(1.03548, 0.15662, 0, -0.174023, 0.931931, 0, 0, 0, 1.05, -1.07502, -1.21217, 0)
+material_override = SubResource("StandardMaterial3D_v2t2p")
+mesh = ExtResource("8_7gnjm")
 skeleton = NodePath("../..")
 
-[node name="MangoDown" type="MeshInstance3D" parent="Fruit/Mango"]
-transform = Transform3D(0.9, 0, 0, 0, 0.886327, 0.156283, 0, -0.156283, 0.886327, 0, -0.7, 0.646043)
-material_override = SubResource("StandardMaterial3D_2iwh1")
-mesh = ExtResource("13_5a80i")
-skeleton = NodePath("../..")
+[node name="EggplantUp" type="MeshInstance3D" parent="Fruit/Eggplant"]
+transform = Transform3D(1.03548, 0.15662, 0, -0.174023, 0.931931, 0, 0, 0, 1.05, -1.14797, -1.39691, 0)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("9_76d8y")
+skeleton = NodePath("../../..")
 
 [node name="Chilly" type="Node3D" parent="Fruit"]
 visible = false
@@ -184,20 +184,20 @@ material_override = ExtResource("5_ayy1q")
 mesh = ExtResource("11_ycsjt")
 skeleton = NodePath("../..")
 
-[node name="Eggplant" type="Node3D" parent="Fruit"]
+[node name="Mango" type="Node3D" parent="Fruit"]
 visible = false
 
-[node name="EggplantDown" type="MeshInstance3D" parent="Fruit/Eggplant"]
-transform = Transform3D(1.03548, 0.15662, 0, -0.174023, 0.931931, 0, 0, 0, 1.05, -1.07502, -1.21217, 0)
-material_override = SubResource("StandardMaterial3D_v2t2p")
-mesh = ExtResource("8_7gnjm")
+[node name="MangoUp" type="MeshInstance3D" parent="Fruit/Mango"]
+transform = Transform3D(0.9, 0, 0, 0, 0.886327, 0.156283, 0, -0.156283, 0.886327, 0, -0.7, 0.646043)
+material_override = ExtResource("5_ayy1q")
+mesh = ExtResource("12_0adww")
 skeleton = NodePath("../..")
 
-[node name="EggplantUp" type="MeshInstance3D" parent="Fruit/Eggplant"]
-transform = Transform3D(1.03548, 0.15662, 0, -0.174023, 0.931931, 0, 0, 0, 1.05, -1.14797, -1.39691, 0)
-material_override = ExtResource("5_ayy1q")
-mesh = ExtResource("9_76d8y")
-skeleton = NodePath("../../..")
+[node name="MangoDown" type="MeshInstance3D" parent="Fruit/Mango"]
+transform = Transform3D(0.9, 0, 0, 0, 0.886327, 0.156283, 0, -0.156283, 0.886327, 0, -0.7, 0.646043)
+material_override = SubResource("StandardMaterial3D_2iwh1")
+mesh = ExtResource("13_5a80i")
+skeleton = NodePath("../..")
 
 [node name="Brocolli" type="Node3D" parent="Fruit"]
 visible = false
