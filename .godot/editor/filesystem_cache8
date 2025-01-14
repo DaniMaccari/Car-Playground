@@ -1,64 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736789143
+::res://::1736884982
 export_presets.cfg::TextFile::-1::1732012912::0::1::::<><>::
-icon.svg::CompressedTexture2D::8445948122843711016::1730135459::1733753198::1::::<><>::
 letterIcon_FruitRush2.png::CompressedTexture2D::1964623947298989578::1733137507::1733137591::1::::<><>::
 letterIcon_FruitRush3.png::CompressedTexture2D::8409235850002367105::1736094047::1736094050::1::::<><>::
 letterIcon_FruitRush.png::CompressedTexture2D::2867265116940578151::1732880998::1732902797::1::::<><>::
-Low_Poly_Forest_hill.obj::Mesh::5368940632780451967::1736285230::1736367803::1::::<><>::
-portada.tscn::PackedScene::4051207191083260836::1733773714::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://icqo0ewds2pv::::res://Scenes/Trees/tree_pine1.tscn
 README.md::TextFile::-1::1730196857::0::1::::<><>::
-::res://Assets/::1736366886
+::res://Assets/::1736791801
 shadow2.png::CompressedTexture2D::8411960753491382055::1732880998::1732902797::1::::<><>::
 shadow.png::CompressedTexture2D::2526691689808764331::1715793212::1731370562::1::::<><>::
-::res://Assets/auto_racing_car/::1732902798
+::res://Assets/auto_racing_car/::1736791578
 turnipCar2.png::CompressedTexture2D::3083532534906620810::1732880998::1732902798::1::::<><>::
 turnipCar2.tga::CompressedTexture2D::2631171221499277906::1732880998::1732902797::1::::<><>::
-turnipCar3.png::CompressedTexture2D::264405189078391616::1732880998::1732902797::1::::<><>::
 turnipCar4.png::CompressedTexture2D::4428688460281492614::1732880998::1732902797::1::::<><>::
 turnipCar.png::CompressedTexture2D::8982629798876723033::1731763048::1731783375::1::::<><>::
-::res://Assets/auto_racing_car/black/::1730195507
-sportsCar_black.fbx::PackedScene::3507048867548242844::1470514372::1730195502::1::::<><>::uid://bc86ujm0p3o01::::res://Assets/auto_racing_car/black/sportsCar_black.png
-sportsCar_black.obj::Mesh::3142982962761808139::1470514379::1730195499::1::::<><>::
-sportsCar_black.png::CompressedTexture2D::2596841271911849236::1470512803::1730195507::1::::<><>::
-sportsCar_black_collada_14.dae::PackedScene::5000347851640361825::1470514434::1730195502::1::::<><>::uid://bc86ujm0p3o01::::res://Assets/auto_racing_car/black/sportsCar_black.png
-sportsCar_black_collada_15.dae::PackedScene::8284387178173975324::1470514480::1730195501::1::::<><>::
-::res://Assets/auto_racing_car/green/::1730195507
-sportscar_green.fbx::PackedScene::6555605782066787141::1470514365::1730195501::1::::<><>::uid://x26l2f5r8tfk::::res://Assets/auto_racing_car/green/sportsCar_green.png
-sportscar_green.obj::Mesh::3803276089280761620::1470514360::1730195498::1::::<><>::
-sportsCar_green.png::CompressedTexture2D::1671984900784648600::1470512810::1730195507::1::::<><>::
-sportscar_green_collada_14.dae::PackedScene::6469760560143365690::1470514426::1730195500::1::::<><>::uid://x26l2f5r8tfk::::res://Assets/auto_racing_car/green/sportsCar_green.png
-sportscar_green_collada_15.dae::PackedScene::4664581556252431404::1470514474::1730195500::1::::<><>::
-::res://Assets/auto_racing_car/orange/::1730195507
-sportscar_orange.fbx::PackedScene::5511223301136962675::1470514353::1730195500::1::::<><>::uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png
+::res://Assets/auto_racing_car/orange/::1736791560
 sportscar_orange.obj::Mesh::924787153515190315::1470514348::1730195499::1::::<><>::
-sportsCar_orange.png::CompressedTexture2D::8402336128655713094::1470512773::1730195507::1::::<><>::
-sportscar_orange_collada_14.dae::PackedScene::4310799987495027634::1470514419::1730195499::1::::<><>::uid://dryfipg1mxl0q::::res://Assets/auto_racing_car/orange/sportsCar_orange.png
-sportscar_orange_collada_15.dae::PackedScene::4644062979081561767::1470514465::1730195500::1::::<><>::
-::res://Assets/auto_racing_car/purple/::1730195547
-sportscar_purple.fbx::PackedScene::6912313887344851021::1470514335::1730195505::1::::<><>::uid://c0ivpb1f260mt::::res://Assets/auto_racing_car/purple/sportscar_purple.png
-sportscar_purple.obj::Mesh::6016917463014055674::1470514342::1730195499::1::::<><>::
-sportsCar_Purple.png::CompressedTexture2D::6545379417078930007::1470512779::1730195547::1::::<><>::
-sportscar_purple_collada_14.dae::PackedScene::8670598044686962478::1470514412::1730195505::1::::<><>::uid://c0ivpb1f260mt::::res://Assets/auto_racing_car/purple/sportscar_purple.png
-sportscar_purple_collada_15.dae::PackedScene::8570489383518054900::1557901417::1730195506::1::::<><>::
-::res://Assets/auto_racing_car/red/::1730195507
-sportscar_red.fbx::PackedScene::1509257908008886011::1470514321::1730195506::1::::<><>::uid://bhvxcgfrgft2l::::res://Assets/auto_racing_car/red/sportsCar_red.png
-sportscar_red.obj::Mesh::1747960294538096490::1470514327::1730195498::1::::<><>::
-sportsCar_red.png::CompressedTexture2D::2922494908060784085::1470512785::1730195507::1::::<><>::
-sportscar_red_collada_14.dae::PackedScene::4066549141301391617::1470514398::1730195505::1::::<><>::uid://bhvxcgfrgft2l::::res://Assets/auto_racing_car/red/sportsCar_red.png
-sportscar_red_collada_15.dae::PackedScene::1819250499164209691::1470514448::1730195504::1::::<><>::
-::res://Assets/auto_racing_car/white/::1731801111
-sportscar_white.fbx::PackedScene::3855133125657008513::1470514260::1730195504::1::::<><>::uid://bvu7qunaf0ds2::::res://Assets/auto_racing_car/white/sportsCar_white.png
-sportscar_white.obj::Mesh::2988186428791316955::1470514267::1730195499::1::::<><>::
-sportsCar_white.png::CompressedTexture2D::3903646542201110499::1470512790::1730195507::1::::<><>::
-sportscar_white_collada_14.dae::PackedScene::7633256646533974434::1470514238::1730195503::1::::<><>::uid://bvu7qunaf0ds2::::res://Assets/auto_racing_car/white/sportsCar_white.png
-sportscar_white_collada_15.dae::PackedScene::2646577984277970529::1470514251::1730195503::1::::<><>::
-::res://Assets/auto_racing_car/Yellow/::1730204788
-SportsCar_Yellow.fbx::PackedScene::7907145507511809508::1470514170::1730195503::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png
-SportsCar_Yellow.obj::Mesh::8475949138614177743::1470514182::1730195498::1::::<><>::
-sportsCar_yellow.png::CompressedTexture2D::1780412628892661599::1470512797::1730195507::1::::<><>::
-SportsCar_Yellow_collada_14.dae::PackedScene::5688594115860263825::1470514114::1730195503::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png
-SportsCar_Yellow_collada_15.dae::PackedScene::451025993547661501::1470514155::1730195503::1::::<><>::
 ::res://Assets/fonts/::1734368505
 namaku.regular.ttf::FontFile::2043883892719369457::1732880998::1734368505::1::::<><>::
 ::res://Assets/Fruits/::1736698903
@@ -78,12 +34,12 @@ one_cherry_up.obj::Mesh::5116723760106857768::1733137507::1733137591::1::::<><>:
 turnip.obj::Mesh::183030459160446609::1732880995::1734430328::1::::<><>::
 turnip_down.obj::Mesh::2164898977555006981::1732880995::1734430328::1::::<><>::
 turnip_up.obj::Mesh::4368204687232792272::1732880995::1734430328::1::::<><>::
-::res://Assets/Images/::1736680816
-endPhoto.png::CompressedTexture2D::7327814888460102082::1733224046::1733224050::1::::<><>::
+::res://Assets/Images/::1736793197
+endPhoto.png::CompressedTexture2D::7327814888460102082::1736793187::1736793197::1::::<><>::
 Fried-Egg-PNG.png::CompressedTexture2D::1989521560840398354::1733142312::1733142365::1::::<><>::
 Mud-PNG.png::CompressedTexture2D::1795763689825855580::1736453581::1736453593::1::::<><>::
 slime.png::CompressedTexture2D::5171808865876842600::1736680811::1736680816::1::::<><>::
-::res://Assets/Low_Poly_Forest_Pack_Devilswork.Shop_v02/::1736367804
+::res://Assets/Low_Poly_Forest_Pack_Devilswork.Shop_v02/::1736792156
 ::res://Assets/Low_Poly_Forest_Pack_Devilswork.Shop_v02/FBX 2013/::1736366906
 Low_Poly_Forest_fence01.fbx::PackedScene::2456596057770507445::1545882391::1736366905::1::::<><>::
 Low_Poly_Forest_fence02.fbx::PackedScene::6176699742115442265::1545882391::1736366905::1::::<><>::
@@ -143,53 +99,13 @@ Low_Poly_Forest_treeTall05.fbx::PackedScene::327969430346937365::1545882394::173
 Low_Poly_Forest_treeTall06.fbx::PackedScene::4374765976949021450::1545882394::1736366897::1::::<><>::
 Low_Poly_Forest_treeThin01.fbx::PackedScene::1200720261829086308::1545882394::1736366897::1::::<><>::
 Low_Poly_Forest_treeThin02.fbx::PackedScene::4182339868449754732::1545882394::1736366898::1::::<><>::
-::res://Assets/Low_Poly_Forest_Pack_Devilswork.Shop_v02/tex/::1736427982
-fence01.png::CompressedTexture2D::3363045273493917576::1545531171::1736366893::1::::<><>::
-fence02.png::CompressedTexture2D::6079399822583559823::1545531178::1736366893::1::::<><>::
-ground.png::CompressedTexture2D::8896655030631168654::1545531181::1736366892::1::::<><>::
-hill.png::CompressedTexture2D::1558403862066785394::1545531184::1736366892::1::::<><>::
-treeBlob.png::CompressedTexture2D::8336054046540759644::1545531193::1736367827::1::::<><>::
-treeRound.png::CompressedTexture2D::8809816967005425735::1545531199::1736427982::1::::<><>::
-treeRoundTop.png::CompressedTexture2D::986901892935707583::1545531225::1736427969::1::::<><>::
-treeRoundTopSnow.png::CompressedTexture2D::7191023377274592772::1545882536::1736366893::1::::<><>::
-treeTall.png::CompressedTexture2D::149723335740953684::1545531231::1736366972::1::::<><>::
 ::res://Assets/Models/::1733827785
 Bunny_Ears_1.obj::Mesh::4517002766006640755::1733827722::1733827785::1::::<><>::
 Bunny_Ears_2.obj::Mesh::2351054493661052028::1733827783::1733827785::1::::<><>::
 Traffic_Cone.obj::Mesh::1769870293086134362::1733308753::1733308760::1::::<><>::
-::res://Assets/music-loop-bundle-download_2024_q3/::1734372666
-_LICENSE.txt::TextFile::-1::1733183588::0::1::::<><>::
-_README.txt::TextFile::-1::1733183588::0::1::::<><>::
-FreeLoopsMetadata.png::CompressedTexture2D::4916309802340969248::1733183587::1734372666::1::::<><>::
-Interior Birdecorator Decorate.ogg::AudioStreamOggVorbis::2266487065413696004::1733183587::1734372666::1::::<><>::
-Interior Birdecorator Explore.ogg::AudioStreamOggVorbis::7395017522698760524::1733183587::1734372665::1::::<><>::
-Interior Birdecorator Explore_CUTE.ogg::AudioStreamOggVorbis::4767657893862575239::1733183587::1734372665::1::::<><>::
-Interior Birdecorator Explore_FESTIVE.ogg::AudioStreamOggVorbis::4689349827688207163::1733183587::1734372665::1::::<><>::
-Interior Birdecorator Explore_SILLY.ogg::AudioStreamOggVorbis::714240162280361101::1733183587::1734372665::1::::<><>::
-Interior Birdecorator Menu_IN.ogg::AudioStreamOggVorbis::132075763978816624::1733183587::1734372665::1::::<><>::
-Interior Birdecorator Menu_LOOP.ogg::AudioStreamOggVorbis::2763827388293873143::1733183587::1734372665::1::::<><>::
-Sketchbook2024Metadata.jpg::CompressedTexture2D::4674711500156594102::1733183588::1734372666::1::::<><>::
-Sketchbook 2024-07-03.ogg::AudioStreamOggVorbis::967624302872934724::1733183587::1734372665::1::::<><>::
-Sketchbook 2024-07-04.ogg::AudioStreamOggVorbis::6245935098111925155::1733183587::1734372665::1::::<><>::
-Sketchbook 2024-07-07.ogg::AudioStreamOggVorbis::4585234311104571162::1733183587::1734372665::1::::<><>::
-Sketchbook 2024-07-19_L01.ogg::AudioStreamOggVorbis::4405937320411168610::1733183587::1734372665::1::::<><>::
-Sketchbook 2024-07-19_L02.ogg::AudioStreamOggVorbis::4017498340154451335::1733183587::1734372665::1::::<><>::
-Sketchbook 2024-07-19_L03.ogg::AudioStreamOggVorbis::4852762414100637170::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-07-19_L04.ogg::AudioStreamOggVorbis::73370729451935::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-08-01.ogg::AudioStreamOggVorbis::8621010731417663940::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-08-07.ogg::AudioStreamOggVorbis::8486460732794242077::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-08-13.ogg::AudioStreamOggVorbis::5246526782794125500::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-08-21.ogg::AudioStreamOggVorbis::462841709302125516::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-04_IN.ogg::AudioStreamOggVorbis::1265412997756508539::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-04_LOOP.ogg::AudioStreamOggVorbis::2550302743306654079::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-12.ogg::AudioStreamOggVorbis::8060663214559354490::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-18.ogg::AudioStreamOggVorbis::9070941260119987061::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-22.ogg::AudioStreamOggVorbis::3094038006474644852::1733183588::1734372665::1::::<><>::
-Sketchbook 2024-09-25.ogg::AudioStreamOggVorbis::7450344752852394439::1733183588::1734372666::1::::<><>::
-::res://Assets/road/::1734433767
+::res://Assets/road/::1736791777
 lowpoly_road.png::CompressedTexture2D::1980525158324549206::1557901128::1734433766::1::::<><>::
 roadRampUp.fbx::PackedScene::3615954539442895616::1493877326::1734433767::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/lowpoly_road.png
-roadRampUp.obj::Mesh::6108061731334705899::1557900878::1734433767::1::::<><>::
 ::res://Assets/sounds/::1733137591
 Engine_0.wav::AudioStreamWAV::300811340604007614::1733136439::1733137591::1::::<><>::
 Engine_1.wav::AudioStreamWAV::1312746086513726155::1733136439::1733137591::1::::<><>::
@@ -209,14 +125,10 @@ Fruit_get_4.wav::AudioStreamWAV::8412661566406242187::1733136439::1733137591::1:
 Fruit_get_5.wav::AudioStreamWAV::5613372816041855647::1733136439::1733137591::1::::<><>::
 Press_start.wav::AudioStreamWAV::1586924039490700222::1733136439::1733137591::1::::<><>::
 Start.wav::AudioStreamWAV::940285632050775774::1733136439::1733137591::1::::<><>::
-::res://Assets/sound_effects/::1734438166
-bubblepop.wav::AudioStreamWAV::4088925272469285715::1734369329::1734369334::1::::<><>::
+::res://Assets/sound_effects/::1736791887
 flash.mp3::AudioStreamMP3::8470821421788628476::1734438157::1734438166::1::::<><>::
-Rise02.wav::AudioStreamWAV::4201787099495197691::1734371020::1734371024::1::::<><>::
-rock-smash-6304.mp3::AudioStreamMP3::2843952050652914199::1734371352::1734371404::1::::<><>::
-rock-smash.wav::AudioStreamWAV::4885440133761787739::1734371403::1734371404::1::::<><>::
 Sketchbook 2024-08-01.wav::AudioStreamWAV::2913494568742984043::1734372641::1734428858::1::::<><>::
-::res://Assets/sound_effects/catch/::1736789159
+::res://Assets/sound_effects/catch/::1736789385
 catch_1.wav::AudioStreamWAV::2672023468862535046::1736789383::1736789385::1::::<><>::
 catch_2.wav::AudioStreamWAV::3695492328044110946::1736789377::1736789385::1::::<><>::
 catch_3.wav::AudioStreamWAV::1718387867301227260::1736789370::1736789385::1::::<><>::
@@ -232,14 +144,8 @@ impact_1.wav::AudioStreamWAV::4273317288637127235::1734429552::1734433240::1::::
 impact_2.wav::AudioStreamWAV::1955666362054842566::1734429559::1734433242::1::::<><>::
 impact_3.wav::AudioStreamWAV::595668179517586970::1734429563::1734433244::1::::<><>::
 impact_4.wav::AudioStreamWAV::5833099473224137163::1734429567::1734433247::1::::<><>::
-::res://Assets/Terrain/::1734433738
-mapa_grises2.png::CompressedTexture2D::2682355209618683724::1731763048::1731783374::1::::<><>::
-mapa_grises.png::CompressedTexture2D::7945401227767018522::1731370539::1731419519::1::::<><>::
-mapa_grises_blanco.png::CompressedTexture2D::197891522634123989::1731763048::1731783374::1::::<><>::
-playgroundTerrain.obj::Mesh::6364036064050671975::1731322771::1731323112::1::::<><>::
-playgroundTerrainMapa2.obj::Mesh::4533647082755836316::1731370539::1731370564::1::::<><>::
+::res://Assets/Terrain/::1736792044
 playgroundTerrainMapa3.obj::Mesh::8133407015547215129::1731763048::1731783375::1::::<><>::
-playgroundTerrainMapa.obj::Mesh::420403870880642817::1731370539::1731370564::1::::<><>::
 terrainTexture_24x24.png::CompressedTexture2D::4811560855094932326::1731763048::1731783374::1::::<><>::
 waterTexture.png::CompressedTexture2D::2388891520297317461::1732893439::1733137591::1::::<><>::
 ::res://Assets/Timer/::1732902797
@@ -277,22 +183,22 @@ treeSet_pine1.obj::Mesh::5275392076723220363::1471122140::1730195498::1::::<><>:
 treeSet_pine2.dae::PackedScene::5696840749889720089::1471122270::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.fbx::PackedScene::314090825589050912::1471121971::1730195502::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 treeSet_pine2.obj::Mesh::4997888647085511052::1471122146::1730195498::1::::<><>::
-::res://Materials/::1736789183
-green_object.tres::StandardMaterial3D::8613466926877225069::1736789183::0::1::::<><>::
+::res://Materials/::1736864860
+green_object.tres::StandardMaterial3D::8613466926877225069::1736864860::0::1::::<><>::
 white_outline.tres::StandardMaterial3D::8468086941860159889::1733137507::0::1::::<><>::
-::res://Scenes/::1736789184
-Collectable_object.tscn::PackedScene::4235372428240886192::1736789183::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://cj0cxi6liarg8::::res://Scenes/Particles/Splash_Particles.tscn<>uid://dr32085ecldit::::res://Assets/shadow2.png<>uid://53xtm07vf5cr::::res://Assets/Fruits/turnip_down.obj<>uid://duyosomtrhacb::::res://Materials/green_object.tres<>uid://b3h8xtdrss1ke::::res://Assets/Fruits/turnip_up.obj<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://btydnrirhelh7::::res://Assets/Fruits/eggplant_down.obj<>uid://t1rurnkebveh::::res://Assets/Fruits/eggplant_up.obj<>uid://bpn3tyjntthtr::::res://Assets/Fruits/chilly_down.obj<>uid://dugdqtccgxmig::::res://Assets/Fruits/chilly_up.obj<>uid://bitqlrphlapch::::res://Assets/Fruits/mango_up.obj<>uid://dprmq1l0a2hu0::::res://Assets/Fruits/mango_down.obj<>uid://bmfeltytt7du8::::res://Assets/Fruits/carrot.obj<>uid://dwwcenf4ijruk::::res://Assets/Fruits/carrot_up.obj<>uid://ds0bfo2i5qr3b::::res://Assets/Fruits/one_cherry_down.obj<>uid://ce5txs3qq5dmu::::res://Assets/Fruits/one_cherry_up.obj<>uid://b1pje3l80c4fd::::res://Assets/Fruits/brocoli_down.obj<>uid://colhytyytyhof::::res://Scenes/Trees/green3.tres<>uid://pnr51bkmyn63::::res://Assets/Fruits/brocoli_up.obj
-end_scene.tscn::PackedScene::6949835753646174006::1736789184::0::1::::<><>::res://Scripts/ui_end.gd<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://dcnwbm678aqfi::::res://Assets/Images/endPhoto.png
-Main.tscn::PackedScene::4779548486523294006::1736789183::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>res://Scripts/main.gd<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://nnqmqh43ervq::::res://Assets/sounds/Start.wav<>uid://wuyn3t14l8ic::::res://Assets/sounds/Press_start.wav<>uid://blf53tseq5hq4::::res://Scenes/Sound/SoundManager.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://b2p25076emcvk::::res://Scenes/Sound/CollectSound.tscn<>uid://dsxlgrbqvslfg::::res://Assets/sound_effects/flash.mp3<>res://Scripts/points_counter.gd<>uid://babgxuvp8ftuj::::res://Assets/Terrain/waterTexture.png<>res://Scripts/ui_scrip.gd<>uid://sgnjqag75kd::::res://Scenes/Ramp_Jump.tscn<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://b0n0s75hc3uto::::res://Assets/Timer/timer_under.png<>uid://cbdvf4y1bibso::::res://Assets/Timer/timer_progress.png<>uid://c6as1rcvvwj4y::::res://Scenes/end_scene.tscn<>uid://l7rd14u5o0hj::::res://Scenes/menu_scene.tscn<>res://Scripts/slime_effect.gd<>uid://cfxi63qw0gta3::::res://Assets/Images/slime.png<>uid://bhrk3hlu65vo2::::res://Assets/sound_effects/Sketchbook 2024-08-01.wav<>uid://be6npkqj16mv7::::res://Scenes/Trees/base_tree.tscn
-menu_scene.tscn::PackedScene::839176325762823403::1736789184::0::1::::<><>::res://Scripts/menu_script.gd<>uid://dr2q5ebiklem8::::res://letterIcon_FruitRush3.png<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf
+::res://Scenes/::1736868376
+Collectable_object.tscn::PackedScene::4235372428240886192::1736868285::0::1::::<><>::res://Scripts/collectable.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://cj0cxi6liarg8::::res://Scenes/Particles/Splash_Particles.tscn<>uid://dr32085ecldit::::res://Assets/shadow2.png<>uid://53xtm07vf5cr::::res://Assets/Fruits/turnip_down.obj<>uid://duyosomtrhacb::::res://Materials/green_object.tres<>uid://b3h8xtdrss1ke::::res://Assets/Fruits/turnip_up.obj<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://btydnrirhelh7::::res://Assets/Fruits/eggplant_down.obj<>uid://t1rurnkebveh::::res://Assets/Fruits/eggplant_up.obj<>uid://bpn3tyjntthtr::::res://Assets/Fruits/chilly_down.obj<>uid://dugdqtccgxmig::::res://Assets/Fruits/chilly_up.obj<>uid://bitqlrphlapch::::res://Assets/Fruits/mango_up.obj<>uid://dprmq1l0a2hu0::::res://Assets/Fruits/mango_down.obj<>uid://bmfeltytt7du8::::res://Assets/Fruits/carrot.obj<>uid://dwwcenf4ijruk::::res://Assets/Fruits/carrot_up.obj<>uid://ds0bfo2i5qr3b::::res://Assets/Fruits/one_cherry_down.obj<>uid://ce5txs3qq5dmu::::res://Assets/Fruits/one_cherry_up.obj<>uid://b1pje3l80c4fd::::res://Assets/Fruits/brocoli_down.obj<>uid://colhytyytyhof::::res://Scenes/Trees/green3.tres<>uid://pnr51bkmyn63::::res://Assets/Fruits/brocoli_up.obj
+end_scene.tscn::PackedScene::6949835753646174006::1736868285::0::1::::<><>::res://Scripts/ui_end.gd<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://dcnwbm678aqfi::::res://Assets/Images/endPhoto.png
+Main.tscn::PackedScene::4779548486523294006::1736868376::0::1::::<><>::uid://dd0nts174s84k::::res://Scenes/Vehicle_movement.tscn<>res://Scripts/main.gd<>uid://b1lv72wgq2xnc::::res://Scenes/Collectable_object.tscn<>uid://nnqmqh43ervq::::res://Assets/sounds/Start.wav<>uid://wuyn3t14l8ic::::res://Assets/sounds/Press_start.wav<>uid://blf53tseq5hq4::::res://Scenes/Sound/SoundManager.tscn<>uid://ca7h2il3ay43c::::res://Scenes/Terrain_test.tscn<>uid://b2p25076emcvk::::res://Scenes/Sound/CollectSound.tscn<>uid://dsxlgrbqvslfg::::res://Assets/sound_effects/flash.mp3<>res://Scripts/points_counter.gd<>uid://babgxuvp8ftuj::::res://Assets/Terrain/waterTexture.png<>res://Scripts/ui_scrip.gd<>uid://sgnjqag75kd::::res://Scenes/Ramp_Jump.tscn<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf<>uid://b0n0s75hc3uto::::res://Assets/Timer/timer_under.png<>uid://cbdvf4y1bibso::::res://Assets/Timer/timer_progress.png<>uid://c6as1rcvvwj4y::::res://Scenes/end_scene.tscn<>uid://l7rd14u5o0hj::::res://Scenes/menu_scene.tscn<>res://Scripts/slime_effect.gd<>uid://cfxi63qw0gta3::::res://Assets/Images/slime.png<>uid://bhrk3hlu65vo2::::res://Assets/sound_effects/Sketchbook 2024-08-01.wav<>uid://be6npkqj16mv7::::res://Scenes/Trees/base_tree.tscn
+menu_scene.tscn::PackedScene::839176325762823403::1736868285::0::1::::<><>::res://Scripts/menu_script.gd<>uid://dr2q5ebiklem8::::res://letterIcon_FruitRush3.png<>uid://4ecp7joovjcb::::res://Assets/fonts/namaku.regular.ttf
 portada_test.tscn::PackedScene::1504843517781321233::1736461025::0::1::::<><>::uid://bdqtagqcmrma1::::res://Assets/auto_racing_car/turnipCar2.tga<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>uid://bb87ii470kyi2::::res://Assets/shadow.png<>uid://bmfeltytt7du8::::res://Assets/Fruits/carrot.obj<>uid://duyosomtrhacb::::res://Materials/green_object.tres<>uid://dwwcenf4ijruk::::res://Assets/Fruits/carrot_up.obj
 Ramp_Jump.tscn::PackedScene::37546814286771119::1734520989::0::1::::<><>::uid://3hm7v02tlxrq::::res://Assets/road/lowpoly_road.png
-Terrain_test.tscn::PackedScene::4839375129353731758::1736789184::0::1::::<><>::uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png<>uid://dn45a4gbxptf2::::res://Assets/Terrain/playgroundTerrainMapa3.obj
+Terrain_test.tscn::PackedScene::4839375129353731758::1736790529::0::1::::<><>::uid://cas0x7ga5oho5::::res://Assets/Terrain/terrainTexture_24x24.png<>uid://dn45a4gbxptf2::::res://Assets/Terrain/playgroundTerrainMapa3.obj
 tree_test.tscn::PackedScene::2571739762073301797::1736426878::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
-Vehicle_movement.tscn::PackedScene::7422262263913703112::1736789184::0::1::::<><>::uid://0mpevcqojxn8::::res://Assets/auto_racing_car/Yellow/sportsCar_yellow.png<>res://Scripts/vehicle_movement.gd<>uid://bdqtagqcmrma1::::res://Assets/auto_racing_car/turnipCar2.tga<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png<>uid://c3mfsr6utvnq8::::res://Scenes/Particles/Smoke_Particles.tscn<>uid://c6emvqr8grvfe::::res://Scenes/Particles/Fire_Particles.tscn<>uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn<>uid://b5mcm1hegysvb::::res://Assets/Models/Bunny_Ears_1.obj<>uid://8q4r208dmcae::::res://Assets/Models/Bunny_Ears_2.obj<>uid://b15a58t3qvf3p::::res://Assets/sound_effects/impact/impact_1.wav<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://24lslm7a2n63::::res://Assets/sound_effects/impact/impact_2.wav<>uid://iqstkqj1i2x7::::res://Assets/sound_effects/impact/impact_3.wav<>uid://cpdukcj20uawp::::res://Assets/sound_effects/impact/impact_4.wav
-::res://Scenes/Particles/::1736789184
+Vehicle_movement.tscn::PackedScene::7422262263913703112::1736868285::0::1::::<><>::res://Scripts/vehicle_movement.gd<>uid://bdqtagqcmrma1::::res://Assets/auto_racing_car/turnipCar2.tga<>uid://nf8dymeux4b4::::res://Assets/auto_racing_car/orange/sportscar_orange.obj<>uid://bb87ii470kyi2::::res://Assets/shadow.png<>uid://c3mfsr6utvnq8::::res://Scenes/Particles/Smoke_Particles.tscn<>uid://c6emvqr8grvfe::::res://Scenes/Particles/Fire_Particles.tscn<>uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn<>uid://b5mcm1hegysvb::::res://Assets/Models/Bunny_Ears_1.obj<>uid://8q4r208dmcae::::res://Assets/Models/Bunny_Ears_2.obj<>uid://b15a58t3qvf3p::::res://Assets/sound_effects/impact/impact_1.wav<>uid://hqtr7myc01kx::::res://Assets/Fruits/banana.obj<>uid://24lslm7a2n63::::res://Assets/sound_effects/impact/impact_2.wav<>uid://iqstkqj1i2x7::::res://Assets/sound_effects/impact/impact_3.wav<>uid://cpdukcj20uawp::::res://Assets/sound_effects/impact/impact_4.wav
+::res://Scenes/Particles/::1736793587
 Cone.tscn::PackedScene::3189511733194467305::1734428860::0::1::::<><>::uid://0hlrf7itsqgo::::res://Assets/Models/Traffic_Cone.obj
-Confetty_Particles.tscn::PackedScene::1427968904052651013::1736789184::0::1::::<><>::res://Scripts/confetty_particles.gd
+Confetty_Particles.tscn::PackedScene::1427968904052651013::1736793587::0::1::::<><>::res://Scripts/confetty_particles.gd
 Drift_Effect.tscn::PackedScene::726039917849167788::1733755236::0::1::::<><>::uid://dbqov2ebodyr1::::res://Scenes/Particles/Drift_Particles.tscn
 Drift_Particles.tscn::PackedScene::7263369902726987220::1733878144::0::1::::<><>::
 Egg_Particles.tscn::PackedScene::3570954259555652177::1733769057::0::1::::<><>::uid://3l0envjypycw::::res://Assets/Images/Fried-Egg-PNG.png
@@ -302,34 +208,34 @@ Mud.tscn::PackedScene::4670398720667665950::1736461026::0::1::::<><>::uid://dgnb
 Mud_Particles.tscn::PackedScene::7607353317278958887::1736461026::0::1::::<><>::uid://0t473ihq15ye::::res://Assets/Images/Mud-PNG.png
 Smoke_Particles.tscn::PackedScene::6763238193274775821::1733744657::0::1::::<><>::
 Splash_Particles.tscn::PackedScene::5456313379811571793::1736367950::0::1::::<><>::res://Scripts/splash_particles.gd
-::res://Scenes/Sound/::1736789184
-CollectSound.tscn::PackedScene::4314179424784526556::1736789184::0::1::::<><>::uid://becl3ot3g08es::::res://Assets/sound_effects/catch/catch_1.wav<>res://Scripts/Sound/collect_sound.gd<>uid://byi6u46cfctil::::res://Assets/sound_effects/catch/level-up.mp3<>uid://bsweho30xq6cs::::res://Assets/sound_effects/catch/catch_2.wav<>uid://yqnukjacapoe::::res://Assets/sound_effects/catch/catch_3.wav<>uid://df622a0myexlj::::res://Assets/sound_effects/catch/catch_4.wav<>uid://cfljelnlovxn0::::res://Assets/sound_effects/catch/catch_5.wav<>uid://cy47yrw3qe5m6::::res://Assets/sound_effects/catch/catch_6.wav<>uid://dsr6vjcfa0tgp::::res://Assets/sound_effects/catch/catch_7.wav<>uid://bnod3uf5160vi::::res://Assets/sound_effects/catch/catch_8.wav<>uid://c5opmtadaaaka::::res://Assets/sound_effects/catch/catch_9.wav
-SoundManager.tscn::PackedScene::3170692390448530249::1736461025::0::1::::<><>::res://Scripts/Sound/engine.sound.gd<>uid://ejyk3tk5jiwk::::res://Assets/sounds/Engine_0.wav<>uid://sx50bdt0r812::::res://Assets/sounds/Engine_1.wav<>uid://br1i7xgojupnx::::res://Assets/sounds/Engine_2.wav<>uid://d2gbvxi3gliwy::::res://Assets/sounds/Engine_3.wav<>uid://hif1ieoxk2am::::res://Assets/sounds/Engine_4.wav<>uid://blgup18flxiju::::res://Assets/sounds/Engine_5.wav<>uid://bwbhlnbwyc06d::::res://Assets/sounds/Engine_6.wav<>uid://b1tidhnopijbj::::res://Assets/sounds/Engine_7.wav<>uid://jkmyfb8o75oi::::res://Assets/sounds/Engine_8.wav<>uid://dfpg5iv7mitxo::::res://Assets/sounds/Engine_9.wav<>uid://cki6h3s5e7r8o::::res://Assets/sounds/Engine_10.wav
-::res://Scenes/Trees/::1736789184
-bark2.tres::StandardMaterial3D::1095672481120555::1736789183::0::1::::<><>::
-bark.tres::StandardMaterial3D::2715734255447638270::1736789183::0::1::::<><>::
-base_tree.tscn::PackedScene::2731988426830889810::1736789184::0::1::::<><>::res://Scripts/tree_script.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://jas2sbpi0yi5::::res://Scenes/Trees/yellow1.tres<>uid://hiwodxtekhdg::::res://Scenes/Trees/green1.tres<>uid://4l3k7lcgjvtf::::res://Scenes/Trees/green2.tres<>uid://bexr0m4bhbs0m::::res://Scenes/Trees/bark.tres<>uid://jq48de6o8owe::::res://Scenes/Trees/yellow2.tres<>uid://colhytyytyhof::::res://Scenes/Trees/green3.tres<>uid://7ef5yq8dgqi2::::res://Scenes/Trees/green4.tres<>uid://sbsw6cglgd::::res://Scenes/Trees/bark2.tres
-green1.tres::StandardMaterial3D::509197896423807288::1736789183::0::1::::<><>::
-green2.tres::StandardMaterial3D::2059904252373427335::1736789183::0::1::::<><>::
-green3.tres::StandardMaterial3D::5778662247752146925::1736789183::0::1::::<><>::
-green4.tres::StandardMaterial3D::2254658952995161323::1736789183::0::1::::<><>::
+::res://Scenes/Sound/::1736794125
+CollectSound.tscn::PackedScene::4314179424784526556::1736790529::0::1::::<><>::uid://becl3ot3g08es::::res://Assets/sound_effects/catch/catch_1.wav<>res://Scripts/Sound/collect_sound.gd<>uid://byi6u46cfctil::::res://Assets/sound_effects/catch/level-up.mp3<>uid://bsweho30xq6cs::::res://Assets/sound_effects/catch/catch_2.wav<>uid://yqnukjacapoe::::res://Assets/sound_effects/catch/catch_3.wav<>uid://df622a0myexlj::::res://Assets/sound_effects/catch/catch_4.wav<>uid://cfljelnlovxn0::::res://Assets/sound_effects/catch/catch_5.wav<>uid://cy47yrw3qe5m6::::res://Assets/sound_effects/catch/catch_6.wav<>uid://dsr6vjcfa0tgp::::res://Assets/sound_effects/catch/catch_7.wav<>uid://bnod3uf5160vi::::res://Assets/sound_effects/catch/catch_8.wav<>uid://c5opmtadaaaka::::res://Assets/sound_effects/catch/catch_9.wav
+SoundManager.tscn::PackedScene::3170692390448530249::1736794125::0::1::::<><>::res://Scripts/Sound/engine.sound.gd<>uid://ejyk3tk5jiwk::::res://Assets/sounds/Engine_0.wav<>uid://sx50bdt0r812::::res://Assets/sounds/Engine_1.wav<>uid://br1i7xgojupnx::::res://Assets/sounds/Engine_2.wav<>uid://d2gbvxi3gliwy::::res://Assets/sounds/Engine_3.wav<>uid://hif1ieoxk2am::::res://Assets/sounds/Engine_4.wav<>uid://blgup18flxiju::::res://Assets/sounds/Engine_5.wav<>uid://bwbhlnbwyc06d::::res://Assets/sounds/Engine_6.wav<>uid://b1tidhnopijbj::::res://Assets/sounds/Engine_7.wav<>uid://jkmyfb8o75oi::::res://Assets/sounds/Engine_8.wav<>uid://dfpg5iv7mitxo::::res://Assets/sounds/Engine_9.wav<>uid://cki6h3s5e7r8o::::res://Assets/sounds/Engine_10.wav
+::res://Scenes/Trees/::1736868285
+bark2.tres::StandardMaterial3D::1095672481120555::1736864860::0::1::::<><>::
+bark.tres::StandardMaterial3D::2715734255447638270::1736864860::0::1::::<><>::
+base_tree.tscn::PackedScene::2731988426830889810::1736868285::0::1::::<><>::res://Scripts/tree_script.gd<>uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>uid://jas2sbpi0yi5::::res://Scenes/Trees/yellow1.tres<>uid://hiwodxtekhdg::::res://Scenes/Trees/green1.tres<>uid://4l3k7lcgjvtf::::res://Scenes/Trees/green2.tres<>uid://bexr0m4bhbs0m::::res://Scenes/Trees/bark.tres<>uid://jq48de6o8owe::::res://Scenes/Trees/yellow2.tres<>uid://colhytyytyhof::::res://Scenes/Trees/green3.tres<>uid://7ef5yq8dgqi2::::res://Scenes/Trees/green4.tres<>uid://sbsw6cglgd::::res://Scenes/Trees/bark2.tres
+green1.tres::StandardMaterial3D::509197896423807288::1736864860::0::1::::<><>::
+green2.tres::StandardMaterial3D::2059904252373427335::1736864860::0::1::::<><>::
+green3.tres::StandardMaterial3D::5778662247752146925::1736864860::0::1::::<><>::
+green4.tres::StandardMaterial3D::2254658952995161323::1736864860::0::1::::<><>::
 tree_green1.tscn::PackedScene::6673572041245616726::1732880998::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png
 tree_pine1.tscn::PackedScene::566637297878609407::1736367721::0::1::::<><>::uid://4id1juuifsd4::::res://Assets/tree_set/treebase_color.png<>res://Scripts/tree_script.gd
-yellow1.tres::StandardMaterial3D::632841662705859702::1736789183::0::1::::<><>::
-yellow2.tres::StandardMaterial3D::666549525974125808::1736789183::0::1::::<><>::
-::res://Scripts/::1736712741
+yellow1.tres::StandardMaterial3D::632841662705859702::1736864860::0::1::::<><>::
+yellow2.tres::StandardMaterial3D::666549525974125808::1736864860::0::1::::<><>::
+::res://Scripts/::1736868376
 collectable.gd::GDScript::-1::1736699429::0::1::::<>Node3D<>::
 confetty_particles.gd::GDScript::-1::1736712424::0::1::::<>GPUParticles3D<>::
 fence.gd::GDScript::-1::1736648286::0::1::::<>StaticBody3D<>::
-main.gd::GDScript::-1::1736712741::0::1::::<>Node3D<>::
+main.gd::GDScript::-1::1736868376::0::1::::<>Node3D<>::
 menu_script.gd::GDScript::-1::1735740954::0::1::::<>Control<>::
 points_counter.gd::GDScript::-1::1736712162::0::1::::<>Node3D<>::
 slime_effect.gd::GDScript::-1::1736699857::0::1::::<>Control<>::
 splash_particles.gd::GDScript::-1::1734440299::0::1::::<>Node3D<>::
 tree_script.gd::GDScript::-1::1736453003::0::1::::<>StaticBody3D<>::
 ui_end.gd::GDScript::-1::1733228047::0::1::::<>Control<>::
-ui_scrip.gd::GDScript::-1::1734521014::0::1::::<>Control<>::
-vehicle_movement.gd::GDScript::-1::1736648214::0::1::::<>VehicleBody3D<>::
-::res://Scripts/Sound/::1736789183
-collect_sound.gd::GDScript::-1::1736789183::0::1::::<>AudioStreamPlayer<>::
-engine.sound.gd::GDScript::-1::1734519034::0::1::::<>Node3D<>::
+ui_scrip.gd::GDScript::-1::1736794422::0::1::::<>Control<>::
+vehicle_movement.gd::GDScript::-1::1736806817::0::1::::<>VehicleBody3D<>::
+::res://Scripts/Sound/::1736864860
+collect_sound.gd::GDScript::-1::1736864860::0::1::::<>AudioStreamPlayer<>::
+engine.sound.gd::GDScript::-1::1736790528::0::1::::<>Node3D<>::

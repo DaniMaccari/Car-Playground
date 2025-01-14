@@ -107,9 +107,9 @@ func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 		5:
 			car_player.activate_carrot()
 		6:
-			points_manager.spawn_confetty(pos)
-		7:
 			car_player.activate_banana()
+		7:
+			points_manager.spawn_confetty(pos)
 			
 			#points_manager.spawn_mud(pos)
 	

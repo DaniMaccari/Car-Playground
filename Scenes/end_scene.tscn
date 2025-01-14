@@ -32,7 +32,7 @@ color = Color(0.980392, 0.980392, 0.980392, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="endPhoto/ColorRect"]
 position = Vector2(103.016, 96.6057)
-scale = Vector2(0.694706, 0.694706)
+scale = Vector2(0.862576, 0.862576)
 texture = ExtResource("3_musp7")
 
 [node name="endText" type="Control" parent="."]

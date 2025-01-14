@@ -32,6 +32,7 @@ var carrot_timer : Timer
 var carrot_jumps : int = 4
 # banana
 var banana_effect : int = 1
+var banana_timer : Timer
 #eggplant
 var in_mud : bool = false
 
@@ -67,6 +68,7 @@ func _ready() -> void:
 	add_child(chilly_timer)
 	
 	carrot_timer = $carrot_timer
+	banana_timer = $banana_timer
 	pass
 	
 func _physics_process(delta: float) -> void:
@@ -215,6 +217,7 @@ func _on_chilly_timeout() -> void:
 func activate_banana() -> void:
 	banana_effect = -1
 	$Banana.show()
+	banana_timer.start()
 
 func _on_banana_timer_timeout() -> void:
 	banana_effect = 1
