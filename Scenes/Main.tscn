@@ -35,9 +35,10 @@ sky_material = SubResource("ProceduralSkyMaterial_iymry")
 
 [sub_resource type="Environment" id="Environment_sn5f3"]
 background_mode = 1
-background_color = Color(0.207843, 0.431373, 0.839216, 1)
+background_color = Color(0, 0.554167, 0.95, 1)
 sky = SubResource("Sky_3aueq")
-ambient_light_color = Color(0.960375, 0.641588, 0.665189, 1)
+ambient_light_energy = 0.0
+reflected_light_source = 1
 tonemap_exposure = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oggjv"]
@@ -73,12 +74,13 @@ environment = SubResource("Environment_sn5f3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.736401, -0.218348, -0.640342, 0.633022, -0.111619, 0.766044, -0.238738, -0.969467, 0.0560227, 2.38419e-07, 10, -5.51343e-07)
-light_color = Color(0.988235, 0.760784, 0.780392, 1)
+light_color = Color(0.823529, 0.333333, 0.117647, 1)
 light_indirect_energy = 4.0
+light_volumetric_fog_energy = 0.0
 light_bake_mode = 1
 shadow_enabled = true
-shadow_opacity = 0.8
-shadow_blur = 3.0
+shadow_opacity = 0.9
+directional_shadow_mode = 0
 directional_shadow_max_distance = 80.0
 sky_mode = 1
 

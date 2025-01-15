@@ -101,7 +101,7 @@ func fruit_effect(num_fruit : int, pos : Vector3) -> void:
 		2:
 			car_player.activate_chilly()
 		3:
-			points_manager.spawn_cone(pos)
+			points_manager.spawn_cone(pos) 
 		4:
 			points_manager.spawn_fence(pos) #working
 		5:

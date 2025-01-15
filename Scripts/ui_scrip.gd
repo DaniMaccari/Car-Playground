@@ -61,8 +61,11 @@ func _on_timer_timeout() -> void:
 		elif game_time == 30:
 			$StartLabel.clear()
 			$StartLabel.append_text("[center]3")
+	elif game_time <= 95:
+		$TimerLabel.modulate = Color(1.0, 0.4706, 0.3529, 1.0)
+		$StartLabel.clear()
 	else:
-		$StartLabel.modulate = Color(1, 1, 1, 1)
+		$TimerLabel.modulate = Color(1, 1, 1, 1)
 		$StartLabel.clear()
 	
 	timer_label.value = game_time
