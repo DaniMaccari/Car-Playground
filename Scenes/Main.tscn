@@ -42,6 +42,7 @@ reflected_light_source = 1
 tonemap_exposure = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oggjv"]
+shading_mode = 2
 albedo_texture = ExtResource("6_lfaja")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uq350"]
@@ -67,7 +68,7 @@ pitch_scale = 0.95
 stream = ExtResource("2_32c2q")
 
 [node name="CollectSound" parent="." instance=ExtResource("4_fr1yy")]
-volume_db = -5.0
+volume_db = -10.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sn5f3")
@@ -81,7 +82,7 @@ light_bake_mode = 1
 shadow_enabled = true
 shadow_opacity = 0.9
 directional_shadow_mode = 0
-directional_shadow_max_distance = 80.0
+directional_shadow_fade_start = 0.7
 sky_mode = 1
 
 [node name="VehicleBody3D" parent="." instance=ExtResource("1_j6e7n")]
@@ -125,6 +126,7 @@ transform = Transform3D(50.5, 0, 0, 0, 50.5, 0, 0, 0, 50.5, 2.38419e-07, -4, 0.9
 visible = false
 layers = 16
 material_override = SubResource("StandardMaterial3D_oggjv")
+cast_shadow = 0
 mesh = SubResource("PlaneMesh_uq350")
 
 [node name="RampaSalto" parent="." instance=ExtResource("8_g2yf7")]

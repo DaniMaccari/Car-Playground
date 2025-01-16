@@ -27,6 +27,7 @@ window/size/viewport_width=800
 window/size/viewport_height=600
 window/size/resizable=false
 window/size/borderless=true
+window/vsync/vsync_mode=0
 window/defaults/default_clear_color=Color(0.737193, 0.737193, 0.737193, 1)
 
 [global_group]
