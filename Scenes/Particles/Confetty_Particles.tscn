@@ -14,11 +14,12 @@ particles_anim_loop = false
 
 [sub_resource type="Gradient" id="Gradient_ts5ob"]
 interpolation_mode = 1
-offsets = PackedFloat32Array(0, 0.160221, 0.298343, 0.469613, 0.635359, 0.767956, 0.900553)
-colors = PackedColorArray(1, 0.0862745, 0, 1, 1, 0.529412, 0.917647, 1, 0.0941176, 0.435294, 1, 1, 0.0941176, 1, 1, 1, 1, 0.513726, 0, 1, 1, 0.933333, 0.2, 1, 0, 0.901961, 0.290196, 1)
+offsets = PackedFloat32Array(0, 0.171271, 0.331492, 0.513812, 0.657459, 0.839779)
+colors = PackedColorArray(1, 0.0862745, 0, 1, 1, 0.529412, 0.917647, 1, 0.0941176, 0.435294, 1, 1, 0.0941176, 1, 1, 1, 1, 0.513726, 0, 1, 1, 0.933333, 0.2, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_ktsup"]
 gradient = SubResource("Gradient_ts5ob")
+width = 50
 
 [sub_resource type="Curve" id="Curve_qvajs"]
 _data = [Vector2(0.00931676, 0.0314039), 0.0, 7.90082, 0, 0, Vector2(0.258373, 0.923077), 0.471119, 0.471119, 0, 0, Vector2(0.995215, 0.32967), -2.58379, -1.88658, 0, 0]
